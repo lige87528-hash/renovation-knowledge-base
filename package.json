@@ -1,0 +1,25 @@
+{
+  "name": "knowledge-base",
+  "version": "1.0.0",
+  "description": "装修行业知识库 - 汇集各类装修知识，为从业者和业主提供专业参考",
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs"
+  },
+  "keywords": [
+    "装修",
+    "知识库",
+    "施工规范",
+    "家装"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "vitepress": "^1.6.4"
+  },
+  "dependencies": {
+    "pdf-parse": "^1.1.1"
+  }
+}
