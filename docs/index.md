@@ -3,7 +3,7 @@ layout: home
 
 hero:
   name: "装修知识库"
-  text: "专业装修知识一站式平台"
+  text: "专业装修知识共享平台"
   tagline: 汇集装修白皮书、施工规范、材料指南、避坑指南等全方位家装知识，为从业者和业主提供专业参考
   image:
     src: /logo.svg
