@@ -490,5 +490,6 @@ export default defineConfig({
   head: [
     ['meta', { name: 'keywords', content: '装修,家装,施工规范,验收标准,装修避坑,装修报价,装修材料' }],
     ['meta', { name: 'author', content: '装修知识库' }],
+    ['script', {}, `var _hmt = _hmt || []; (function() { var hm = document.createElement("script"); hm.src = "https://hm.baidu.com/hm.js?0c9c1ef25610fa1a45227942f16d07fd"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s); })();`],
   ],
 })
