@@ -1,0 +1,23 @@
+{
+  "name": "装修知识库",
+  "short_name": "装修知识库",
+  "description": "335篇装修知识文章，覆盖国标解读、施工规范、验收清单、避坑指南",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#3B82F6",
+  "icons": [
+    {
+      "src": "/pwa-192.svg",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/pwa-512.svg",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

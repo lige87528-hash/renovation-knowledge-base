@@ -490,6 +490,19 @@ export default defineConfig({
   head: [
     ['meta', { name: 'keywords', content: '装修,家装,施工规范,验收标准,装修避坑,装修报价,装修材料' }],
     ['meta', { name: 'author', content: '装修知识库' }],
+    // Open Graph / 微信分享卡片
+    ['meta', { property: 'og:type', content: 'website' }],
+    ['meta', { property: 'og:title', content: '装修知识库' }],
+    ['meta', { property: 'og:description', content: '335篇装修知识文章，覆盖国标解读、施工规范、验收清单、避坑指南、市场分析，为从业者和业主提供专业参考' }],
+    ['meta', { property: 'og:image', content: 'https://zhuangxiuzhishi.cn/og-cover.svg' }],
+    ['meta', { property: 'og:url', content: 'https://zhuangxiuzhishi.cn/' }],
+    ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
+    // PWA
+    ['link', { rel: 'manifest', href: '/manifest.json' }],
+    ['meta', { name: 'theme-color', content: '#3B82F6' }],
+    ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
+    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black-translucent' }],
+    // 百度统计
     ['script', {}, `var _hmt = _hmt || []; (function() { var hm = document.createElement("script"); hm.src = "https://hm.baidu.com/hm.js?0c9c1ef25610fa1a45227942f16d07fd"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s); })();`],
   ],
 })

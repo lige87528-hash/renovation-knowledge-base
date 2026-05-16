@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#1E40AF"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <!-- Grid pattern -->
+  <g opacity="0.06" stroke="#fff" stroke-width="1">
+    <line x1="0" y1="157" x2="1200" y2="157"/>
+    <line x1="0" y1="315" x2="1200" y2="315"/>
+    <line x1="0" y1="472" x2="1200" y2="472"/>
+    <line x1="300" y1="0" x2="300" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/>
+    <line x1="900" y1="0" x2="900" y2="630"/>
+  </g>
+  <!-- House icon -->
+  <g transform="translate(100, 180)">
+    <rect x="0" y="80" width="200" height="160" rx="10" fill="#fff" opacity="0.15"/>
+    <polygon points="100,0 0,80 200,80" fill="#fff" opacity="0.2"/>
+    <rect x="70" y="130" width="60" height="90" rx="4" fill="#fff" opacity="0.2"/>
+    <rect x="20" y="105" width="40" height="35" rx="3" fill="#fff" opacity="0.15"/>
+    <rect x="140" y="105" width="40" height="35" rx="3" fill="#fff" opacity="0.15"/>
+  </g>
+  <!-- Text -->
+  <text x="400" y="280" font-family="sans-serif" font-weight="800" font-size="72" fill="#FFFFFF">装修知识库</text>
+  <text x="400" y="370" font-family="sans-serif" font-weight="400" font-size="32" fill="#BFDBFE">335篇装修知识文章</text>
+  <text x="400" y="430" font-family="sans-serif" font-weight="400" font-size="28" fill="#93C5FD">国标解读 · 施工规范 · 验收清单 · 避坑指南</text>
+  <!-- Decorative badges -->
+  <g transform="translate(400, 480)">
+    <rect x="0" y="0" width="140" height="44" rx="22" fill="#FBBF24"/>
+    <text x="70" y="28" text-anchor="middle" font-family="sans-serif" font-weight="600" font-size="18" fill="#78350F">全工种覆盖</text>
+  </g>
+  <g transform="translate(560, 480)">
+    <rect x="0" y="0" width="140" height="44" rx="22" fill="#34D399"/>
+    <text x="70" y="28" text-anchor="middle" font-family="sans-serif" font-weight="600" font-size="18" fill="#064E3B">免费开放</text>
+  </g>
+  <g transform="translate(720, 480)">
+    <rect x="0" y="0" width="140" height="44" rx="22" fill="#F472B6"/>
+    <text x="70" y="28" text-anchor="middle" font-family="sans-serif" font-weight="600" font-size="18" fill="#831843">持续更新</text>
+  </g>
+</svg>
