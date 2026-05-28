@@ -4,7 +4,7 @@ layout: home
 hero:
   name: "装修知识库"
   text: "专业装修知识共享平台"
-  tagline: 汇集装修白皮书、施工规范、材料指南、避坑指南等全方位家装知识，为从业者和业主提供专业参考
+  tagline: 汇集装修白皮书、施工规范、材料选购、避坑指南等全方位家装知识，为从业者和业主提供专业参考
   image:
     src: /logo.svg
     alt: 装修知识库
@@ -20,43 +20,53 @@ hero:
       link: /whitepaper/
 
 features:
-  - icon: "📋"
+  - icon:
+      src: /icon-whitepaper.svg
     title: 装修白皮书
     details: 行业白皮书解读、装修全流程指南、风格/环保/智能家居等专题
     link: /whitepaper/
-  - icon: "📐"
+  - icon:
+      src: /icon-standards.svg
     title: 施工规范
     details: 8项国标解读、行业/地方标准汇总、水电泥木油工种专项施工指南
     link: /standards/
-  - icon: "🏠"
+  - icon:
+      src: /icon-models.svg
     title: 家装模式
     details: 清包/半包/全包/整装/装配式装修对比，找到适合你的装修方式
     link: /models/
-  - icon: "🔧"
+  - icon:
+      src: /icon-crafts.svg
     title: 工种工艺
     details: 水电/泥瓦/木/油漆工工艺详解，按空间分类的施工指南
     link: /crafts/
-  - icon: "💰"
+  - icon:
+      src: /icon-pricing.svg
     title: 报价预算
     details: 经济/舒适/高端三档报价模板、预算控制技巧、贷款与省钱攻略
     link: /pricing/
-  - icon: "✅"
+  - icon:
+      src: /icon-inspection.svg
     title: 验收标准
     details: 分阶段验收Checklist（水电28项/泥瓦32项/木作25项/油漆20项/竣工45项）
     link: /inspection/
-  - icon: "🧱"
-    title: 材料指南
+  - icon:
+      src: /icon-materials.svg
+    title: 材料选购
     details: 主材辅材清单、品牌推荐、真伪鉴别、瓷砖/地板/卫浴/涂料选购指南
     link: /materials/
-  - icon: "⚠️"
+  - icon:
+      src: /icon-pitfalls.svg
     title: 避坑指南
     details: 装修前/签合同/施工中/材料选购/验收售后全流程避坑，含真伪鉴别
     link: /pitfalls/
-  - icon: "📊"
+  - icon:
+      src: /icon-market.svg
     title: 市场分析
     details: 30+城市家装市场分析、行业白皮书解读、发展趋势
     link: /market/
-  - icon: "🏢"
+  - icon:
+      src: /icon-enterprises.svg
     title: 龙头企业
     details: 家装施工/定制家居/建材龙头企业现状与对比分析
     link: /enterprises/
@@ -83,3 +93,44 @@ features:
 - [市场分析报告](/market/) — 30+城市市场规模、消费偏好、竞争格局
 - [龙头企业研究](/enterprises/) — 金螳螂/东易日盛/欧派/东方雨虹等企业分析
 - [工艺详解](/crafts/) — 按空间和系统分类的施工工艺与验收标准
+
+## 最近更新
+
+### 最新更新日志
+
+<div class="update-list">
+  <div class="update-item"><span class="update-date">2026-05-28</span> <a href="/whitepaper/">装修白皮书</a> — 全文内容优化完善</div>
+  <div class="update-item"><span class="update-date">2026-05-28</span> <a href="/standards/">施工规范</a> — 国标解读与专项施工指南更新</div>
+  <div class="update-item"><span class="update-date">2026-05-27</span> <a href="/pitfalls/">避坑指南</a> — 材料真伪鉴别与合同陷阱新增章节</div>
+  <div class="update-item"><span class="update-date">2026-05-26</span> <a href="/materials/">材料选购</a> — 瓷砖/地板/卫浴选购指南优化</div>
+  <div class="update-item"><span class="update-date">2026-05-25</span> <a href="/market/">市场分析</a> — 新一线城市市场数据更新</div>
+</div>
+
+<style>
+.update-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+.update-item {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--vp-c-text-2);
+}
+.update-item a {
+  color: var(--vp-c-brand);
+  text-decoration: none;
+  font-weight: 500;
+}
+.update-item a:hover {
+  text-decoration: underline;
+}
+.update-date {
+  display: inline-block;
+  min-width: 100px;
+  font-family: 'SF Mono', 'Fira Code', monospace;
+  font-size: 0.82rem;
+  color: var(--vp-c-text-3);
+}
+</style>
