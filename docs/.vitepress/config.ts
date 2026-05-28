@@ -31,6 +31,7 @@ export default defineConfig({
 
     nav: [
       { text: '首页', link: '/' },
+      { text: '标签', link: '/tags/' },
       { text: '装修白皮书', link: '/whitepaper/' },
       { text: '家装模式', link: '/models/' },
       { text: '施工规范', link: '/standards/' },

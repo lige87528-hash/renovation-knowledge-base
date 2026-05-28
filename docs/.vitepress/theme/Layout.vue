@@ -87,7 +87,12 @@ watch(() => route.path, () => {
   progressWidth.value = 0
 })
 
-// 相关推荐 — 基于 tags 匹配，无标签时回退到同分类
+// 相关文章 — 基于 tags 匹配，无标签时回退到同分类
+const articleTags = computed(() => {
+  const tags = page.value?.frontmatter?.tags || []
+  return Array.isArray(tags) ? tags.slice(0, 8) : []
+})
+
 const relatedArticles = computed(() => {
   const currentPage = route.data?.relativePath || ''
   if (!currentPage) return []
@@ -158,6 +163,14 @@ const relatedArticles = computed(() => {
           <polyline points="12,6 12,12 16,14"/>
         </svg>
         <span>最后更新于 {{ page.lastUpdated }}</span>
+      </div>
+
+      <!-- 文章标签 -->
+      <div v-if="articleTags.length > 0" class="article-tags">
+        <a href="/tags/" class="tags-label">🏷️ 标签</a>
+        <a v-for="tag in articleTags" :key="tag" :href="'/tags/' + encodeURIComponent(tag)" class="tag-link">
+          {{ tag }}
+        </a>
       </div>
 
       <!-- 反馈按钮 -->
@@ -285,6 +298,38 @@ const relatedArticles = computed(() => {
 .last-updated-badge svg {
   width: 14px;
   height: 14px;
+}
+
+/* 文章标签 */
+.article-tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 1rem;
+}
+.tags-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--vp-c-text-1);
+  text-decoration: none;
+  margin-right: 0.3rem;
+}
+.tag-link {
+  display: inline-block;
+  font-size: 0.78rem;
+  padding: 0.2rem 0.6rem;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 12px;
+  background: var(--vp-c-bg-soft);
+  color: var(--vp-c-text-2);
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.tag-link:hover {
+  border-color: var(--vp-c-brand);
+  color: var(--vp-c-brand);
+  background: var(--vp-c-brand-soft, rgba(59,130,246,0.1));
 }
 
 /* 相关推荐 */
