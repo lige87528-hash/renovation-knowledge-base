@@ -1,3 +1,7 @@
+---
+category: materials
+tags: ["材料选购", "装修材料", "品牌推荐"]
+---
 # 智能家居材料预埋指南 (Smart Home Pre-installation Guide)
 
 ## 1. Why Pre-installation Matters

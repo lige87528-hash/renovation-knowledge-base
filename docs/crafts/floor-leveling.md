@@ -1,3 +1,7 @@
+---
+category: crafts
+tags: ["工种工艺", "施工工艺", "装修工艺"]
+---
 # 地面找平施工工艺 (Floor Leveling Construction Craft)
 
 ## 概述

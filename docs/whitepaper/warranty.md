@@ -1,3 +1,7 @@
+---
+category: whitepaper
+tags: ["装修白皮书", "行业趋势", "装修指南"]
+---
 # 装修保修指南 (Renovation Warranty Guide)
 
 ## 概述

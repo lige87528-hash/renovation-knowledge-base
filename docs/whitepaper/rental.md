@@ -1,3 +1,7 @@
+---
+category: whitepaper
+tags: ["装修白皮书", "行业趋势", "装修指南"]
+---
 # 出租房装修指南 (Rental Property Renovation Guide)
 
 ## 概述

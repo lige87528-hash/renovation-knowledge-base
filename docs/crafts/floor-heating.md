@@ -1,3 +1,7 @@
+---
+category: crafts
+tags: ["工种工艺", "施工工艺", "装修工艺"]
+---
 # 地暖施工工艺 (Floor Heating Installation Craft)
 
 ## 概述

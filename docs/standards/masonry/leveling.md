@@ -1,3 +1,7 @@
+---
+category: standards
+tags: ["泥瓦施工", "瓷砖铺贴", "防水", "施工规范", "国家标准", "施工工艺"]
+---
 # 地面找平标准 (Floor Leveling Standards)
 
 > Self-Leveling and Cement Mortar Floor Leveling Requirements for Residential Renovation

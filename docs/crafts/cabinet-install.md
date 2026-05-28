@@ -1,3 +1,7 @@
+---
+category: crafts
+tags: ["工种工艺", "施工工艺", "装修工艺"]
+---
 # 定制柜安装工艺 — Custom Cabinet Installation Craft
 
 ## 1. Overview

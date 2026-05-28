@@ -1,3 +1,7 @@
+---
+category: standards
+tags: ["油漆施工", "墙面处理", "涂料", "施工规范", "国家标准", "施工工艺"]
+---
 # 腻子施工标准 (Putty Application Standards)
 
 > Interior Wall Putty Application Requirements for Residential Renovation

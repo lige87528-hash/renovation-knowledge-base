@@ -1,3 +1,7 @@
+---
+category: pricing
+tags: ["装修报价", "预算控制", "装修费用"]
+---
 # 装修隐藏费用揭秘 (Hidden Renovation Costs)
 
 ## 概述

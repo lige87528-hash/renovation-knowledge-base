@@ -1,3 +1,7 @@
+---
+category: pitfalls
+tags: ["装修避坑", "合同陷阱", "施工陷阱"]
+---
 # 保修期避坑 — Warranty Period Pitfalls
 
 The warranty period is your primary protection against construction defects and material failures after project completion. However, contractors routinely limit warranty scope, create barriers to claims, and exploit homeowners' lack of knowledge about their legal rights. This guide explains warranty requirements under Chinese law, common exclusion tactics, and how to ensure your warranty provides meaningful protection.

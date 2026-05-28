@@ -1,3 +1,7 @@
+---
+category: pitfalls
+tags: ["装修避坑", "合同陷阱", "施工陷阱"]
+---
 # 验收环节避坑 (Acceptance Stage Pitfalls)
 
 ## 概述

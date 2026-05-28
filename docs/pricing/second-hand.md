@@ -1,3 +1,7 @@
+---
+category: pricing
+tags: ["装修报价", "预算控制", "装修费用"]
+---
 # 二手房装修预算 (Second-Hand Home Renovation Budget)
 
 ## 概述

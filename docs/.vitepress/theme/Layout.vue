@@ -1,13 +1,166 @@
 <script setup>
 import DefaultTheme from 'vitepress/theme'
-import { onMounted } from 'vue'
+import { useRoute, useData } from 'vitepress'
+import { ref, onMounted, onUnmounted, computed, watch, nextTick } from 'vue'
 
 const { Layout } = DefaultTheme
+const route = useRoute()
+const { page, site } = useData()
+
+// Breadcrumb path computation
+const breadcrumbs = computed(() => {
+  const path = route.data?.relativePath || ''
+  if (!path) return []
+  const parts = path.replace(/\\/g, '/').split('/').filter(Boolean)
+  const crumbs = [{ label: '首页', link: '/' }]
+  let accumulated = ''
+  for (const part of parts) {
+    accumulated += '/' + part
+    // Remove .md for leaf
+    const display = part.replace(/\.md$/, '')
+    const isLeaf = part.endsWith('.md')
+    crumbs.push({
+      label: displayName(display),
+      link: isLeaf ? undefined : accumulated.replace(/\/index$/, '') + '/',
+    })
+  }
+  return crumbs
+})
+
+const categoryNames = {
+  whitepaper: '装修白皮书',
+  standards: '施工规范',
+  models: '家装模式',
+  crafts: '工种工艺',
+  pricing: '报价预算',
+  inspection: '验收标准',
+  materials: '材料选购',
+  pitfalls: '避坑指南',
+  market: '市场分析',
+  enterprises: '龙头企业',
+}
+
+function displayName(name) {
+  // Check if it's a category
+  if (categoryNames[name]) return categoryNames[name]
+  // Convert kebab-case to readable Chinese (fallback)
+  return name.replace(/-/g, ' ')
+}
+
+function categoryName(cat) {
+  return categoryNames[cat] || cat
+}
+
+// Back to top + reading progress
+const showBackToTop = ref(false)
+const progressWidth = ref(0)
+let ticking = false
+
+function onScroll() {
+  if (ticking) return
+  ticking = true
+  requestAnimationFrame(() => {
+    const scrollTop = window.scrollY || document.documentElement.scrollTop
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight
+    const pct = docHeight > 0 ? Math.round((scrollTop / docHeight) * 100) : 0
+    progressWidth.value = pct
+    showBackToTop.value = scrollTop > 400
+    ticking = false
+  })
+}
+
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: 'smooth' })
+}
+
+onMounted(() => {
+  window.addEventListener('scroll', onScroll, { passive: true })
+})
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', onScroll)
+})
+
+// Reset scroll state on route change
+watch(() => route.path, () => {
+  showBackToTop.value = false
+  progressWidth.value = 0
+})
+
+// 相关推荐 — 基于 tags 匹配，无标签时回退到同分类
+const relatedArticles = computed(() => {
+  const currentPage = route.data?.relativePath || ''
+  if (!currentPage) return []
+
+  const parts = currentPage.replace(/\\/g, '/').split('/')
+  const currentCategory = parts[0] || ''
+  const currentTags = page.value?.frontmatter?.tags || []
+  const pages = site.value?.pages || []
+
+  const scored = pages
+    .filter(p => {
+      const rel = (p.relativePath || '').replace(/\\/g, '/')
+      return rel !== currentPage && rel.endsWith('.md')
+    })
+    .map(p => {
+      const pTags = p.frontmatter?.tags || []
+      const pCat = p.frontmatter?.category || ''
+      // 计算匹配分数
+      let score = 0
+      if (Array.isArray(currentTags) && currentTags.length > 0) {
+        score = currentTags.filter(t => pTags.includes(t)).length
+      } else {
+        // 无标签时按分类匹配
+        score = pCat === currentCategory ? 1 : 0
+      }
+      // 同分类加分
+      if (pCat === currentCategory) score += 0.5
+      return { page: p, score }
+    })
+    .filter(x => x.score > 0)
+    .sort((a, b) => b.score - a.score)
+    .slice(0, 3)
+    .map(x => ({
+      title: x.page.title || '未命名',
+      link: '/' + (x.page.relativePath || '').replace(/\\/g, '/').replace(/\.md$/, '').replace(/\/index$/, ''),
+      category: x.page.frontmatter?.category || '',
+    }))
+
+  // 修复链接：确保 index 页正确
+  return scored.map(a => ({
+    ...a,
+    link: a.link.endsWith('/') ? a.link : a.link + '/',
+  }))
+})
 </script>
 
 <template>
   <Layout>
+    <!-- 阅读进度条 -->
+    <div class="reading-progress-bar" :style="{ width: progressWidth + '%' }" />
+
+    <!-- 面包屑（仅文章页显示） -->
+    <template #doc-before>
+      <nav class="breadcrumb-nav" v-if="breadcrumbs.length > 1">
+        <template v-for="(crumb, i) in breadcrumbs" :key="i">
+          <span v-if="i > 0" class="breadcrumb-sep">›</span>
+          <a v-if="crumb.link && crumb.link !== route.path" :href="crumb.link">{{ crumb.label }}</a>
+          <span v-else class="breadcrumb-current">{{ crumb.label }}</span>
+        </template>
+      </nav>
+    </template>
+
+    <!-- 更新时间徽章 -->
     <template #doc-after>
+      <div v-if="page.lastUpdated" class="last-updated-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"/>
+          <polyline points="12,6 12,12 16,14"/>
+        </svg>
+        <span>最后更新于 {{ page.lastUpdated }}</span>
+      </div>
+
+      <!-- 反馈按钮 -->
       <div class="feedback-section">
         <div class="feedback-title">这篇内容对你有帮助吗？</div>
         <div class="feedback-buttons">
@@ -18,7 +171,20 @@ const { Layout } = DefaultTheme
           <p>关注装修知识库，获取更多专业指导</p>
         </div>
       </div>
+
+      <!-- 相关推荐 -->
+      <div v-if="relatedArticles.length > 0" class="related-section">
+        <div class="related-title">📖 推荐阅读</div>
+        <div class="related-list">
+          <a v-for="(article, i) in relatedArticles" :key="i" :href="article.link" class="related-item">
+            <span class="related-category">{{ categoryName(article.category) }}</span>
+            <span class="related-name">{{ article.title }}</span>
+          </a>
+        </div>
+      </div>
     </template>
+
+    <!-- 页脚 -->
     <template #footer-after>
       <div class="footer-contact">
         <p class="footer-contact-text">
@@ -28,9 +194,42 @@ const { Layout } = DefaultTheme
       </div>
     </template>
   </Layout>
+
+  <!-- 返回顶部按钮 -->
+  <button class="back-to-top-btn" :class="{ visible: showBackToTop }" @click="scrollToTop" title="返回顶部">
+    ↑
+  </button>
 </template>
 
 <style>
+/* 面包屑容器 - 在文章内容区顶部 */
+.breadcrumb-nav {
+  font-size: 0.85rem;
+  color: var(--vp-c-text-2);
+  padding: 0;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  flex-wrap: wrap;
+}
+.breadcrumb-nav a {
+  color: var(--vp-c-brand);
+  text-decoration: none;
+}
+.breadcrumb-nav a:hover {
+  text-decoration: underline;
+}
+.breadcrumb-sep {
+  color: var(--vp-c-text-3);
+  margin: 0 0.1rem;
+}
+.breadcrumb-current {
+  color: var(--vp-c-text-1);
+  font-weight: 500;
+}
+
+/* 反馈区 */
 .feedback-section {
   margin: 2rem 0;
   padding: 1.5rem;
@@ -39,21 +238,18 @@ const { Layout } = DefaultTheme
   background: var(--vp-c-bg-soft);
   text-align: center;
 }
-
 .feedback-title {
   font-size: 1rem;
   font-weight: 600;
   margin-bottom: 1rem;
   color: var(--vp-c-text-1);
 }
-
 .feedback-buttons {
   display: flex;
   justify-content: center;
   gap: 1rem;
   margin-bottom: 1rem;
 }
-
 .feedback-btn {
   padding: 0.5rem 1.5rem;
   border: 1px solid var(--vp-c-divider);
@@ -63,28 +259,105 @@ const { Layout } = DefaultTheme
   font-size: 0.9rem;
   transition: all 0.2s;
 }
-
 .feedback-btn:hover {
   border-color: var(--vp-c-brand);
   background: var(--vp-c-brand-light);
   color: #fff;
 }
-
 .feedback-follow {
   font-size: 0.85rem;
   color: var(--vp-c-text-2);
 }
 
+/* 更新时间徽章 */
+.last-updated-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.82rem;
+  color: var(--vp-c-text-2);
+  padding: 0.3rem 0.8rem;
+  background: var(--vp-c-bg-soft);
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 6px;
+  margin-top: 0.5rem;
+}
+.last-updated-badge svg {
+  width: 14px;
+  height: 14px;
+}
+
+/* 相关推荐 */
+.related-section {
+  margin: 1.5rem 0;
+  padding: 1.25rem;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 12px;
+  background: var(--vp-c-bg-soft);
+}
+.related-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: var(--vp-c-text-1);
+}
+.related-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.related-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.6rem 0.8rem;
+  border-radius: 8px;
+  background: var(--vp-c-bg);
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.related-item:hover {
+  background: var(--vp-c-bg-soft);
+}
+.related-category {
+  font-size: 0.75rem;
+  padding: 0.15rem 0.5rem;
+  background: var(--vp-c-brand-soft, rgba(59, 130, 246, 0.1));
+  color: var(--vp-c-brand);
+  border-radius: 4px;
+  white-space: nowrap;
+  font-weight: 500;
+}
+.related-name {
+  font-size: 0.88rem;
+  color: var(--vp-c-text-1);
+  font-weight: 500;
+}
+
+/* 页脚联系信息 */
 .footer-contact {
   padding: 1rem 0;
   text-align: center;
   border-top: 1px solid var(--vp-c-divider);
 }
-
 .footer-contact-text {
   font-size: 0.8rem;
   color: var(--vp-c-text-2);
   margin: 0;
   line-height: 1.6;
+}
+
+/* 移动端优化 */
+@media (max-width: 640px) {
+  .back-to-top-btn {
+    bottom: 1.2rem;
+    right: 1.2rem;
+    width: 36px;
+    height: 36px;
+    font-size: 1rem;
+  }
+  .breadcrumb-nav {
+    font-size: 0.78rem;
+  }
 }
 </style>

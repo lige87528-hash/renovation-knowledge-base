@@ -1,3 +1,7 @@
+---
+category: whitepaper
+tags: ["装修白皮书", "行业趋势", "装修指南"]
+---
 # 装修邻里关系处理 (Handling Neighbor Relations During Renovation)
 
 ## 概述

@@ -1,3 +1,7 @@
+---
+category: standards
+tags: ["水电施工", "水电验收", "水电布线", "施工规范", "国家标准", "施工工艺"]
+---
 # 智能家居布线标准 (Smart Home Wiring Standards)
 
 ## 概述

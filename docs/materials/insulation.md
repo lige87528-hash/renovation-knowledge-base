@@ -1,3 +1,7 @@
+---
+category: materials
+tags: ["材料选购", "装修材料", "品牌推荐"]
+---
 # 保温隔热材料指南 (Insulation Materials Guide)
 
 ## 1. Why Insulation Matters in Renovation

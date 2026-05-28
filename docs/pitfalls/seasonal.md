@@ -1,3 +1,7 @@
+---
+category: pitfalls
+tags: ["装修避坑", "合同陷阱", "施工陷阱"]
+---
 # 季节性装修避坑 — Seasonal Renovation Pitfalls
 
 Season and weather conditions significantly impact renovation quality, timeline, and cost. Temperature, humidity, and precipitation affect material performance, curing times, paint adhesion, and worker productivity. This guide provides season-specific strategies to minimize risks and maximize quality throughout your renovation project.

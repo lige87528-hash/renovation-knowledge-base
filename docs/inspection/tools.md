@@ -1,3 +1,7 @@
+---
+category: inspection
+tags: ["验收标准", "验收清单", "装修验收"]
+---
 # 验收工具清单 (Inspection Tools Checklist)
 
 ## 概述

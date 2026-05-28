@@ -1,3 +1,7 @@
+---
+category: crafts
+tags: ["工种工艺", "施工工艺", "装修工艺"]
+---
 # 厨房防溅墙工艺 (Kitchen Backsplash Craft)
 
 ## 概述

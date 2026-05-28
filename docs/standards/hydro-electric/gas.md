@@ -1,3 +1,7 @@
+---
+category: standards
+tags: ["水电施工", "水电验收", "水电布线", "施工规范", "国家标准", "施工工艺"]
+---
 # 燃气管道施工标准 (Gas Pipeline Standards)
 
 ## 概述

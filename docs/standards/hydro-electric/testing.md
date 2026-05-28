@@ -1,3 +1,7 @@
+---
+category: standards
+tags: ["水电施工", "水电验收", "水电布线", "施工规范", "国家标准", "施工工艺"]
+---
 # 水电测试标准 (Hydro-Electric Testing Standards)
 
 > Water Pipe and Electrical System Testing Requirements for Residential Renovation

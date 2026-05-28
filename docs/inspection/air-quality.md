@@ -1,3 +1,7 @@
+---
+category: inspection
+tags: ["验收标准", "验收清单", "装修验收"]
+---
 # 室内空气质量验收 (Indoor Air Quality Acceptance)
 
 ## 概述

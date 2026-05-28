@@ -1,3 +1,7 @@
+---
+category: standards
+tags: ["施工规范", "国家标准", "施工工艺"]
+---
 # 消防安全标准 (Fire Safety Standards)
 
 > Residential Renovation Fire Safety Requirements

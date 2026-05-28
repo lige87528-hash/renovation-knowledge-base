@@ -1,3 +1,7 @@
+---
+category: crafts
+tags: ["工种工艺", "施工工艺", "装修工艺"]
+---
 # 隔音施工工艺 — Soundproofing Construction Craft
 
 ## 1. Overview

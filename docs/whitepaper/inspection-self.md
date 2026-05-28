@@ -1,3 +1,7 @@
+---
+category: whitepaper
+tags: ["装修白皮书", "行业趋势", "装修指南"]
+---
 # 业主自检指南 (Homeowner Self-Inspection Guide)
 
 ## 概述

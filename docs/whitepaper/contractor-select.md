@@ -1,3 +1,7 @@
+---
+category: whitepaper
+tags: ["装修白皮书", "行业趋势", "装修指南"]
+---
 # 施工队选择指南 (Contractor Selection Guide)
 
 ## 概述

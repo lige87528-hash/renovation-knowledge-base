@@ -1,3 +1,7 @@
+---
+category: crafts
+tags: ["工种工艺", "施工工艺", "装修工艺"]
+---
 # 排水系统施工工艺 (Drainage System Construction Craft)
 
 ## 概述

@@ -1,3 +1,7 @@
+---
+category: pitfalls
+tags: ["装修避坑", "合同陷阱", "施工陷阱"]
+---
 # 家电采购避坑 (Appliance Purchase Pitfalls)
 
 ## 概述

@@ -1,3 +1,7 @@
+---
+category: pitfalls
+tags: ["装修避坑", "合同陷阱", "施工陷阱"]
+---
 # 设计费避坑 — Design Fee Pitfalls
 
 Design fees represent one of the most ambiguous and easily abused cost categories in residential renovation. Homeowners frequently overpay for minimal service, receive incomplete deliverables, or discover hidden charges after signing. This guide explains how design fees should work, what to expect, and how to protect yourself from common traps.

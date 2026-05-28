@@ -1,3 +1,7 @@
+---
+category: whitepaper
+tags: ["装修白皮书", "行业趋势", "装修指南"]
+---
 # 装修审批流程 (Renovation Permit Process)
 
 ## 概述

@@ -1,3 +1,7 @@
+---
+category: materials
+tags: ["材料选购", "装修材料", "品牌推荐"]
+---
 # 密封材料指南 (Sealant Materials Guide)
 
 ## 概述

@@ -1,3 +1,7 @@
+---
+category: pitfalls
+tags: ["装修避坑", "合同陷阱", "施工陷阱"]
+---
 # 沟通陷阱避坑 — Communication Pitfall Avoidance
 
 Effective communication with contractors and renovation teams is one of the most underestimated factors determining project success. Studies show that over 60% of renovation disputes stem from miscommunication, unmet expectations, or undocumented changes. This guide provides a comprehensive framework for maintaining clear, professional, and legally-sound communication throughout your renovation project.

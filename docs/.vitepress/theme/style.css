@@ -1,0 +1,162 @@
+/* ===== 自定义容器（替代默认 warning/tip 提示框） ===== */
+.custom-block.tip-pitfall {
+  border-color: #ef4444;
+  background-color: rgba(239, 68, 68, 0.05);
+}
+.custom-block.tip-pitfall .custom-block-title { color: #ef4444; }
+
+.custom-block.tip-money {
+  border-color: #22c55e;
+  background-color: rgba(34, 197, 94, 0.05);
+}
+.custom-block.tip-money .custom-block-title { color: #22c55e; }
+
+.custom-block.tip-standard {
+  border-color: #3b82f6;
+  background-color: rgba(59, 130, 246, 0.05);
+}
+.custom-block.tip-standard .custom-block-title { color: #3b82f6; }
+
+/* ===== 正文排版优化 ===== */
+
+/* 控制正文最大宽度，中文最佳行长 35-40 字 */
+.vp-doc .content-container .content:not(:only-child) {
+  max-width: 760px;
+}
+
+/* H2 层级呼吸感 */
+.vp-doc h2 {
+  margin-top: 3rem;
+  margin-bottom: 1.2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--vp-c-divider);
+}
+
+/* H3 层级呼吸感 */
+.vp-doc h3 {
+  margin-top: 2rem;
+  margin-bottom: 0.8rem;
+}
+
+/* 段落间距 */
+.vp-doc p {
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+/* 图片样式统一 */
+.vp-doc img {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== 面包屑导航 ===== */
+.breadcrumb-nav {
+  font-size: 0.85rem;
+  color: var(--vp-c-text-2);
+  padding: 0.5rem 0 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+.breadcrumb-nav a {
+  color: var(--vp-c-brand);
+  text-decoration: none;
+}
+.breadcrumb-nav a:hover {
+  text-decoration: underline;
+}
+.breadcrumb-sep {
+  color: var(--vp-c-text-3);
+  margin: 0 0.15rem;
+}
+
+/* ===== 返回顶部按钮 ===== */
+.back-to-top-btn {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--vp-c-brand);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+  z-index: 999;
+}
+.back-to-top-btn.visible {
+  opacity: 1;
+  visibility: visible;
+}
+.back-to-top-btn:hover {
+  background: var(--vp-c-brand-dark, #2563eb);
+  transform: translateY(-2px);
+}
+
+/* ===== 阅读进度条 ===== */
+.reading-progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background: linear-gradient(90deg, var(--vp-c-brand), #8b5cf6);
+  z-index: 1000;
+  transition: width 0.1s ease-out;
+}
+
+/* ===== 更新时间标签 ===== */
+.last-updated-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.82rem;
+  color: var(--vp-c-text-2);
+  padding: 0.3rem 0.8rem;
+  background: var(--vp-c-bg-soft);
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 6px;
+  margin-top: 0.5rem;
+}
+.last-updated-badge svg {
+  width: 14px;
+  height: 14px;
+}
+
+/* ===== 移动端优化 ===== */
+@media (max-width: 640px) {
+  /* 返回顶部按钮位置调整 */
+  .back-to-top-btn {
+    bottom: 1.2rem;
+    right: 1.2rem;
+    width: 36px;
+    height: 36px;
+  }
+
+  /* 面包屑字号缩小 */
+  .breadcrumb-nav {
+    font-size: 0.78rem;
+  }
+
+  /* 移动端表格横向滑动 */
+  .vp-doc table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* 移动端正文宽度调整 */
+  .vp-doc .content-container .content:not(:only-child) {
+    max-width: 100%;
+  }
+}

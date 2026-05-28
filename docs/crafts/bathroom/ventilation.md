@@ -1,3 +1,7 @@
+---
+category: crafts
+tags: ["卫浴选购", "马桶", "淋浴", "工种工艺", "施工工艺", "装修工艺"]
+---
 # 卫生间通风排气工艺 — Bathroom Ventilation Craft
 
 ## 1. Overview

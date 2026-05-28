@@ -1,3 +1,7 @@
+---
+category: crafts
+tags: ["工种工艺", "施工工艺", "装修工艺"]
+---
 # 厨房台面工艺 — Kitchen Countertop Fabrication & Installation
 
 ## 1. Overview

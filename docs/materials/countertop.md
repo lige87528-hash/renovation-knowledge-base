@@ -1,3 +1,7 @@
+---
+category: materials
+tags: ["材料选购", "装修材料", "品牌推荐"]
+---
 # 台面材料选购指南 (Countertop Materials Guide)
 
 ## 1. Countertop Material Overview

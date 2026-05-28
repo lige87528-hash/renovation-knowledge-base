@@ -1,3 +1,7 @@
+---
+category: crafts
+tags: ["工种工艺", "施工工艺", "装修工艺"]
+---
 # 配电箱施工工艺 (Electrical Panel Installation Craft)
 
 ## 概述

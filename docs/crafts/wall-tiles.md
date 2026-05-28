@@ -1,3 +1,7 @@
+---
+category: crafts
+tags: ["工种工艺", "施工工艺", "装修工艺"]
+---
 # 墙面瓷砖铺贴工艺 — Wall Tile Installation Craft
 
 ## 1. Overview

@@ -1,3 +1,7 @@
+---
+category: materials
+tags: ["材料选购", "装修材料", "品牌推荐"]
+---
 # 水管电线管材详解 (Pipe & Wire Materials Guide)
 
 ## 1. Water Pipe Materials: PPR vs PEX vs Copper

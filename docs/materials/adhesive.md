@@ -1,3 +1,7 @@
+---
+category: materials
+tags: ["材料选购", "装修材料", "品牌推荐"]
+---
 # 胶水与粘合剂指南 (Adhesive & Sealant Guide)
 
 ## 1. Overview of Adhesive Types Used in Renovation

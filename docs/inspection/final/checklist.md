@@ -1,3 +1,7 @@
+---
+category: inspection
+tags: ["验收清单", "Checklist", "验收标准", "装修验收"]
+---
 # 竣工验收详细清单
 
 ## 整体外观检查

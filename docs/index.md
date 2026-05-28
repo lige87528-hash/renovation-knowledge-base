@@ -106,6 +106,31 @@ features:
   <div class="update-item"><span class="update-date">2026-05-25</span> <a href="/market/">市场分析</a> — 新一线城市市场数据更新</div>
 </div>
 
+## 编辑精选
+
+<div class="picks-grid">
+  <a href="/pitfalls/pre-renovation" class="pick-card">
+    <span class="pick-icon">🔒</span>
+    <h3>装修前避坑指南</h3>
+    <p>低价引流、口头承诺、预算分配 — 开工前必看</p>
+  </a>
+  <a href="/pitfalls/contract-signing" class="pick-card">
+    <span class="pick-icon">📝</span>
+    <h3>签合同避坑</h3>
+    <p>条款陷阱、付款节点、保修条款 — 一字之差差之千里</p>
+  </a>
+  <a href="/materials/purchase-checklist" class="pick-card">
+    <span class="pick-icon">📋</span>
+    <h3>材料采购清单</h3>
+    <p>主材+辅材一站式清单，漏买少买一次搞定</p>
+  </a>
+  <a href="/inspection/" class="pick-card">
+    <span class="pick-icon">✅</span>
+    <h3>分阶段验收清单</h3>
+    <p>水电28项/泥瓦32项/木作25项/油漆20项/竣工45项</p>
+  </a>
+</div>
+
 <style>
 .update-list {
   display: flex;
@@ -132,5 +157,46 @@ features:
   font-family: 'SF Mono', 'Fira Code', monospace;
   font-size: 0.82rem;
   color: var(--vp-c-text-3);
+}
+
+/* 编辑精选 */
+.picks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.pick-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 12px;
+  background: var(--vp-c-bg-soft);
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.pick-card:hover {
+  border-color: var(--vp-c-brand);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.15);
+}
+.pick-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.pick-card h3 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--vp-c-text-1);
+  margin: 0 0 0.4rem;
+}
+.pick-card p {
+  font-size: 0.82rem;
+  color: var(--vp-c-text-2);
+  margin: 0;
+  line-height: 1.5;
 }
 </style>

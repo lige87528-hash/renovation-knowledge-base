@@ -1,3 +1,7 @@
+---
+category: pitfalls
+tags: ["装修避坑", "合同陷阱", "施工陷阱"]
+---
 # 材料替换避坑 — Material Substitution Pitfalls
 
 Unauthorized or poorly communicated material substitution is one of the most common sources of quality degradation and budget disputes in residential renovation. This guide explains how substitutions occur, how to detect them, and how to establish a fair and transparent approval process.
