@@ -110,22 +110,22 @@ features:
 
 <div class="picks-grid">
   <a href="/pitfalls/pre-renovation" class="pick-card">
-    <span class="pick-icon">🔒</span>
+    <svg class="pick-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
     <h3>装修前避坑指南</h3>
     <p>低价引流、口头承诺、预算分配 — 开工前必看</p>
   </a>
   <a href="/pitfalls/contract-signing" class="pick-card">
-    <span class="pick-icon">📝</span>
+    <svg class="pick-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg>
     <h3>签合同避坑</h3>
     <p>条款陷阱、付款节点、保修条款 — 一字之差差之千里</p>
   </a>
   <a href="/materials/purchase-checklist" class="pick-card">
-    <span class="pick-icon">📋</span>
+    <svg class="pick-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
     <h3>材料采购清单</h3>
     <p>主材+辅材一站式清单，漏买少买一次搞定</p>
   </a>
   <a href="/inspection/" class="pick-card">
-    <span class="pick-icon">✅</span>
+    <svg class="pick-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
     <h3>分阶段验收清单</h3>
     <p>水电28项/泥瓦32项/木作25项/油漆20项/竣工45项</p>
   </a>
@@ -184,8 +184,11 @@ features:
   box-shadow: 0 4px 12px rgba(59, 130, 246, 0.15);
 }
 .pick-icon {
-  font-size: 2rem;
+  width: 2.5rem;
+  height: 2.5rem;
   margin-bottom: 0.5rem;
+  color: var(--vp-c-brand);
+  opacity: 0.8;
 }
 .pick-card h3 {
   font-size: 0.95rem;
