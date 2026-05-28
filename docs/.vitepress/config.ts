@@ -476,9 +476,7 @@ export default defineConfig({
       },
     },
 
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/' },
-    ],
+    socialLinks: [],
 
     footer: {
       message: 'Released under the MIT License.',
@@ -508,7 +506,7 @@ export default defineConfig({
     },
   },
 
-  // 动态 head — 为每个页面生成 canonical URL 和个性化 meta description
+  // 动态 head — 为每个页面生成 canonical URL、个性化 description、JSON-LD
   transformHead({ pageData }) {
     const head: any[] = []
     const relPath = pageData.relativePath || ''
@@ -530,6 +528,56 @@ export default defineConfig({
       head.push(['meta', { name: 'description', content: desc }])
       head.push(['meta', { property: 'og:description', content: desc }])
     }
+
+    // JSON-LD 结构化数据
+    const pageTitle = pageData.title || '装修知识库'
+    const parts = pagePath.split('/').filter(Boolean)
+    const category = parts[0] || ''
+
+    let jsonLd: any
+    if (!pagePath) {
+      // 首页 — WebSite + SearchAction
+      jsonLd = {
+        '@context': 'https://schema.org',
+        '@type': 'WebSite',
+        name: '装修知识库',
+        url: 'https://zhuangxiuzhishi.cn/',
+        description: desc,
+        potentialAction: {
+          '@type': 'SearchAction',
+          target: {
+            '@type': 'EntryPoint',
+            urlTemplate: 'https://zhuangxiuzhishi.cn/?search={search_term_string}',
+          },
+          'query-input': 'required name=search_term_string',
+        },
+      }
+    } else {
+      // 文章页 — Article
+      jsonLd = {
+        '@context': 'https://schema.org',
+        '@type': 'Article',
+        headline: pageTitle,
+        description: desc,
+        url: fullUrl,
+        author: { '@type': 'Organization', name: '装修知识库' },
+        publisher: {
+          '@type': 'Organization',
+          name: '装修知识库',
+          logo: { '@type': 'ImageObject', url: 'https://zhuangxiuzhishi.cn/logo.svg' },
+        },
+        mainEntityOfPage: fullUrl,
+      }
+      if (category) {
+        jsonLd.articleSection = categoryDescriptions[category] || category
+      }
+    }
+
+    head.push([
+      'script',
+      { type: 'application/ld+json' },
+      JSON.stringify(jsonLd),
+    ])
 
     return head
   },

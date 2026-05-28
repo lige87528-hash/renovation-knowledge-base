@@ -1,8 +1,10 @@
 import DefaultTheme from 'vitepress/theme'
 import { onMounted } from 'vue'
+import Layout from './Layout.vue'
 
 export default {
-  extends: DefaultTheme,
+  ...DefaultTheme,
+  Layout: Layout,
   setup() {
     onMounted(() => {
       if ('serviceWorker' in navigator) {
