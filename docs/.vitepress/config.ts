@@ -1,5 +1,26 @@
 import { defineConfig } from 'vitepress'
 
+// 各分类的个性化 description 映射
+const categoryDescriptions: Record<string, string> = {
+  'whitepaper': '装修行业白皮书解读，涵盖行业发展趋势、装修风格、旧房翻新、环保装修等全方位指导',
+  'standards': '住宅装饰装修工程施工规范大全，涵盖国家标准 GB50210/GB50327 及水电泥木油各工种施工标准',
+  'models': '清包/半包/全包/整装/拎包入住等家装模式对比分析，帮你选择最适合的装修方式',
+  'crafts': '水电工/泥瓦工/木工/油漆工/安装工等各工种工艺详解，覆盖全流程施工工艺',
+  'pricing': '装修报价清单模板、各城市参考价、预算控制技巧和贷款方案',
+  'inspection': '装修验收标准与清单，涵盖水电/泥瓦/木作/油漆/竣工各阶段验收要点',
+  'materials': '瓷砖/地板/涂料/卫浴/门窗等主辅材选购指南，含品牌推荐和材料鉴别方法',
+  'pitfalls': '装修避坑大全，涵盖设计/施工/材料/合同四大环节常见陷阱及应对策略',
+  'market': '全国 30+ 城市装修市场分析，覆盖北上广深及新一线城市装修行情',
+  'enterprises': '东易日盛/业之峰/金螳螂家等装修龙头企业对比分析与发展趋势',
+}
+
+function getMetaDescription(page: string): string {
+  const parts = page.split('/').filter(Boolean)
+  if (parts.length === 0) return '汇集各类装修知识，为从业者和业主提供专业参考'
+  const category = parts[0]
+  return categoryDescriptions[category] || `装修知识：${parts[parts.length - 1]}，专业装修指导参考`
+}
+
 export default defineConfig({
   title: '装修知识库',
   description: '汇集各类装修知识，为从业者和业主提供专业参考',
@@ -487,11 +508,40 @@ export default defineConfig({
     },
   },
 
+  // 动态 head — 为每个页面生成 canonical URL 和个性化 meta description
+  transformHead({ pageData }) {
+    const head: any[] = []
+    const relPath = pageData.relativePath || ''
+    // Remove .md extension
+    let pagePath = relPath.replace(/\.md$/, '')
+    // Handle homepage: index.md → empty string; category/index.md → category/
+    pagePath = pagePath.replace(/\/index$/, '')
+    if (pagePath === 'index') pagePath = ''
+    // Normalize
+    pagePath = pagePath.replace(/\\/g, '/')
+    const fullUrl = pagePath ? `https://zhuangxiuzhishi.cn/${pagePath}/` : 'https://zhuangxiuzhishi.cn/'
+
+    // canonical URL
+    head.push(['link', { rel: 'canonical', href: fullUrl }])
+
+    // 个性化 description
+    const desc = getMetaDescription(pagePath)
+    if (desc) {
+      head.push(['meta', { name: 'description', content: desc }])
+      head.push(['meta', { property: 'og:description', content: desc }])
+    }
+
+    return head
+  },
+
   head: [
+    ['link', { rel: 'icon', href: '/favicon.ico', type: 'image/x-icon' }],
+    ['link', { rel: 'icon', href: '/logo.svg', type: 'image/svg+xml' }],
     ['meta', { name: 'keywords', content: '装修,家装,施工规范,验收标准,装修避坑,装修报价,装修材料' }],
     ['meta', { name: 'author', content: '装修知识库' }],
     // Open Graph / 微信分享卡片
     ['meta', { property: 'og:type', content: 'website' }],
+    ['meta', { property: 'og:locale', content: 'zh_CN' }],
     ['meta', { property: 'og:title', content: '装修知识库' }],
     ['meta', { property: 'og:description', content: '335篇装修知识文章，覆盖国标解读、施工规范、验收清单、避坑指南、市场分析，为从业者和业主提供专业参考' }],
     ['meta', { property: 'og:image', content: 'https://zhuangxiuzhishi.cn/og-cover.svg' }],

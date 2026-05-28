@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vitepress dev docs",
-    "build": "vitepress build docs",
+    "build": "vitepress build docs && node docs/.vitepress/post-build.js",
     "preview": "vitepress preview docs"
   },
   "keywords": [
@@ -17,6 +17,7 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "sitemap": "^9.0.1",
     "vitepress": "^1.6.4"
   },
   "dependencies": {
