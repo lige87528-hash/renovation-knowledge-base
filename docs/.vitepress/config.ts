@@ -50,7 +50,6 @@ export default defineConfig({
           items: [
             { text: '概述', link: '/whitepaper/' },
             { text: '行业白皮书解读', link: '/whitepaper/industry-whitepaper' },
-            { text: '概述详解', link: '/whitepaper/overview' },
             { text: '行业发展趋势', link: '/whitepaper/trends' },
             { text: '装修全流程指南', link: '/whitepaper/process' },
             { text: '装修风格大全', link: '/whitepaper/styles' },
@@ -148,7 +147,6 @@ export default defineConfig({
             { text: '腻子施工标准', link: '/standards/painting/putty' },
             { text: '墙面处理规范', link: '/standards/painting/wall' },
             { text: '墙面处理详解', link: '/standards/painting/wall-detailed' },
-            { text: '墙面处理详解', link: '/standards/painting/detailed' },
             { text: '安装工程规范', link: '/standards/installation/' },
             { text: '安装施工标准', link: '/standards/installation/standard' },
             { text: '地板安装规范', link: '/standards/installation/flooring' },
