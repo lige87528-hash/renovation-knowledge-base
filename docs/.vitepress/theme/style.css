@@ -278,6 +278,13 @@
   background: var(--vp-c-brand-soft) !important;
   border-radius: 8px !important;
   padding: 12px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+/* Feature 图标颜色：img 标签渲染的 SVG 用 filter 改色 */
+.VPFeature .icon img {
+  filter: brightness(0) saturate(100%) invert(35%) sepia(85%) saturate(600%) hue-rotate(350deg) brightness(95%) !important;
 }
 
 /* ===== 侧边栏优化 ===== */
