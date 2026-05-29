@@ -2,16 +2,16 @@ import { defineConfig } from 'vitepress'
 
 // 各分类的个性化 description 映射
 const categoryDescriptions: Record<string, string> = {
-  'whitepaper': '装修行业白皮书解读，涵盖行业发展趋势、装修风格、旧房翻新、环保装修等全方位指导',
+  'whitepaper': '装修行业百科，涵盖行业发展趋势、装修风格、旧房翻新、环保装修等全方位指导',
   'standards': '住宅装饰装修工程施工规范大全，涵盖国家标准 GB50210/GB50327 及水电泥木油各工种施工标准',
-  'models': '清包/半包/全包/整装/拎包入住等家装模式对比分析，帮你选择最适合的装修方式',
-  'crafts': '水电工/泥瓦工/木工/油漆工/安装工等各工种工艺详解，覆盖全流程施工工艺',
+  'models': '清包/半包/全包/整装/拎包入住等装修模式对比分析，帮你选择最适合的装修方式',
+  'crafts': '水电工/泥瓦工/木工/油漆工/安装工等各工种施工工艺详解，覆盖全流程施工工艺',
   'pricing': '装修报价清单模板、各城市参考价、预算控制技巧和贷款方案',
-  'inspection': '装修验收标准与清单，涵盖水电/泥瓦/木作/油漆/竣工各阶段验收要点',
+  'inspection': '装修验收清单与标准，涵盖水电/泥瓦/木作/油漆/竣工各阶段验收要点',
   'materials': '瓷砖/地板/涂料/卫浴/门窗等主辅材选购指南，含品牌推荐和材料鉴别方法',
   'pitfalls': '装修避坑大全，涵盖设计/施工/材料/合同四大环节常见陷阱及应对策略',
-  'market': '全国 30+ 城市装修市场分析，覆盖北上广深及新一线城市装修行情',
-  'enterprises': '东易日盛/业之峰/金螳螂家等装修龙头企业对比分析与发展趋势',
+  'market': '全国 30+ 城市装修市场行情，覆盖北上广深及新一线城市装修行情',
+  'enterprises': '东易日盛/业之峰/金螳螂家等装企排行与对比分析',
 }
 
 function getMetaDescription(page: string): string {
@@ -32,19 +32,19 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       { text: '标签', link: '/tags/' },
-      { text: '装修白皮书', link: '/whitepaper/' },
-      { text: '家装模式', link: '/models/' },
+      { text: '行业百科', link: '/whitepaper/' },
+      { text: '装修模式', link: '/models/' },
       { text: '施工规范', link: '/standards/' },
-      { text: '工种工艺', link: '/crafts/' },
+      { text: '施工工艺', link: '/crafts/' },
       { text: '材料选购', link: '/materials/' },
       { text: '报价预算', link: '/pricing/' },
-      { text: '验收标准', link: '/inspection/' },
+      { text: '验收清单', link: '/inspection/' },
       { text: '避坑指南', link: '/pitfalls/' },
       {
         text: '更多 ▾',
         items: [
-          { text: '市场分析', link: '/market/' },
-          { text: '龙头企业', link: '/enterprises/' },
+          { text: '市场行情', link: '/market/' },
+          { text: '装企排行', link: '/enterprises/' },
         ]
       },
     ],
@@ -52,7 +52,7 @@ export default defineConfig({
     sidebar: {
       '/whitepaper/': [
         {
-          text: '装修白皮书',
+          text: '行业百科',
           items: [
             { text: '概述', link: '/whitepaper/' },
             { text: '行业白皮书解读', link: '/whitepaper/industry-whitepaper' },
@@ -91,21 +91,25 @@ export default defineConfig({
       ],
       '/standards/': [
         {
-          text: '施工规范',
+          text: '规范总览',
           items: [
             { text: '概述', link: '/standards/' },
-            { text: '规范概述', link: '/standards/overview' },
             { text: '施工流程', link: '/standards/process-flow' },
             { text: '施工阶段', link: '/standards/phases' },
             { text: '常见问题', link: '/standards/common-issues' },
             { text: '规范详解', link: '/standards/detailed' },
-            { text: '国家标准规范', link: '/standards/national/' },
-            { text: 'GB50210验收标准解读', link: '/standards/national/GB50210' },
-            { text: 'GB50327施工规范解读', link: '/standards/national/GB50327' },
-            { text: 'GB50325环保标准解读', link: '/standards/national/GB50325' },
-            { text: 'GB50222防火规范解读', link: '/standards/national/GB50222' },
-            { text: 'GB50242给排水验收解读', link: '/standards/national/GB50242' },
-            { text: 'GB50303电气验收解读', link: '/standards/national/GB50303' },
+          ],
+        },
+        {
+          text: '国家标准专区',
+          items: [
+            { text: '国家标准概览', link: '/standards/national/' },
+            { text: 'GB50210 装饰装修工程质量验收标准', link: '/standards/national/GB50210' },
+            { text: 'GB50327 住宅装饰装修工程施工规范', link: '/standards/national/GB50327' },
+            { text: 'GB50325 室内环境污染控制标准', link: '/standards/national/GB50325' },
+            { text: 'GB50222 建筑内部装修设计防火规范', link: '/standards/national/GB50222' },
+            { text: 'GB50242 建筑给水排水及采暖验收规范', link: '/standards/national/GB50242' },
+            { text: 'GB50303 建筑电气工程施工质量验收规范', link: '/standards/national/GB50303' },
             { text: '行业标准汇总', link: '/standards/national/industry-standards' },
             { text: '地方配套标准', link: '/standards/national/local-standards' },
             { text: '国家标准详解', link: '/standards/national/attention' },
@@ -122,6 +126,11 @@ export default defineConfig({
             { text: '无障碍标准', link: '/standards/national/accessibility' },
             { text: '施工队管理', link: '/standards/national/team-management' },
             { text: '消防安全标准', link: '/standards/national/fire-safety' },
+          ],
+        },
+        {
+          text: '各工种施工标准',
+          items: [
             { text: '水电工程规范', link: '/standards/hydro-electric/' },
             { text: '水电工种施工指南', link: '/standards/hydro-electric/guide' },
             { text: '水电施工标准', link: '/standards/hydro-electric/standard' },
@@ -166,7 +175,7 @@ export default defineConfig({
       ],
       '/models/': [
         {
-          text: '家装模式',
+          text: '装修模式',
           items: [
             { text: '概述', link: '/models/' },
             { text: '模式对比', link: '/models/comparison' },
@@ -181,7 +190,7 @@ export default defineConfig({
       ],
       '/crafts/': [
         {
-          text: '工种工艺',
+          text: '施工工艺',
           items: [
             { text: '概述', link: '/crafts/' },
             { text: '水电工工艺', link: '/crafts/hydro-electric/' },
@@ -265,7 +274,7 @@ export default defineConfig({
       ],
       '/inspection/': [
         {
-          text: '验收标准',
+          text: '验收清单',
           items: [
             { text: '概述', link: '/inspection/' },
             { text: '验收指南', link: '/inspection/guide' },
@@ -398,7 +407,7 @@ export default defineConfig({
       ],
       '/market/': [
         {
-          text: '市场分析',
+          text: '市场行情',
           items: [
             { text: '概述', link: '/market/' },
             { text: '市场概览', link: '/market/overview' },
@@ -438,7 +447,7 @@ export default defineConfig({
       ],
       '/enterprises/': [
         {
-          text: '龙头企业',
+          text: '装企排行',
           items: [
             { text: '概述', link: '/enterprises/' },
             { text: '企业发展现状', link: '/enterprises/status' },
@@ -488,8 +497,8 @@ export default defineConfig({
     },
 
     editLink: {
-      pattern: '',
-      text: '',
+      pattern: 'https://github.com/lige87528-hash/renovation-knowledge-base/edit/main/docs/:path',
+      text: '在 GitHub 上编辑此页',
     },
 
     lastUpdated: {

@@ -28,16 +28,16 @@ const breadcrumbs = computed(() => {
 })
 
 const categoryNames = {
-  whitepaper: '装修白皮书',
+  whitepaper: '行业百科',
   standards: '施工规范',
-  models: '家装模式',
-  crafts: '工种工艺',
+  models: '装修模式',
+  crafts: '施工工艺',
   pricing: '报价预算',
-  inspection: '验收标准',
+  inspection: '验收清单',
   materials: '材料选购',
   pitfalls: '避坑指南',
-  market: '市场分析',
-  enterprises: '龙头企业',
+  market: '市场行情',
+  enterprises: '装企排行',
 }
 
 function displayName(name) {
