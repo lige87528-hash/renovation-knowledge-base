@@ -40,8 +40,13 @@ export default defineConfig({
       { text: '报价预算', link: '/pricing/' },
       { text: '验收标准', link: '/inspection/' },
       { text: '避坑指南', link: '/pitfalls/' },
-      { text: '市场分析', link: '/market/' },
-      { text: '龙头企业', link: '/enterprises/' },
+      {
+        text: '更多 ▾',
+        items: [
+          { text: '市场分析', link: '/market/' },
+          { text: '龙头企业', link: '/enterprises/' },
+        ]
+      },
     ],
 
     sidebar: {
@@ -108,7 +113,7 @@ export default defineConfig({
             { text: '质量管理规范', link: '/standards/national/quality' },
             { text: '绿色环保标准', link: '/standards/national/green' },
             { text: '安全施工规范', link: '/standards/national/safety' },
-            { text: '安全施工详解', link: '/standards/national/safety-standard' },
+            { text: '安全施工要点详解', link: '/standards/national/safety-standard' },
             { text: '材料验收标准', link: '/standards/national/material-inspection' },
             { text: '材料存储规范', link: '/standards/national/material-storage' },
             { text: '噪音控制标准', link: '/standards/national/noise-control' },
@@ -124,9 +129,9 @@ export default defineConfig({
             { text: '燃气管道标准', link: '/standards/hydro-electric/gas' },
             { text: '智能家居布线', link: '/standards/hydro-electric/smart-home-wiring' },
             { text: '电路施工详解', link: '/standards/hydro-electric/electrical' },
-            { text: '电路施工详解', link: '/standards/hydro-electric/electrical-detailed' },
+            { text: '电路施工要点详解', link: '/standards/hydro-electric/electrical-detailed' },
             { text: '水路施工详解', link: '/standards/hydro-electric/plumbing' },
-            { text: '水路施工详解', link: '/standards/hydro-electric/plumbing-detailed' },
+            { text: '水路施工要点详解', link: '/standards/hydro-electric/plumbing-detailed' },
             { text: '水电改造详解', link: '/standards/hydro-electric/renovation' },
             { text: '泥瓦工程规范', link: '/standards/masonry/' },
             { text: '泥瓦工种施工指南', link: '/standards/masonry/guide' },
@@ -147,7 +152,7 @@ export default defineConfig({
             { text: '油漆施工标准', link: '/standards/painting/standard' },
             { text: '腻子施工标准', link: '/standards/painting/putty' },
             { text: '墙面处理规范', link: '/standards/painting/wall' },
-            { text: '墙面处理详解', link: '/standards/painting/wall-detailed' },
+            { text: '墙面处理要点详解', link: '/standards/painting/wall-detailed' },
             { text: '安装工程规范', link: '/standards/installation/' },
             { text: '安装施工标准', link: '/standards/installation/standard' },
             { text: '地板安装规范', link: '/standards/installation/flooring' },
@@ -478,13 +483,13 @@ export default defineConfig({
     socialLinks: [],
 
     footer: {
-      message: 'Released under the MIT License.',
+      message: '汇集各类装修知识，为从业者和业主提供专业参考',
       copyright: 'Copyright © 2026 装修知识库',
     },
 
     editLink: {
-      pattern: 'https://github.com/your-repo/edit/main/docs/:path',
-      text: '在 GitHub 上编辑此页',
+      pattern: '',
+      text: '',
     },
 
     lastUpdated: {
@@ -596,7 +601,7 @@ export default defineConfig({
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
     // PWA
     ['link', { rel: 'manifest', href: '/manifest.json' }],
-    ['meta', { name: 'theme-color', content: '#3B82F6' }],
+    ['meta', { name: 'theme-color', content: '#b45309' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black-translucent' }],
     // 百度统计

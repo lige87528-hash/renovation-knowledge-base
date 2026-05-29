@@ -167,7 +167,7 @@ const relatedArticles = computed(() => {
 
       <!-- 文章标签 -->
       <div v-if="articleTags.length > 0" class="article-tags">
-        <a href="/tags/" class="tags-label">🏷️ 标签</a>
+        <a href="/tags/" class="tags-label">标签</a>
         <a v-for="tag in articleTags" :key="tag" :href="'/tags/' + encodeURIComponent(tag)" class="tag-link">
           {{ tag }}
         </a>
@@ -177,8 +177,8 @@ const relatedArticles = computed(() => {
       <div class="feedback-section">
         <div class="feedback-title">这篇内容对你有帮助吗？</div>
         <div class="feedback-buttons">
-          <button class="feedback-btn" onclick="window._hmt && _hmt.push(['_trackEvent', 'feedback', 'helpful'])">👍 有帮助</button>
-          <button class="feedback-btn" onclick="window._hmt && _hmt.push(['_trackEvent', 'feedback', 'not-helpful'])">👎 需要改进</button>
+          <button class="feedback-btn" onclick="window._hmt && _hmt.push(['_trackEvent', 'feedback', 'helpful'])"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:18px;height:18px;vertical-align:-2px;margin-right:4px"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg>有帮助</button>
+          <button class="feedback-btn" onclick="window._hmt && _hmt.push(['_trackEvent', 'feedback', 'not-helpful'])"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:18px;height:18px;vertical-align:-2px;margin-right:4px"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h2.67A2.31 2.31 0 0 1 22 4v7a2.31 2.31 0 0 1-2.33 2H17"/></svg>需要改进</button>
         </div>
         <div class="feedback-follow">
           <p>关注装修知识库，获取更多专业指导</p>
@@ -187,7 +187,7 @@ const relatedArticles = computed(() => {
 
       <!-- 相关推荐 -->
       <div v-if="relatedArticles.length > 0" class="related-section">
-        <div class="related-title">📖 推荐阅读</div>
+        <div class="related-title">推荐阅读</div>
         <div class="related-list">
           <a v-for="(article, i) in relatedArticles" :key="i" :href="article.link" class="related-item">
             <span class="related-category">{{ categoryName(article.category) }}</span>
