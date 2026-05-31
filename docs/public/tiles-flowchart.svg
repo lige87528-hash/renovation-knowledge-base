@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" width="800" height="440">
+  <defs>
+    <filter id="shadow" x="-2%" y="-4%" width="104%" height="116%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.06"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="440" rx="16" fill="#faf7f2"/>
+
+  <!-- Step 1 -->
+  <g transform="translate(80, 20)" filter="url(#shadow)">
+    <rect width="640" height="80" rx="12" fill="#fefcf8" stroke="#b45309" stroke-width="2.5"/>
+    <circle cx="52" cy="40" r="24" fill="#b45309"/>
+    <text x="52" y="48" text-anchor="middle" font-family='"Microsoft YaHei", sans-serif' font-size="18" font-weight="bold" fill="#fff">1</text>
+    <text x="94" y="36" font-family='"Microsoft YaHei", sans-serif' font-size="20" font-weight="bold" fill="#1e1a14">基层处理</text>
+    <line x1="94" y1="50" x2="600" y2="50" stroke="#e8e0d4" stroke-width="1"/>
+    <text x="94" y="70" font-family='"Microsoft YaHei", sans-serif' font-size="14" fill="#5c5346">清理基层、找平、刷界面剂</text>
+  </g>
+
+  <polygon points="400,100 390,115 410,115" fill="#d97706"/>
+
+  <!-- Step 2 -->
+  <g transform="translate(80, 130)" filter="url(#shadow)">
+    <rect width="640" height="80" rx="12" fill="#fefcf8" stroke="#d97706" stroke-width="2.5"/>
+    <circle cx="52" cy="40" r="24" fill="#d97706"/>
+    <text x="52" y="48" text-anchor="middle" font-family='"Microsoft YaHei", sans-serif' font-size="18" font-weight="bold" fill="#fff">2</text>
+    <text x="94" y="36" font-family='"Microsoft YaHei", sans-serif' font-size="20" font-weight="bold" fill="#1e1a14">排砖放线</text>
+    <line x1="94" y1="50" x2="600" y2="50" stroke="#e8e0d4" stroke-width="1"/>
+    <text x="94" y="70" font-family='"Microsoft YaHei", sans-serif' font-size="14" fill="#5c5346">弹线定位、预排砖、确定切割位置</text>
+  </g>
+
+  <polygon points="400,210 390,225 410,225" fill="#16a34a"/>
+
+  <!-- Step 3 -->
+  <g transform="translate(80, 240)" filter="url(#shadow)">
+    <rect width="640" height="80" rx="12" fill="#fefcf8" stroke="#16a34a" stroke-width="2.5"/>
+    <circle cx="52" cy="40" r="24" fill="#16a34a"/>
+    <text x="52" y="48" text-anchor="middle" font-family='"Microsoft YaHei", sans-serif' font-size="18" font-weight="bold" fill="#fff">3</text>
+    <text x="94" y="36" font-family='"Microsoft YaHei", sans-serif' font-size="20" font-weight="bold" fill="#1e1a14">铺贴施工</text>
+    <line x1="94" y1="50" x2="600" y2="50" stroke="#e8e0d4" stroke-width="1"/>
+    <text x="94" y="70" font-family='"Microsoft YaHei", sans-serif' font-size="14" fill="#5c5346">涂抹瓷砖胶（齿形刮板）、铺贴、橡皮锤敲实、十字定位器控缝</text>
+  </g>
+
+  <polygon points="400,320 390,335 410,335" fill="#2563eb"/>
+
+  <!-- Step 4 -->
+  <g transform="translate(80, 350)" filter="url(#shadow)">
+    <rect width="640" height="80" rx="12" fill="#fefcf8" stroke="#2563eb" stroke-width="2.5"/>
+    <circle cx="52" cy="40" r="24" fill="#2563eb"/>
+    <text x="52" y="48" text-anchor="middle" font-family='"Microsoft YaHei", sans-serif' font-size="18" font-weight="bold" fill="#fff">4</text>
+    <text x="94" y="36" font-family='"Microsoft YaHei", sans-serif' font-size="20" font-weight="bold" fill="#1e1a14">勾缝/美缝</text>
+    <line x1="94" y1="50" x2="600" y2="50" stroke="#e8e0d4" stroke-width="1"/>
+    <text x="94" y="70" font-family='"Microsoft YaHei", sans-serif' font-size="14" fill="#5c5346">24小时后进行，清理砖缝、填入填缝剂/美缝剂、刮平养护</text>
+  </g>
+</svg>

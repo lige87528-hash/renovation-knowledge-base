@@ -22,3 +22,12 @@ tags: ["装修避坑", "合同陷阱", "施工陷阱"]
 水电改造完成后封槽前，不给业主看管线走向。
 
 **应对策略**：要求水电完工后、封槽前拍照或录像，保留管线位置记录。
+
+---
+
+## 延伸阅读
+
+- 👉 [水电工程规范](/standards/hydro-electric/) — 竖直开槽、走顶不走地
+- 👉 [水电验收清单](/inspection/hydro-electric) — 28 项验收 Checklist
+-  [成品保护](/pitfalls/construction/protection) — 门窗/地面保护措施
+- 👉 [分阶段验收清单](/inspection/) — 每个阶段对照验收

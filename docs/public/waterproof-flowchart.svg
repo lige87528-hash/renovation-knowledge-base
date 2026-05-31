@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="800" height="520">
+  <defs>
+    <filter id="shadow" x="-2%" y="-4%" width="104%" height="116%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.06"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="520" rx="16" fill="#faf7f2"/>
+
+  <!-- Step 1: 基层处理 -->
+  <g transform="translate(80, 20)" filter="url(#shadow)">
+    <rect width="640" height="88" rx="12" fill="#fefcf8" stroke="#b45309" stroke-width="2.5"/>
+    <circle cx="52" cy="44" r="26" fill="#b45309"/>
+    <text x="52" y="52" text-anchor="middle" font-family='"Microsoft YaHei", sans-serif' font-size="20" font-weight="bold" fill="#fff">1</text>
+    <text x="96" y="40" font-family='"Microsoft YaHei", sans-serif' font-size="22" font-weight="bold" fill="#1e1a14">基层处理</text>
+    <line x1="96" y1="54" x2="600" y2="54" stroke="#e8e0d4" stroke-width="1"/>
+    <text x="96" y="76" font-family='"Microsoft YaHei", sans-serif' font-size="15" fill="#5c5346">清理浮灰油污、修补裂缝孔洞、阴阳角做圆弧</text>
+  </g>
+
+  <!-- Arrow 1→2 -->
+  <polygon points="400,108 390,124 410,124" fill="#d97706"/>
+
+  <!-- Step 2: 管根加强 -->
+  <g transform="translate(80, 140)" filter="url(#shadow)">
+    <rect width="640" height="88" rx="12" fill="#fefcf8" stroke="#d97706" stroke-width="2.5"/>
+    <circle cx="52" cy="44" r="26" fill="#d97706"/>
+    <text x="52" y="52" text-anchor="middle" font-family='"Microsoft YaHei", sans-serif' font-size="20" font-weight="bold" fill="#fff">2</text>
+    <text x="96" y="40" font-family='"Microsoft YaHei", sans-serif' font-size="22" font-weight="bold" fill="#1e1a14">管根加强处理</text>
+    <line x1="96" y1="54" x2="600" y2="54" stroke="#e8e0d4" stroke-width="1"/>
+    <text x="96" y="76" font-family='"Microsoft YaHei", sans-serif' font-size="15" fill="#5c5346">管周围 200mm 范围内涂刷厚度≥2mm，套管密封</text>
+  </g>
+
+  <!-- Arrow 2→3 -->
+  <polygon points="400,228 390,244 410,244" fill="#16a34a"/>
+
+  <!-- Step 3: 涂刷底涂 -->
+  <g transform="translate(80, 260)" filter="url(#shadow)">
+    <rect width="640" height="88" rx="12" fill="#fefcf8" stroke="#16a34a" stroke-width="2.5"/>
+    <circle cx="52" cy="44" r="26" fill="#16a34a"/>
+    <text x="52" y="52" text-anchor="middle" font-family='"Microsoft YaHei", sans-serif' font-size="20" font-weight="bold" fill="#fff">3</text>
+    <text x="96" y="40" font-family='"Microsoft YaHei", sans-serif' font-size="22" font-weight="bold" fill="#1e1a14">涂刷底涂</text>
+    <line x1="96" y1="54" x2="600" y2="54" stroke="#e8e0d4" stroke-width="1"/>
+    <text x="96" y="76" font-family='"Microsoft YaHei", sans-serif' font-size="15" fill="#5c5346">均匀涂刷一遍，干燥 4–8 小时</text>
+  </g>
+
+  <!-- Arrow 3→4 -->
+  <polygon points="400,348 390,364 410,364" fill="#2563eb"/>
+
+  <!-- Step 4: 涂刷面涂 -->
+  <g transform="translate(80, 380)" filter="url(#shadow)">
+    <rect width="640" height="88" rx="12" fill="#fefcf8" stroke="#2563eb" stroke-width="2.5"/>
+    <circle cx="52" cy="44" r="26" fill="#2563eb"/>
+    <text x="52" y="52" text-anchor="middle" font-family='"Microsoft YaHei", sans-serif' font-size="20" font-weight="bold" fill="#fff">4</text>
+    <text x="96" y="40" font-family='"Microsoft YaHei", sans-serif' font-size="22" font-weight="bold" fill="#1e1a14">涂刷面涂（2–3 遍）</text>
+    <line x1="96" y1="54" x2="600" y2="54" stroke="#e8e0d4" stroke-width="1"/>
+    <text x="96" y="76" font-family='"Microsoft YaHei", sans-serif' font-size="15" fill="#5c5346">每遍方向垂直，总厚度≥1.5mm</text>
+  </g>
+
+  <!-- Arrow 4→5 -->
+  <polygon points="400,468 390,484 410,484" fill="#dc2626"/>
+
+  <!-- Step 5: 闭水试验 -->
+  <g transform="translate(80, 500)" filter="url(#shadow)">
+    <rect width="640" height="88" rx="12" fill="#fefcf8" stroke="#dc2626" stroke-width="2.5"/>
+    <circle cx="52" cy="44" r="26" fill="#dc2626"/>
+    <text x="52" y="52" text-anchor="middle" font-family='"Microsoft YaHei", sans-serif' font-size="20" font-weight="bold" fill="#fff">5</text>
+    <text x="96" y="40" font-family='"Microsoft YaHei", sans-serif' font-size="22" font-weight="bold" fill="#1e1a14">闭水试验</text>
+    <line x1="96" y1="54" x2="600" y2="54" stroke="#e8e0d4" stroke-width="1"/>
+    <text x="96" y="76" font-family='"Microsoft YaHei", sans-serif' font-size="15" fill="#5c5346">蓄水≥20mm，24 小时无渗漏，检查楼下对应位置</text>
+  </g>
+</svg>

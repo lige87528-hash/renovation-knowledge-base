@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 580" width="800" height="580">
+  <defs>
+    <filter id="shadow" x="-2%" y="-4%" width="104%" height="116%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.06"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="580" rx="16" fill="#faf7f2"/>
+
+  <!-- Phase 1 -->
+  <g transform="translate(80, 30)" filter="url(#shadow)">
+    <rect width="640" height="100" rx="12" fill="#fefcf8" stroke="#b45309" stroke-width="2.5"/>
+    <circle cx="52" cy="50" r="28" fill="#b45309"/>
+    <text x="52" y="59" text-anchor="middle" font-family='"Microsoft YaHei", sans-serif' font-size="22" font-weight="bold" fill="#fff">1</text>
+    <text x="98" y="42" font-family='"Microsoft YaHei", sans-serif' font-size="26" font-weight="bold" fill="#1e1a14">前期准备</text>
+    <line x1="98" y1="56" x2="600" y2="56" stroke="#e8e0d4" stroke-width="1"/>
+    <text x="98" y="80" font-family='"Microsoft YaHei", sans-serif' font-size="17" fill="#5c5346">需求分析、预算规划、选择装修模式</text>
+  </g>
+
+  <!-- Arrow 1→2 (centered between boxes) -->
+  <polygon points="400,152 390,135 410,135" fill="#d97706"/>
+
+  <!-- Phase 2 -->
+  <g transform="translate(80, 165)" filter="url(#shadow)">
+    <rect width="640" height="100" rx="12" fill="#fefcf8" stroke="#d97706" stroke-width="2.5"/>
+    <circle cx="52" cy="50" r="28" fill="#d97706"/>
+    <text x="52" y="59" text-anchor="middle" font-family='"Microsoft YaHei", sans-serif' font-size="22" font-weight="bold" fill="#fff">2</text>
+    <text x="98" y="42" font-family='"Microsoft YaHei", sans-serif' font-size="26" font-weight="bold" fill="#1e1a14">设计签约</text>
+    <line x1="98" y1="56" x2="600" y2="56" stroke="#e8e0d4" stroke-width="1"/>
+    <text x="98" y="80" font-family='"Microsoft YaHei", sans-serif' font-size="17" fill="#5c5346">选装修公司、确定设计方案、签订施工合同</text>
+  </g>
+
+  <!-- Arrow 2→3 -->
+  <polygon points="400,287 390,270 410,270" fill="#16a34a"/>
+
+  <!-- Phase 3 -->
+  <g transform="translate(80, 300)" filter="url(#shadow)">
+    <rect width="640" height="100" rx="12" fill="#fefcf8" stroke="#16a34a" stroke-width="2.5"/>
+    <circle cx="52" cy="50" r="28" fill="#16a34a"/>
+    <text x="52" y="59" text-anchor="middle" font-family='"Microsoft YaHei", sans-serif' font-size="22" font-weight="bold" fill="#fff">3</text>
+    <text x="98" y="42" font-family='"Microsoft YaHei", sans-serif' font-size="26" font-weight="bold" fill="#1e1a14">施工管理</text>
+    <line x1="98" y1="56" x2="600" y2="56" stroke="#e8e0d4" stroke-width="1"/>
+    <text x="98" y="80" font-family='"Microsoft YaHei", sans-serif' font-size="17" fill="#5c5346">拆改→水电→泥瓦→木作→油漆→安装，7 大节点验收</text>
+  </g>
+
+  <!-- Arrow 3→4 -->
+  <polygon points="400,422 390,405 410,405" fill="#2563eb"/>
+
+  <!-- Phase 4 -->
+  <g transform="translate(80, 435)" filter="url(#shadow)">
+    <rect width="640" height="100" rx="12" fill="#fefcf8" stroke="#2563eb" stroke-width="2.5"/>
+    <circle cx="52" cy="50" r="28" fill="#2563eb"/>
+    <text x="52" y="59" text-anchor="middle" font-family='"Microsoft YaHei", sans-serif' font-size="22" font-weight="bold" fill="#fff">4</text>
+    <text x="98" y="42" font-family='"Microsoft YaHei", sans-serif' font-size="26" font-weight="bold" fill="#1e1a14">入住准备</text>
+    <line x1="98" y1="56" x2="600" y2="56" stroke="#e8e0d4" stroke-width="1"/>
+    <text x="98" y="80" font-family='"Microsoft YaHei", sans-serif' font-size="17" fill="#5c5346">开荒保洁、家具家电进场、通风除甲醛→入住</text>
+  </g>
+
+  <!-- Bottom connector dots -->
+  <circle cx="400" cy="552" r="3" fill="#e8e0d4"/>
+  <circle cx="400" cy="562" r="3" fill="#e8e0d4"/>
+  <circle cx="400" cy="572" r="3" fill="#e8e0d4"/>
+  <text x="400" y="595" text-anchor="middle" font-family='"Microsoft YaHei", sans-serif' font-size="13" fill="#8c8276">从拿到钥匙到拎包入住，每一步都有关键决策</text>
+</svg>

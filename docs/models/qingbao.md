@@ -30,3 +30,12 @@ tags: ["装修模式", "全包", "半包", "清包", "整装"]
 ## 费用参考
 
 清包的人工费一般在 300-500 元/㎡（不同城市有差异），材料费另算。
+
+---
+
+## 延伸阅读
+
+-  [材料采购清单](/materials/purchase-checklist) — 主材+辅材一站式勾选清单
+- 👉 [报价规划](/pricing/planning) — 预算分配与报价技巧
+- 👉 [材料真伪鉴别](/pitfalls/material-authentication) — 瓷砖/板材/涂料鉴别方法
+- 👉 [装修前避坑指南](/pitfalls/pre-renovation) — 低价引流、口头承诺

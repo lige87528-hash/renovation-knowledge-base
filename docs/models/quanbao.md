@@ -29,3 +29,11 @@ tags: ["装修模式", "全包", "半包", "清包", "整装"]
 ## 费用参考
 
 全包价格一般在 1000-2000 元/㎡，根据材料和城市差异较大。
+
+---
+
+## 延伸阅读
+
+- 👉 [材料真伪鉴别](/pitfalls/material-authentication) — 防止装修公司以次充好
+-  [合同陷阱详解](/pitfalls/contract/traps) — 模糊报价、恶意漏项
+- 👉 [装修模式对比](/models/comparison) — 全包 vs 整装 vs 半包

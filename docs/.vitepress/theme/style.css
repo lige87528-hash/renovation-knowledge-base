@@ -283,7 +283,8 @@
   justify-content: center !important;
 }
 /* Feature 图标颜色：img 标签渲染的 SVG 用 filter 改色 */
-.VPFeature .icon img {
+.VPFeature .VPImage,
+.VPFeature img.VPImage {
   filter: brightness(0) saturate(100%) invert(35%) sepia(85%) saturate(600%) hue-rotate(350deg) brightness(95%) !important;
 }
 
@@ -357,6 +358,164 @@
     min-width: 44px !important;
     min-height: 44px !important;
   }
+}
+
+/* ===== 内容可视化组件 ===== */
+
+/* --- 步骤条（装修流程四阶段彩色化） --- */
+.step-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1.5rem 0;
+  padding: 1rem 0;
+  overflow-x: auto;
+}
+.step-bar .step-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  min-width: 100px;
+  position: relative;
+}
+.step-bar .step-item .step-num {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  flex-shrink: 0;
+}
+.step-bar .step-item .step-label {
+  font-size: 0.82rem;
+  text-align: center;
+  color: var(--vp-c-text-2);
+  font-weight: 500;
+  line-height: 1.4;
+}
+.step-bar .step-connector {
+  flex: 1;
+  height: 2px;
+  background: var(--vp-c-divider);
+  margin: 0 0.5rem;
+  margin-bottom: 1.5rem;
+  min-width: 20px;
+}
+
+/* 四阶段颜色 */
+.step-bar .step-phase-1 .step-num { background: #b45309; }
+.step-bar .step-phase-2 .step-num { background: #d97706; }
+.step-bar .step-phase-3 .step-num { background: #16a34a; }
+.step-bar .step-phase-4 .step-num { background: #2563eb; }
+
+/* --- 关键数据高亮框 --- */
+.data-highlight {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.3rem 0.8rem;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 1rem;
+  margin: 0 0.2rem;
+}
+.data-highlight.accent {
+  background: rgba(180, 83, 9, 0.1);
+  color: var(--vp-c-brand-1);
+}
+.data-highlight.danger {
+  background: rgba(220, 38, 38, 0.08);
+  color: #dc2626;
+}
+.data-highlight.success {
+  background: rgba(22, 163, 74, 0.08);
+  color: #16a34a;
+}
+.data-highlight.info {
+  background: rgba(37, 99, 235, 0.08);
+  color: #2563eb;
+}
+
+/* --- Checklist 清单组件 --- */
+.checklist {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+.checklist li {
+  padding: 0.5rem 0 0.5rem 2rem;
+  position: relative;
+  line-height: 1.7;
+  color: var(--vp-c-text-2);
+  border-bottom: 1px solid var(--vp-c-divider);
+}
+.checklist li:last-child {
+  border-bottom: none;
+}
+.checklist li::before {
+  content: '☐';
+  position: absolute;
+  left: 0;
+  font-size: 1.1rem;
+  color: var(--vp-c-brand-1);
+}
+.checklist.checked li::before {
+  content: '☑';
+  color: #16a34a;
+}
+
+/* ===== 延伸阅读模块（文章末尾内链） ===== */
+/* 自动识别 h2 + ul 结构的延伸阅读 */
+.vp-doc h2:has(+ ul)::after,
+.vp-doc .related-reading h2::after {
+  content: '';
+}
+.vp-doc .related-reading {
+  margin-top: 2rem;
+  padding: 1.25rem 1.5rem;
+  background: var(--vp-c-bg-soft);
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 10px;
+}
+.vp-doc .related-reading h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--vp-c-brand-1);
+  margin: 0 0 0.8rem;
+  padding: 0;
+  border: none;
+}
+.vp-doc .related-reading ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.vp-doc .related-reading li {
+  margin: 0;
+  line-height: 1.6;
+}
+.vp-doc .related-reading a {
+  color: var(--vp-c-text-1);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  display: block;
+  transition: all 0.15s;
+}
+.vp-doc .related-reading a:hover {
+  background: var(--vp-c-brand-soft);
+  color: var(--vp-c-brand-1);
 }
 
 /* ===== 打印样式 ===== */
