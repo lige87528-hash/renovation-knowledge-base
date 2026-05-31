@@ -2,6 +2,67 @@
    装修知识库 — 自定义主题样式
    =================================================== */
 
+/* ===== 字体统一 ===== */
+:root {
+  /* 中文优先字体栈：苹方 → 思源黑体 → 微软雅黑 → 系统回退 */
+  --font-sans: "PingFang SC", "Noto Sans SC", "Microsoft YaHei", "Hiragino Sans GB", "WenQuanYi Micro Hei", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "SF Mono", "Fira Code", "Cascadia Code", "JetBrains Mono", "Source Code Pro", Menlo, Consolas, monospace;
+}
+
+/* 全站正文统一字体 */
+body, .vp-doc {
+  font-family: var(--font-sans) !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 标题统一字体 */
+.vp-doc h1, .vp-doc h2, .vp-doc h3, .vp-doc h4, .vp-doc h5, .vp-doc h6 {
+  font-family: var(--font-sans) !important;
+}
+
+/* 表格统一字体 */
+.vp-doc table, .vp-doc table th, .vp-doc table td {
+  font-family: var(--font-sans) !important;
+}
+
+/* 侧边栏统一字体 */
+.VPSidebar, .VPSidebarItem .text, .VPSidebarItem .link {
+  font-family: var(--font-sans) !important;
+}
+
+/* 导航栏统一字体 */
+.VPNavBar, .VPNav .title, .VPNav .link {
+  font-family: var(--font-sans) !important;
+}
+
+/* Hero 统一字体 */
+.VPHero .name, .VPHero .text, .VPHero .tagline, .VPHero .action {
+  font-family: var(--font-sans) !important;
+}
+
+/* 代码块等宽字体 */
+.vp-doc code, .vp-doc pre, .vp-doc pre code {
+  font-family: var(--font-mono) !important;
+}
+
+/* 首页内联样式字体 */
+.timeline-nav, .timeline-phase, .timeline-num, .timeline-label, .timeline-hint,
+.quick-link, .quick-link-text, .quick-link-text strong, .quick-link-text span,
+.update-item, .update-date,
+.pick-card, .pick-card h3, .pick-card p {
+  font-family: var(--font-sans) !important;
+}
+
+/* 面包屑、TOC、反馈区字体 */
+.breadcrumb-nav, .breadcrumb-current, .inline-toc, .inline-toc-header, .toc-link,
+.feedback-title, .feedback-btn, .feedback-follow,
+.related-title, .related-item, .related-category, .related-name,
+.last-updated-badge, .recent-badge,
+.back-to-top-btn {
+  font-family: var(--font-sans) !important;
+}
+
 /* ===== 配色方案 — 装修行业温暖感 ===== */
 :root {
   --vp-c-brand-1: #b45309;
