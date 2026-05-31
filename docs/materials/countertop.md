@@ -1,359 +1,365 @@
 ---
 category: materials
-tags: ["材料选购", "装修材料", "品牌推荐"]
+tags: ["材料选购", "台面", "厨房装修", "石英石", "岩板"]
 ---
-# 台面材料选购指南 (Countertop Materials Guide)
+# 台面材料选购指南
 
-## 1. Countertop Material Overview
+## 1. 台面材料概览
 
-| Material | Chinese Name | Cost Range (per linear meter) | Durability | Maintenance | Heat Resistance | Stain Resistance |
-|---|---|---|---|---|---|---|
-| **Quartz (Engineered Stone)** | 石英石台面 | ¥400–1500 | Excellent | Low | Good (not excellent) | Excellent |
-| **Granite (Natural Stone)** | 花岗岩台面 | ¥600–2000+ | Excellent | Moderate | Excellent | Good (when sealed) |
-| **Marble (Natural Stone)** | 大理石台面 | ¥800–3000+ | Moderate | High | Good | Poor (etches easily) |
-| **Stainless Steel** | 不锈钢台面 | ¥500–1200 | Excellent | Low | Excellent | Excellent |
-| **Solid Surface (Acrylic)** | 人造石/亚克力台面 | ¥400–1200 | Good | Low | Poor | Good |
-| **Laminate** | 防火板/层压板台面 | ¥150–500 | Fair | Low | Poor | Good |
-| **Sintered Stone** | 岩板台面 | ¥800–2500+ | Excellent | Low | Excellent | Excellent |
-| **Concrete** | 混凝土台面 | ¥600–1500 | Good | High | Excellent | Good (when sealed) |
-| **Wood / Butcher Block** | 实木台面 | ¥400–1000 | Fair | High | Moderate | Poor |
+| 材料 | 成本（每延米） | 耐用性 | 维护难度 | 耐热性 | 抗污性 |
+|---|---|---|---|---|---|
+| **石英石** | ¥400–1500 | 优秀 | 低 | 良好（非极佳） | 优秀 |
+| **花岗岩（天然石材）** | ¥600–2000+ | 优秀 | 中等 | 极佳 | 良好（需密封） |
+| **大理石（天然石材）** | ¥800–3000+ | 中等 | 高 | 良好 | 较差（易被酸性腐蚀） |
+| **不锈钢** | ¥500–1200 | 优秀 | 低 | 极佳 | 极佳 |
+| **人造石（亚克力）** | ¥400–1200 | 良好 | 低 | 较差 | 良好 |
+| **防火板（层压板）** | ¥150–500 | 一般 | 低 | 较差 | 良好 |
+| **岩板** | ¥800–2500+ | 优秀 | 低 | 极佳 | 极佳 |
+| **混凝土** | ¥600–1500 | 良好 | 高 | 极佳 | 良好（需密封） |
+| **实木/砧板台** | ¥400–1000 | 一般 | 高 | 中等 | 较差 |
 
 ---
 
-## 2. Quartz Countertop (石英石台面)
+## 2. 石英石台面
 
-### Composition
-- 90–94% crushed natural quartz
-- 6–10% polymer resin and pigments
-- Manufactured under high pressure and vibration
+### 成分构成
+- 90–94% 天然石英碎粒
+- 6–10% 聚合物树脂和颜料
+- 高压震动压制成型
 
-### Performance Data
+### 性能参数
 
-| Property | Rating | Notes |
+| 性能指标 | 数值 | 说明 |
 |---|---|---|
-| Mohs Hardness | 6–7 | Harder than granite in some cases |
-| Water Absorption | 0.02% | Virtually non-porous |
-| Flexural Strength | 20–40 MPa | Strong, but can chip at edges |
-| Heat Resistance | Up to 150°C | Resin binder can discolor above this |
-| Stain Resistance | Excellent | No sealing required |
-| UV Stability | Moderate | Prolonged direct sunlight may cause yellowing |
+| 莫氏硬度 | 6–7 | 部分情况下比花岗岩更硬 |
+| 吸水率 | 0.02% | 几乎不吸水 |
+| 抗弯强度 | 20–40 MPa | 强度高，但边缘可能崩边 |
+| 耐热温度 | ≤150°C | 超过此温度树脂可能变色 |
+| 抗污性 | 优秀 | 无需密封 |
+| 抗紫外线 | 中等 | 长期阳光直射可能泛黄 |
 
-### Thickness Options
-| Thickness | Best For | Notes |
+### 厚度选择
+
+| 厚度 | 适用场景 | 说明 |
 |---|---|---|
-| 15mm | Budget kitchens, light use | Requires plywood subtop |
-| 20mm | Standard residential | Most common, no subtop needed |
-| 30mm | Premium / commercial | Heavy, requires sturdy cabinet support |
+| 15mm | 预算厨房、轻度使用 | 需要胶合板基层 |
+| 20mm | 常规家用 | 最常用，无需基层 |
+| 30mm | 高端/商用 | 厚重，需要柜体承重加强 |
 
-### Quality Checklist — What to Look For
-- [ ] Quartz content 90%+ (check product specification)
-- [ ] Brand-marked slab (avoid unbranded "white label" quartz)
-- [ ] Uniform pattern with no visible resin pooling
-- [ ] Edge polish is even with no chip marks
-- [ ] Back of slab has manufacturer logo and batch number
-- [ ] Request material test certificate (especially for formaldehyde and heavy metals)
-- [ ] Minimum 10-year warranty from manufacturer
+### 选购检查清单
+- [ ] 石英含量 90% 以上（查看产品说明）
+- [ ] 板材有品牌标识（避免无品牌"白牌"产品）
+- [ ] 花纹均匀，无可见树脂堆积
+- [ ] 边缘打磨均匀，无崩边痕迹
+- [ ] 板材背面有厂家 logo 和批次号
+- [ ] 索要材料检测报告（尤其是甲醛和重金属）
+- [ ] 厂家质保至少 10 年
 
-### Common Brands
-| Brand | Origin | Price Tier | Notes |
+### 常见品牌
+
+| 品牌 | 产地 | 价位 | 特点 |
 |---|---|---|---|
-| CaesarsStone | Israel | Premium | Original engineered quartz |
-| Silestone (Cosentino) | Spain | Premium | Wide color range, antimicrobial |
-| HanStone (韩石) | Korea | Mid–High | Good value |
-| Zhongxun (中讯) | China | Mid | Largest domestic producer |
-| Opal (欧派配套) | China | Mid | Common in custom cabinet packages |
+| 赛凯石（CaesarStone） | 以色列 | 高端 | 人造石鼻祖 |
+| 赛丽石（Silestone） | 西班牙 | 高端 | 颜色丰富，含抗菌技术 |
+| 韩石（HanStone） | 韩国 | 中高端 | 性价比高 |
+| 中讯 | 中国 | 中端 | 国内最大生产商 |
+| 欧派配套 | 中国 | 中端 | 常见于定制橱柜套餐 |
 
 ---
 
-## 3. Granite Countertop (花岗岩台面)
+## 3. 花岗岩台面
 
-### Characteristics
-- Natural stone, each slab is unique
-- Mined in blocks, cut and polished
-- Requires periodic sealing
+### 特点
+- 天然石材，每块纹理独一无二
+- 原石切割打磨而成
+- 需定期密封养护
 
-### Common Granite Types
+### 常见花岗岩品种
 
-| Type | Origin | Color | Typical Use | Cost |
+| 品种 | 产地 | 颜色 | 适用场景 | 价格 |
 |---|---|---|---|---|
-| Black Galaxy | India | Black with gold flecks | Kitchen, vanity | High |
-| Absolute Black | India | Solid black | Modern kitchens | High |
-| G603 / Sesame White | China | White/gray speckle | Budget natural stone | Low |
-| Ubatuba | Brazil | Dark green/black | Traditional kitchens | Mid |
-| Santa Cecilia | Brazil | Beige/brown/gold | Warm traditional style | Mid |
-| Blue Pearl | Norway | Blue-gray with shimmer | Premium statement | Very High |
+| 黑金沙 | 印度 | 黑色带金点 | 厨房、洗手台 | 高 |
+| 纯黑 | 印度 | 纯黑色 | 现代风格厨房 | 高 |
+| G603 / 芝麻白 | 中国 | 白/灰斑点 | 预算天然石 | 低 |
+| 乌巴图巴 | 巴西 | 深绿/黑色 | 传统风格厨房 | 中 |
+| 圣塞西莉亚 | 巴西 | 米色/棕色/金色 | 暖色传统风格 | 中 |
+| 蓝珍珠 | 挪威 | 蓝灰色闪光 | 高端装饰 | 很高 |
 
-### Maintenance Schedule
-| Task | Frequency | Method |
+### 养护周期
+
+| 养护项目 | 频率 | 方法 |
 |---|---|---|
-| Daily cleaning | Daily | Warm water + mild soap |
-| Deep clean | Weekly | Stone-specific cleaner |
-| Seal application | Every 1–2 years | Penetrating sealer |
-| Water test | Every 6 months | Drop water on surface; if it darkens, reseal |
-| Professional polish | Every 3–5 years | Stone restoration service |
+| 日常清洁 | 每天 | 温水+中性洗洁精 |
+| 深度清洁 | 每周 | 石材专用清洁剂 |
+| 密封处理 | 每 1–2 年 | 渗透型密封剂 |
+| 水滴测试 | 每 6 个月 | 滴水观察，若变色则需重新密封 |
+| 专业抛光 | 每 3–5 年 | 石材翻新服务 |
 
-### Pros and Cons
-| Pros | Cons |
+### 优缺点对比
+
+| 优点 | 缺点 |
 |---|---|
-| Unique natural beauty | Requires sealing |
-| Excellent heat resistance (hot pans OK) | Can crack under impact |
-| Very durable, lasts decades | Seams may be visible |
-| Increases home value | Heavy (requires strong cabinet support) |
-| Resistant to scratches | Natural fissures and pits are normal |
+| 天然纹理独一无二 | 需定期密封 |
+| 极佳耐热性（可直接放热锅） | 受冲击可能开裂 |
+| 非常耐用，可用数十年 | 接缝处可能可见 |
+| 提升房屋价值 | 重量大，需要柜体承重加强 |
+| 抗刮擦 | 天然裂纹和坑洞属正常现象 |
 
 ---
 
-## 4. Marble Countertop (大理石台面)
+## 4. 大理石台面
 
-### Characteristics
-- Calcium carbonate-based; reacts with acids (etching)
-- Prized for veining and elegance
-- Best suited for bathrooms, vanity tops, pastry areas (low acid exposure)
+### 特点
+- 碳酸钙成分，遇酸性物质会被腐蚀（泛白起印）
+- 以纹理和优雅著称
+- 最适合用于卫生间、洗手台、烘焙操作台（低酸性接触场景）
 
-### Common Marble Types
+### 常见大理石品种
 
-| Type | Origin | Appearance | Price |
+| 品种 | 产地 | 外观 | 价格 |
 |---|---|---|---|
-| Carrara | Italy | White with soft gray veins | Mid–High |
-| Calacatta | Italy | White with bold gold/gray veins | Very High |
-| Statuario | Italy | Pure white with dramatic veining | Premium |
-| Emperador Dark | Spain | Dark brown with lighter veins | Mid |
-| Cream Marfil | Spain | Cream/beige uniform | Mid |
-| Domestic white (国产白大理石) | China | White, varied quality | Low–Mid |
+| 卡拉拉白 | 意大利 | 白色带浅灰纹 | 中高 |
+| 卡拉卡塔 | 意大利 | 白色带粗金/灰纹 | 很高 |
+| 雪花白 | 意大利 | 纯白带纹理 | 顶级 |
+| 深啡网 | 西班牙 | 深棕带浅纹 | 中 |
+| 米黄大理石 | 西班牙 | 米黄色均匀 | 中 |
+| 国产白大理石 | 中国 | 白色，品质不一 | 低中 |
 
-### Care Requirements
-- **NEVER** place acidic substances (lemon, vinegar, wine) directly on marble
-- Use coasters and trivets at all times
-- Seal upon installation and every 6–12 months
-- Clean only with pH-neutral stone cleaner
-- Etch marks can be professionally polished out
-- Not recommended for primary kitchen countertops in heavy cooking households
-
----
-
-## 5. Stainless Steel Countertop (不锈钢台面)
-
-### Specifications
-
-| Property | Value |
-|---|---|
-| Common grade | 304 stainless steel (food grade) |
-| Thickness | 1.0–1.5mm (residential); 2.0mm+ (commercial) |
-| Surface finish | Brushed (拉丝), mirror (镜面), embossed (压花) |
-| Core material | Plywood or particleboard substrate, or hollow |
-
-### Pros and Cons
-
-| Pros | Cons |
-|---|---|
-| 100% hygienic, non-porous | Scratches easily (develops patina) |
-| Impervious to heat, water, chemicals | Can dent under impact |
-| Seamless fabrication possible | Industrial look (not for all styles) |
-| Easy to clean | Shows fingerprints on mirror finish |
-| Fireproof | Hollow types sound "tinny" when items placed |
-| Long-lasting | Higher-quality (1.5mm+ 304) is expensive |
-
-### Selection Checklist
-- [ ] Specify 304 grade stainless steel (not 201, which rusts)
-- [ ] Minimum 1.2mm thickness for residential (1.5mm preferred)
-- [ ] Brushed finish hides scratches better than mirror
-- [ ] Verify substrate: plywood core is quieter and more solid than hollow
-- [ ] Check weld quality on corners — should be smooth, continuous
-- [ ] Ensure undersink area has water drainage groove
-- [ ] Edge profile: rolled edge is safer than sharp square edge
+### 养护要点
+- **绝对不要**将酸性物质（柠檬、醋、酒）直接放在大理石上
+- 始终使用杯垫和隔热垫
+- 安装后立即密封，之后每 6–12 个月一次
+- 仅使用 pH 中性石材清洁剂
+- 腐蚀痕迹可通过专业抛光去除
+- 不建议用于重烹饪家庭的主厨房台面
 
 ---
 
-## 6. Solid Surface / Acrylic (人造石台面)
+## 5. 不锈钢台面
 
-### Composition
-- Acrylic (PMMA) or polyester resin + mineral fillers
-- Can be thermoformed into seamless shapes with integrated sinks
+### 规格参数
 
-### Performance
+| 参数 | 数值 |
+|---|---|
+| 常用材质 | 304 不锈钢（食品级） |
+| 厚度 | 1.0–1.5mm（家用）；2.0mm+（商用） |
+| 表面处理 | 拉丝、镜面、压花 |
+| 基层材料 | 胶合板或颗粒板基层，或空鼓 |
 
-| Property | Acrylic-based | Polyester-based |
+### 优缺点对比
+
+| 优点 | 缺点 |
+|---|---|
+| 100% 卫生，不渗水不透气 | 容易刮花（会形成使用痕迹） |
+| 耐热、耐水、耐化学腐蚀 | 受冲击会凹陷 |
+| 可无缝拼接 | 工业风，不适合所有风格 |
+| 易清洁 | 镜面易留指纹 |
+| 防火 | 空鼓型放东西会有"哐哐"声 |
+| 寿命长 | 高质量（1.5mm+ 304）价格贵 |
+
+### 选购检查清单
+- [ ] 指定 304 材质（不要用 201，会生锈）
+- [ ] 家用最低 1.2mm（推荐 1.5mm）
+- [ ] 拉丝面比镜面更耐刮
+- [ ] 确认基层：胶合板芯比空鼓更稳固静音
+- [ ] 检查转角焊接质量 — 应平整连续
+- [ ] 水槽下方区域应有排水槽
+- [ ] 边缘选择：卷边比直角更安全
+
+---
+
+## 6. 人造石/亚克力台面
+
+### 成分构成
+- 亚克力（PMMA）或聚酯树脂 + 矿物填料
+- 可热弯成型，与水槽无缝拼接
+
+### 性能对比
+
+| 性能 | 亚克力基 | 聚酯基 |
 |---|---|---|
-| Durability | Good | Moderate |
-| Repairability | Excellent (scratches can be sanded out) | Moderate |
-| Heat Resistance | Up to 90°C | Up to 80°C |
-| Stain Resistance | Good | Good |
-| Seam Visibility | Nearly invisible (color-matched adhesive) | Visible |
-| Cost | Moderate | Low |
+| 耐用性 | 良好 | 中等 |
+| 可修复性 | 优秀（刮痕可打磨去除） | 中等 |
+| 耐热温度 | ≤90°C | ≤80°C |
+| 抗污性 | 良好 | 良好 |
+| 接缝可见度 | 几乎不可见（同色胶） | 可见 |
+| 价格 | 中等 | 低 |
 
-### Best Applications
-- Bathroom vanities (seamless with integrated basin)
-- Reception desks and commercial counters
-- Kitchen islands with curved profiles
-- NOT recommended near cooktops (heat sensitivity)
+### 适用场景
+- 卫生间洗手台（与水槽无缝一体）
+- 前台接待台和商业柜台
+- 带弧形的厨房岛台
+- **不建议**靠近灶台使用（不耐热）
 
-### Brand Leaders
-| Brand | Notes |
+### 主流品牌
+
+| 品牌 | 特点 |
 |---|---|
-| Corian (DuPont) | Original solid surface, premium |
-| HI-MACS (LG) | Good quality, wide colors |
-| Staron (Samsung) | Competitive pricing |
-| Domestic brands | Many options; verify acrylic content percentage |
+| 可丽耐（Corian / 杜邦） | 人造石鼻祖，高端 |
+| 喜必思（HI-MACS / LG） | 品质好，颜色丰富 |
+| 三星（Staron） | 价格竞争力强 |
+| 国产品牌 | 选择多，注意确认亚克力含量 |
 
 ---
 
-## 7. Sintered Stone (岩板台面)
+## 7. 岩板台面
 
-### What Is It?
-- Natural minerals (feldspar, silica) pressed at 1200°C+ and extreme pressure
-- Essentially a high-performance porcelain/stone composite
+### 什么是岩板？
+- 天然矿物（长石、硅石）在 1200°C 以上高温和极高压力下压制而成
+- 本质上是高性能瓷石复合材料
 
-### Performance Comparison vs Quartz
+### 岩板 vs 石英石对比
 
-| Property | Sintered Stone | Quartz |
+| 性能 | 岩板 | 石英石 |
 |---|---|---|
-| Heat Resistance | Up to 1200°C+ (direct flame OK) | Up to 150°C |
-| Scratch Resistance | Mohs 6–7 | Mohs 6–7 |
-| Stain Resistance | Excellent (near-zero absorption) | Excellent |
-| UV Stability | Excellent (no yellowing) | Moderate (may yellow) |
-| Impact Resistance | Moderate (can chip at edges) | Good |
-| Fabrication | Requires diamond tools, specialist | Standard stone tools |
-| Cost | Higher (¥800–2500/m) | Mid (¥400–1500/m) |
-| Thickness | 6mm, 12mm, 20mm | 15mm, 20mm, 30mm |
-| Maximum Slab Size | Up to 3600 x 1600mm | Up to 3200 x 1600mm |
+| 耐热性 | ≤1200°C+（可直接明火接触） | ≤150°C |
+| 抗刮性 | 莫氏 6–7 | 莫氏 6–7 |
+| 抗污性 | 优秀（几乎零吸水） | 优秀 |
+| 抗紫外线 | 优秀（不泛黄） | 中等（可能泛黄） |
+| 抗冲击性 | 中等（边缘可能崩边） | 良好 |
+| 加工难度 | 需金刚石工具，专业师傅 | 常规石材工具 |
+| 价格 | 较高（¥800–2500/延米） | 中等（¥400–1500/延米） |
+| 厚度 | 6mm、12mm、20mm | 15mm、20mm、30mm |
+| 最大板材尺寸 | 可达 3600×1600mm | 可达 3200×1600mm |
 
-### Pros and Cons
-| Pros | Cons |
+### 优缺点对比
+
+| 优点 | 缺点 |
 |---|---|
-| Superior heat resistance | Brittle — can chip or crack on impact |
-| UV stable (outdoor OK) | Requires specialist fabricator |
-| Near-zero water absorption | Edge profiles limited (hard to shape) |
-| Food-safe, antibacterial | Undermount sink installation is tricky |
-| Thin profiles (6mm) allow lightweight cabinets | Repair of chips is difficult |
+| 超强耐热性 | 脆性大 — 受冲击可能崩边或开裂 |
+| 抗紫外线（可用于户外） | 需要专业加工师傅 |
+| 几乎零吸水率 | 边缘造型受限（不易塑形） |
+| 食品级安全、抗菌 | 台下盆安装难度大 |
+| 超薄款（6mm）可配轻质柜体 | 崩边修复困难 |
 
 ---
 
-## 8. Laminate Countertop (防火板台面)
+## 8. 防火板台面
 
-### Construction
-- Decorative HPL (High-Pressure Laminate) surface
-- Particleboard or MDF substrate
-- Post-formed or flat edge options
+### 结构
+- 装饰性高压层压板（HPL）表面
+- 颗粒板或密度板基层
+- 后成型或平边可选
 
-### Pros and Cons
+### 优缺点对比
 
-| Pros | Cons |
+| 优点 | 缺点 |
 |---|---|
-| Most economical option | Not heat resistant (no hot pans) |
-| Huge variety of colors/patterns | Water damage at seams and edges |
-| Easy DIY installation | Cannot be repaired (must replace) |
-| Lightweight | Shorter lifespan (5–15 years) |
-| Smooth, easy to clean | Seams are visible |
+| 最经济的选择 | 不耐热（不能放热锅） |
+| 颜色/花纹选择极多 | 接缝和边缘易进水损坏 |
+| 安装简单 | 无法修复（只能整体更换） |
+| 重量轻 | 寿命较短（5–15 年） |
+| 表面光滑易清洁 | 接缝可见 |
 
-### Lifespan Expectancy
-- Budget laminate: 5–8 years
-- Premium (Formica, Wilsonart): 10–15 years
-- Failure mode: edge swelling from water ingress, delamination, burn marks
-
----
-
-## 9. Detailed Material Comparison
-
-### Heat Resistance Test
-
-| Material | Hot Pot (200°C) Direct Contact | Boiling Water | Oven-to-Counter |
-|---|---|---|---|
-| Granite | Safe | Safe | Safe |
-| Marble | Risk of thermal shock | Safe | Safe |
-| Quartz | Risk of discoloration | Safe | Safe |
-| Sintered Stone | Safe | Safe | Safe |
-| Stainless Steel | Safe | Safe | Safe |
-| Solid Surface | Risk of damage | Safe | Risk of damage |
-| Laminate | Will burn/melt | Risk of edge damage | Will damage |
-| Wood | Burn marks | Water ring risk | Will scorch |
-
-### Maintenance Effort Scale
-
-| Material | Daily Cleaning | Periodic Treatment | Annual Effort |
-|---|---|---|---|
-| Quartz | Wipe with damp cloth | None | Minimal |
-| Granite | Wipe with stone cleaner | Seal every 1–2 years | 30 min |
-| Marble | Wipe with pH-neutral cleaner | Seal every 6–12 months | 1–2 hours |
-| Stainless Steel | Wipe; use stainless cleaner | None | Minimal |
-| Solid Surface | Wipe; sand out scratches | None | Minimal |
-| Sintered Stone | Wipe with damp cloth | None | Minimal |
-| Laminate | Wipe with damp cloth | None | Minimal |
-| Wood | Wipe dry immediately | Oil every 3–6 months | 2–3 hours |
-
-### Cost Comparison (Including Installation, per linear meter)
-
-| Material | Budget | Mid-Range | Premium |
-|---|---|---|---|
-| Laminate | ¥150–250 | ¥250–400 | ¥400–500 |
-| Quartz | ¥400–600 | ¥600–900 | ¥900–1500 |
-| Solid Surface | ¥400–600 | ¥600–900 | ¥900–1200 |
-| Stainless Steel | ¥500–700 | ¥700–900 | ¥900–1200 |
-| Granite | ¥600–900 | ¥900–1500 | ¥1500–2000+ |
-| Sintered Stone | ¥800–1200 | ¥1200–1800 | ¥1800–2500+ |
-| Marble | ¥800–1200 | ¥1200–2000 | ¥2000–3000+ |
+### 使用寿命
+- 低端防火板：5–8 年
+- 高端（富美家 Formica、威盛亚 Wilsonart）：10–15 年
+- 常见损坏：边缘进水膨胀、分层、烫痕
 
 ---
 
-## 10. Selection Guide by Room and Usage
+## 9. 材料详细对比
 
-### Kitchen Countertop
+### 耐热测试
 
-| Usage Pattern | Recommended Material | Thickness | Edge Profile |
+| 材料 | 200°C 热锅直接接触 | 沸水 | 刚从烤箱取出的烤盘 |
 |---|---|---|---|
-| Heavy cooking, Chinese cuisine | Quartz or Sintered Stone | 20mm | Eased or beveled |
-| Baking-focused (pastry) | Marble or Quartz | 20–30mm | Bullnose or eased |
-| Modern / minimalist | Stainless Steel or Sintered Stone | 1.5mm / 12mm | Square edge |
-| Budget / rental | Laminate | 28mm total | Post-formed |
-| Seamless look with integrated sink | Solid Surface | 12mm | Integrated |
-| Traditional / luxury | Granite | 30mm | Bullnose or ogee |
+| 花岗岩 | 安全 | 安全 | 安全 |
+| 大理石 | 有热震风险 | 安全 | 安全 |
+| 石英石 | 有变色风险 | 安全 | 安全 |
+| 岩板 | 安全 | 安全 | 安全 |
+| 不锈钢 | 安全 | 安全 | 安全 |
+| 人造石 | 有损坏风险 | 安全 | 有损坏风险 |
+| 防火板 | 会烧焦/熔化 | 边缘有风险 | 会损坏 |
+| 实木 | 会留烫痕 | 有水渍风险 | 会烧焦 |
 
-### Bathroom Vanity
+### 维护工作量对比
 
-| Priority | Recommended Material | Why |
+| 材料 | 日常清洁 | 定期养护 | 年度耗时 |
+|---|---|---|---|
+| 石英石 | 湿布擦拭 | 无需 | 极少 |
+| 花岗岩 | 石材清洁剂擦拭 | 每 1–2 年密封 | 30 分钟 |
+| 大理石 | pH 中性清洁剂擦拭 | 每 6–12 个月密封 | 1–2 小时 |
+| 不锈钢 | 擦拭；不锈钢专用清洁剂 | 无需 | 极少 |
+| 人造石 | 擦拭；刮痕可打磨 | 无需 | 极少 |
+| 岩板 | 湿布擦拭 | 无需 | 极少 |
+| 防火板 | 湿布擦拭 | 无需 | 极少 |
+| 实木 | 立即擦干 | 每 3–6 个月涂油 | 2–3 小时 |
+
+### 价格对比（含安装，每延米）
+
+| 材料 | 经济档 | 中档 | 高端 |
+|---|---|---|---|
+| 防火板 | ¥150–250 | ¥250–400 | ¥400–500 |
+| 石英石 | ¥400–600 | ¥600–900 | ¥900–1500 |
+| 人造石 | ¥400–600 | ¥600–900 | ¥900–1200 |
+| 不锈钢 | ¥500–700 | ¥700–900 | ¥900–1200 |
+| 花岗岩 | ¥600–900 | ¥900–1500 | ¥1500–2000+ |
+| 岩板 | ¥800–1200 | ¥1200–1800 | ¥1800–2500+ |
+| 大理石 | ¥800–1200 | ¥1200–2000 | ¥2000–3000+ |
+
+---
+
+## 10. 按房间和使用场景选择
+
+### 厨房台面
+
+| 使用场景 | 推荐材料 | 厚度 | 边缘造型 |
+|---|---|---|---|
+| 重烹饪、中式爆炒 | 石英石或岩板 | 20mm | 直边或斜边 |
+| 烘焙为主 | 大理石或石英石 | 20–30mm | 圆边或直边 |
+| 现代极简风格 | 不锈钢或岩板 | 1.5mm / 12mm | 直角边 |
+| 预算/出租房 | 防火板 | 总厚 28mm | 后成型圆边 |
+| 与水槽无缝一体 | 人造石 | 12mm | 一体成型 |
+| 传统/豪华风格 | 花岗岩 | 30mm | 圆边或欧式曲线边 |
+
+### 卫生间洗手台
+
+| 需求 | 推荐材料 | 原因 |
 |---|---|---|
-| Hygiene first | Solid Surface (seamless with basin) | No joints for bacteria |
-| Luxury look | Marble | Elegant veining |
-| Durability | Quartz | Stain-resistant, low maintenance |
-| Budget | Laminate or Ceramic tile | Cost-effective |
+| 卫生第一 | 人造石（与水槽一体） | 无接缝，不易滋生细菌 |
+| 豪华感 | 大理石 | 纹理优雅 |
+| 耐用性 | 石英石 | 抗污、低维护 |
+| 预算型 | 防火板或陶瓷砖 | 性价比高 |
 
-### Outdoor Kitchen
+### 户外厨房
 
-| Material | Suitability | Notes |
+| 材料 | 适用性 | 说明 |
 |---|---|---|
-| Granite | Excellent | UV stable, weather resistant |
-| Sintered Stone | Excellent | Best overall for outdoors |
-| Stainless Steel | Good | 316 grade for coastal areas |
-| Quartz | Poor | UV may cause yellowing |
-| Marble | Poor | Weathering and staining |
-| Laminate | Not suitable | Water damage |
+| 花岗岩 | 优秀 | 抗紫外线、耐候 |
+| 岩板 | 优秀 | 户外最佳选择 |
+| 不锈钢 | 良好 | 沿海地区选 316 材质 |
+| 石英石 | 不适合 | 紫外线可能泛黄 |
+| 大理石 | 不适合 | 风化和污渍 |
+| 防火板 | 不适用 | 进水损坏 |
 
 ---
 
-## 11. Countertop Installation Checklist
+## 11. 台面安装检查清单
 
-- [ ] Verify cabinet top is level (±2mm over 2m) before templating
-- [ ] Measure and template AFTER cabinets are installed (not before)
-- [ ] Specify cutout locations for sink, cooktop, faucet in advance
-- [ ] Undermount sink requires reinforced substrate and clips
-- [ ] Allow 2–3mm expansion gap at wall; cover with backsplash or silicone
-- [ ] Seams should be placed away from high-use areas; request color-matched adhesive
-- [ ] Overhang beyond 300mm requires brackets or corbels (for stone)
-- [ ] For cooktops, verify clearance between countertop and appliances below
-- [ ] Inspect slab in person before cutting (natural stone varies)
-- [ ] Request installation photos showing seam quality and edge finish
-- [ ] Water test around sink cutout after installation (check for leaks)
-- [ ] Retain manufacturer warranty card and product certificate
+- [ ] 测量前确认柜顶水平（2 米内 ±2mm）
+- [ ] 柜体安装完成后再测量开模（不要提前）
+- [ ] 提前确定水槽、灶台、水龙头的开孔位置
+- [ ] 台下盆需要加强基层和固定夹
+- [ ] 墙面留 2–3mm 膨胀缝，用挡水条或玻璃胶覆盖
+- [ ] 接缝应避开高频使用区域，要求同色胶粘接
+- [ ] 悬挑超过 300mm 需要支架或托架（石材类）
+- [ ] 灶台位置需确认台面与下方电器的安全间距
+- [ ] 天然石材需亲自看板选料后再切割
+- [ ] 要求提供安装照片，确认接缝质量和边缘效果
+- [ ] 安装后在水槽周围做漏水测试
+- [ ] 保留厂家质保卡和产品合格证
 
 ---
 
-## 12. Edge Profile Options
+## 12. 边缘造型选项
 
-| Profile | Description | Best For | Cost Impact |
+| 造型 | 描述 | 适用风格 | 价格影响 |
 |---|---|---|---|
-| **Square / Eased** | Clean 90° with slight rounding | Modern, minimalist | Base |
-| **Beveled** | Angled cut (usually 45°) | Transitional | +10–15% |
-| **Bullnose** | Fully rounded edge | Traditional, family kitchens | +15–25% |
-| **Half Bullnose** | Rounded top, square bottom | Budget traditional | +10% |
-| **Ogee** | Decorative S-curve | Luxury, ornate styles | +30–50% |
-| **Waterfall** | Vertical continuation to floor | Kitchen islands, modern | +50–100% (material + labor) |
-| **Mitered** | 45° joint creating thick appearance | Premium, sintered stone | +20–30% |
+| **直边/小圆边** | 干净 90° 微倒角 | 现代极简 | 基础价 |
+| **斜边** | 45° 斜切 | 过渡风格 | +10–15% |
+| **大圆边** | 完全圆润 | 传统、有孩家庭 | +15–25% |
+| **半圆边** | 上面圆、下面方 | 预算传统 | +10% |
+| **欧式曲线边** | 装饰性 S 形曲线 | 豪华、雕花风格 | +30–50% |
+| **瀑布边** | 垂直延伸至地面 | 厨房岛台、现代 | +50–100%（材料+人工） |
+| **斜接边** | 45° 拼接形成加厚效果 | 高端、岩板 | +20–30% |

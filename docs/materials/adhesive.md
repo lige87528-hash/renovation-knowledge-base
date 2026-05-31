@@ -2,244 +2,244 @@
 category: materials
 tags: ["材料选购", "装修材料", "品牌推荐"]
 ---
-# 胶水与粘合剂指南 (Adhesive & Sealant Guide)
+# 胶水与粘合剂指南
 
-## 1. Overview of Adhesive Types Used in Renovation
+## 1. 装修常用粘合剂类型概览
 
-| Adhesive Type | Chinese Name | Primary Use | Base Material | Cure Mechanism |
+| 粘合剂类型 | 中文名 | 主要用途 | 基材 | 固化方式 |
 |---|---|---|---|---|
-| Glass Glue / Silicone Sealant | 玻璃胶 | Sealing windows, bathrooms, kitchens | Silicone | Moisture cure |
-| Structural Adhesive | 结构胶 | Load-bearing bonds,幕墙 (curtain wall) | Epoxy / Polyurethane / MS Polymer | Chemical cure |
-| Tile Adhesive | 瓷砖胶/瓷砖粘结剂 | Bonding tiles to walls/floors | Cement + polymer modified | Water evaporation + hydration |
-| Floor Adhesive | 地板胶 | Wood flooring, LVT, rubber flooring | Polyurethane / Acrylic | Solvent evaporation / moisture cure |
-| Wood Glue | 木工胶/白乳胶 | Wood joints, cabinetry, trim | PVA (Polyvinyl Acetate) | Water evaporation |
-| Polyurethane Foam | 发泡胶/PU发泡剂 | Gap filling, insulation, window sealing | Polyurethane | Moisture cure (expanding) |
-| Contact Adhesive | 万能胶 | Laminate, veneer, rubber flooring | Neoprene / Polychloroprene | Solvent evaporation |
-| Epoxy Adhesive | 环氧树脂胶 | Metal, stone, structural repair | Two-part epoxy | Chemical reaction (A+B mix) |
-| MS Polymer Sealant | MS改性硅烷胶 | General sealing, replacing silicone | Modified silane | Moisture cure |
-| Tile Grout (Epoxy) | 环氧美缝剂 | Tile joint filling (bathroom, kitchen) | Epoxy resin | Chemical cure |
+| 玻璃胶 / 硅酮密封胶 | 玻璃胶 | 窗户密封、卫生间、厨房 | 硅酮 | 湿气固化 |
+| 结构胶 | 结构胶 | 承重粘接、幕墙 | 环氧树脂 / 聚氨酯 / MS 聚合物 | 化学固化 |
+| 瓷砖胶 | 瓷砖胶 / 瓷砖粘结剂 | 墙面 / 地面瓷砖粘接 | 水泥 + 聚合物改性 | 水分蒸发 + 水化反应 |
+| 地板胶 | 地板胶 | 木地板、LVT、橡胶地板 | 聚氨酯 / 丙烯酸 | 溶剂挥发 / 湿气固化 |
+| 木工胶 | 木工胶 / 白乳胶 | 木材接合、橱柜、线条 | PVA（聚醋酸乙烯酯） | 水分蒸发 |
+| PU 发泡剂 | 发泡胶 / PU 发泡剂 | 填缝、保温、窗户密封 | 聚氨酯 | 湿气固化（膨胀型） |
+| 万能胶 | 万能胶 | 防火板、木皮、橡胶地板 | 氯丁橡胶 | 溶剂挥发 |
+| 环氧树脂胶 | 环氧树脂胶 | 金属、石材、结构修补 | 双组分环氧 | 化学反应（A+B 混合） |
+| MS 改性硅烷胶 | MS 改性硅烷胶 | 通用密封、替代玻璃胶 | 改性硅烷 | 湿气固化 |
+| 环氧美缝剂 | 环氧美缝剂 | 瓷砖填缝（卫生间、厨房） | 环氧树脂 | 化学固化 |
 
 ---
 
-## 2. Glass Glue / Silicone Sealant (玻璃胶)
+## 2. 玻璃胶 / 硅酮密封胶
 
-### Types
+### 类型分类
 
-| Type | Characteristics | Best For | Avoid |
+| 类型 | 特点 | 适用场景 | 避免使用 |
 |---|---|---|---|
-| **Acidic (酸性)** | Strong smell (vinegar), fast cure, strong bond | Glass, mirrors, smooth non-porous surfaces | Marble, cement, metal (corrosive), mirrors with silver backing |
-| **Neutral (中性)** | No odor, slower cure, safe for most materials | General sealing, bathroom, kitchen, stone, metal | None (universal use) |
-| **Anti-mold (防霉型)** | Contains fungicide, neutral or acidic | Bathroom, kitchen, areas with persistent moisture | Food contact surfaces |
-| **Weather-resistant (耐候型)** | UV stable, wide temperature range | Exterior windows, facade sealing | Interior decorative work |
+| **酸性** | 刺鼻气味（醋酸味），固化快，粘接力强 | 玻璃、镜子、光滑非多孔表面 | 大理石、水泥、金属（有腐蚀性）、镀银背面镜子 |
+| **中性** | 无气味，固化较慢，适用于大多数材料 | 通用密封、卫生间、厨房、石材、金属 | 无（通用型） |
+| **防霉型** | 含杀菌剂，中性或酸性 | 卫生间、厨房、长期潮湿区域 | 食品接触面 |
+| **耐候型** | 抗紫外线，耐温范围宽 | 外窗、外墙密封 | 室内装饰用途 |
 
-### Application Checklist
-- [ ] Clean surfaces thoroughly — remove dust, oil, old sealant residue
-- [ ] Use masking tape on both sides for clean bead lines
-- [ ] Apply at 5–40°C; cold temperatures slow curing
-- [ ] Tool the bead within 5 minutes of application
-- [ ] Remove masking tape immediately after tooling
-- [ ] Allow 24 hours full cure before exposing to water
-- [ ] Do NOT paint over silicone (use MS polymer if painting is needed)
+### 施工检查清单
+- [ ] 彻底清洁表面 — 清除灰尘、油污、旧胶残留
+- [ ] 两侧贴美纹纸，确保胶线整齐
+- [ ] 在 5–40°C 环境下施工；低温会延缓固化
+- [ ] 打胶后 5 分钟内完成刮平
+- [ ] 刮平后立即撕除美纹纸
+- [ ] 完全固化需 24 小时，期间避免接触水
+- [ ] 硅酮胶表面不可刷漆（如需刷漆，改用 MS 聚合物）
 
-### Common Brands
-| Brand | Product Line | Notes |
+### 常见品牌
+| 品牌 | 产品系列 | 说明 |
 |---|---|---|
-| GE (Momentive) | Silicone I / II | Industry standard, reliable |
-| Dow (Dow Corning) | 791, 795 | Excellent for construction |
-| Wacker (瓦克) | GM, GN | German quality, good anti-mold |
-| Sika (西卡) | Sikasil | Strong in structural applications |
-| Bai Yun (白云) | Chinese domestic | Cost-effective, good availability |
+| GE（迈图） | Silicone I / II | 行业标准，品质可靠 |
+| 道康宁（Dow Corning） | 791, 795 | 建筑领域表现优异 |
+| 瓦克（Wacker） | GM, GN | 德国品质，防霉效果好 |
+| 西卡（Sika） | Sikasil | 结构密封领域强势 |
+| 白云 | 国产 | 性价比高，渠道广 |
 
 ---
 
-## 3. Structural Adhesive (结构胶)
+## 3. 结构胶
 
-### Applications in Renovation
-- Bonding stone countertops to cabinets
-- Curtain wall panel installation
-- Stair nosing and tread bonding
-- Heavy mirror mounting (frameless)
-- Metal-to-concrete connections
-- Glass railing installation
+### 装修中的应用场景
+- 石材台面与柜体粘接
+- 幕墙板材安装
+- 楼梯踏步和收口条粘接
+- 无框重型镜子安装
+- 金属与混凝土连接
+- 玻璃栏杆安装
 
-### Types by Chemistry
+### 按化学成分分类
 
-| Chemistry | Strength | Cure Time | Temperature Range | Best For |
+| 化学成分 | 粘接强度 | 固化时间 | 温度范围 | 适用场景 |
 |---|---|---|---|---|
-| **Epoxy** | Very high | 5 min – 24 hrs (depends on formula) | -40 to 120°C | Structural stone, metal bonding |
-| **Polyurethane (PU)** | High | 4–24 hrs | -40 to 90°C | Flexible bonds, dissimilar materials |
-| **MS Polymer** | High | 24 hrs (surface cure 30 min) | -40 to 100°C | All-purpose structural, paintable |
-| **Silicone (structural grade)** | Moderate–High | 24 hrs | -50 to 200°C | Glass curtain walls, high-temp areas |
+| **环氧树脂** | 极高 | 5 分钟 – 24 小时（视配方） | -40 至 120°C | 结构石材、金属粘接 |
+| **聚氨酯（PU）** | 高 | 4–24 小时 | -40 至 90°C | 柔性粘接、异种材料 |
+| **MS 聚合物** | 高 | 24 小时（表干 30 分钟） | -40 至 100°C | 通用结构胶，可刷漆 |
+| **硅酮（结构级）** | 中–高 | 24 小时 | -50 至 200°C | 玻璃幕墙、高温区域 |
 
-### Selection Guide
-| Scenario | Recommended Type | Key Property |
+### 选用指南
+| 场景 | 推荐类型 | 关键性能 |
 |---|---|---|
-| Stone countertop bonding | Epoxy (two-part) | High shear strength, gap filling |
-| Glass railing to floor | Structural silicone | UV stable, transparent |
-| Metal bracket to concrete | PU structural adhesive | Flexibility, vibration resistance |
-| Frameless mirror mounting | MS polymer | Safe for mirror backing, strong |
-| Outdoor structural glazing | Structural silicone (ASTM C1184) | Weather resistance |
+| 石材台面粘接 | 环氧树脂（双组分） | 高剪切强度、可填缝 |
+| 玻璃栏杆固定到地面 | 结构硅酮胶 | 抗紫外线、透明 |
+| 金属支架固定到混凝土 | PU 结构胶 | 柔性、抗震 |
+| 无框镜子安装 | MS 聚合物胶 | 不腐蚀镜子背面、粘接力强 |
+| 户外结构玻璃安装 | 结构硅酮胶（ASTM C1184 标准） | 耐候性 |
 
 ---
 
-## 4. Tile Adhesive (瓷砖胶 / 瓷砖粘结剂)
+## 4. 瓷砖胶
 
-### Classification by Performance Grade
+### 按性能等级分类
 
-| Grade | Bond Strength | Tile Size Supported | Wall or Floor | Notes |
+| 等级 | 粘接强度 | 适用瓷砖尺寸 | 墙面 / 地面 | 说明 |
 |---|---|---|---|---|
-| **C0 (Basic)** | ≥ 0.5 MPa | Up to 200 x 200mm | Floor only | Basic cement-based, budget |
-| **C1 (Standard)** | ≥ 0.5 MPa (improved) | Up to 400 x 400mm | Wall and floor | Most common for residential |
-| **C2 (Enhanced)** | ≥ 1.0 MPa | Large format (600 x 1200mm+) | Wall and floor | Polymer-modified, for heavy tiles |
-| **S1 (Flexible)** | C2 + ≥ 2.5mm deformation | Large format on flexible substrates | Wall and floor | For underfloor heating, wood substrates |
-| **S2 (Highly Flexible)** | C2 + ≥ 5mm deformation | Very large format, exterior | All | For extreme movement areas |
+| **C0（基础型）** | ≥ 0.5 MPa | 最大 200×200mm | 仅地面 | 基础水泥基，经济型 |
+| **C1（标准型）** | ≥ 0.5 MPa（改良） | 最大 400×400mm | 墙面和地面 | 家装最常用 |
+| **C2（增强型）** | ≥ 1.0 MPa | 大板（600×1200mm+） | 墙面和地面 | 聚合物改性，适合重砖 |
+| **S1（柔性）** | C2 + ≥ 2.5mm 变形量 | 大砖用于柔性基层 | 墙面和地面 | 适合地暖、木质基层 |
+| **S2（高柔性）** | C2 + ≥ 5mm 变形量 | 超大板、户外 | 全场景 | 适合极端变形区域 |
 
-### C1 vs Traditional Cement Mortar
+### 瓷砖胶 vs 传统水泥砂浆
 
-| Feature | Tile Adhesive (C1) | Cement Mortar |
+| 对比项目 | 瓷砖胶（C1） | 水泥砂浆 |
 |---|---|---|
-| Bond Strength | 0.5+ MPa | 0.2–0.3 MPa |
-| Application Thickness | 3–8mm (thin-bed) | 15–30mm (thick-bed) |
-| Material Consumption | 4–6 kg/m² | 15–25 kg/m² |
-| Slump Resistance | Excellent (no sagging on walls) | Poor (tiles slide on walls) |
-| Water Retention | High (no pre-soaking tiles needed) | Low (tiles must be soaked) |
-| Workability | Mix with water only | Requires sand mixing, skill-dependent |
+| 粘接强度 | 0.5+ MPa | 0.2–0.3 MPa |
+| 施工厚度 | 3–8mm（薄贴法） | 15–30mm（厚贴法） |
+| 材料用量 | 4–6 kg/m² | 15–25 kg/m² |
+| 抗滑坠性 | 优秀（墙面砖不下滑） | 差（墙面砖容易下滑） |
+| 保水性 | 高（瓷砖无需泡水） | 低（瓷砖必须泡水） |
+| 施工便利性 | 加水即可使用 | 需拌沙，依赖工人技术 |
 
-### Application Checklist
-- [ ] Select grade based on tile size and location (wall vs floor)
-- [ ] Substrate must be solid, clean, and level (±3mm / 2m)
-- [ ] Mix to a smooth, lump-free paste; let rest 5 minutes, remix
-- [ ] Apply with correct notch trowel size:
-  - Small tiles (up to 200mm): 6mm notch
-  - Medium tiles (200–400mm): 8mm notch
-  - Large tiles (400mm+): 10mm notch
-- [ ] Use **double-buttering** (apply adhesive to both substrate and tile back) for tiles larger than 400mm
-- [ ] Press firmly and shift slightly to collapse ridges
-- [ ] Open time: install within 20 minutes of spreading adhesive
-- [ ] Do not add extra cement or sand to pre-mixed tile adhesive
+### 施工检查清单
+- [ ] 根据瓷砖尺寸和铺贴位置（墙面 / 地面）选择等级
+- [ ] 基层必须牢固、干净、平整（2 米内 ±3mm）
+- [ ] 搅拌至均匀无颗粒膏状；静置 5 分钟后再次搅拌
+- [ ] 选用正确的齿形刮刀规格：
+  - 小砖（200mm 以下）：6mm 齿形
+  - 中砖（200–400mm）：8mm 齿形
+  - 大砖（400mm 以上）：10mm 齿形
+- [ ] 超过 400mm 的瓷砖采用 **双面刮法**（基层和砖背面都涂胶）
+- [ ] 用力按压并轻微移动使条纹压实
+- [ ] 开放时间：刮胶后 20 分钟内完成铺贴
+- [ ] 不要在预混瓷砖胶中额外添加水泥或沙子
 
-### Brand Recommendations
-| Brand | Notes |
+### 品牌推荐
+| 品牌 | 说明 |
 |---|---|
-| Mapei (马贝) | Full range C0–S2, excellent quality |
-| Davco (德高) | Popular in China, good C1/C2 range |
-| Sika (西卡) | SikaCeram line, reliable |
-| Oriental Yuhong (东方雨虹) | Domestic leader, cost-effective |
-| Bostik (波士胶) | French brand, strong large-format line |
+| 马贝（Mapei） | C0–S2 全系列，品质优秀 |
+| 德高（Davco） | 国内市场热门，C1/C2 系列齐全 |
+| 西卡（Sika） | SikaCeram 系列，品质可靠 |
+| 东方雨虹 | 国内龙头，性价比高 |
+| 波士胶（Bostik） | 法国品牌，大板铺贴线强势 |
 
 ---
 
-## 5. Floor Adhesive (地板胶)
+## 5. 地板胶
 
-### Types by Flooring Material
+### 按地板类型选用
 
-| Flooring Type | Recommended Adhesive | Key Properties |
+| 地板类型 | 推荐粘合剂 | 关键性能 |
 |---|---|---|
-| Solid wood | PU adhesive or elastic MS polymer | Flexible, moisture-tolerant |
-| Engineered wood | Solvent-free acrylic or silane-based | Low VOC, fast set |
-| LVT / SPC | Pressure-sensitive acrylic | Re-positionable, water-resistant |
-| Rubber flooring | Contact adhesive or water-based dispersion | Strong bond, flexible |
-| Carpet | Pressure-sensitive or hot-melt | Releasable (for carpet tiles) |
+| 实木地板 | PU 胶或弹性 MS 聚合物 | 柔性、耐潮湿 |
+| 复合地板 | 无溶剂丙烯酸或硅烷基 | 低 VOC、快干 |
+| LVT / SPC | 压敏丙烯酸胶 | 可重新定位、耐水 |
+| 橡胶地板 | 万能胶或水性分散胶 | 粘接力强、柔性 |
+| 地毯 | 压敏胶或热熔胶 | 可拆卸（适合方块地毯） |
 
-### VOC Considerations
-| Adhesive Type | Typical VOC Level | Ventilation Required |
+### VOC 考量
+| 粘合剂类型 | 典型 VOC 含量 | 通风要求 |
 |---|---|---|
-| Solvent-based contact adhesive | High (200–600 g/L) | Yes, 48+ hours |
-| Water-based acrylic | Low (< 50 g/L) | Minimal |
-| MS Polymer | Very Low (< 10 g/L) | Minimal |
-| Solvent-free PU | Low (< 30 g/L) | 24 hours |
+| 溶剂型万能胶 | 高（200–600 g/L） | 是，48 小时以上 |
+| 水性丙烯酸胶 | 低（< 50 g/L） | 最少 |
+| MS 聚合物胶 | 极低（< 10 g/L） | 最少 |
+| 无溶剂 PU 胶 | 低（< 30 g/L） | 24 小时 |
 
-> **Rule:** Always choose water-based or solvent-free floor adhesives for occupied residential spaces. Verify VOC compliance with GB 18583 (Chinese indoor adhesive standard) or equivalent.
+> **原则：** 住宅空间始终选择水性或无溶剂地板胶。确认 VOC 符合 GB 18583（中国室内粘合剂标准）或同等标准。
 
 ---
 
-## 6. Wood Glue / PVA Adhesive (木工胶)
+## 6. 木工胶 / PVA 胶
 
-### Types
+### 类型分类
 
-| Type | Color When Dry | Water Resistance | Set Time | Use |
+| 类型 | 干燥后颜色 | 耐水性 | 固化时间 | 用途 |
 |---|---|---|---|---|
-| **White PVA (白乳胶)** | Transparent | None (interior only) | 30 min clamp, 24 hr cure | Indoor furniture, cabinetry |
-| **Yellow PVA (黄胶)** | Amber | Moderate (D2) | 30 min clamp | Interior wood, trim |
-| **Cross-linked PVA (D3/D4)** | Transparent/amber | High (exterior grade) | 1–2 hr clamp | Outdoor furniture, boats |
-| **Urea-Formaldehyde (脲醛胶)** | Hard, brittle | Good | Fast (with catalyst) | Plywood, particleboard manufacturing |
-| **EVA Hot Melt (热熔胶)** | Transparent | None | Instant | Edge banding, quick assembly |
+| **白乳胶** | 透明 | 无（仅室内） | 夹持 30 分钟，24 小时完全固化 | 室内家具、橱柜 |
+| **黄胶** | 琥珀色 | 中等（D2 级） | 夹持 30 分钟 | 室内木材、线条 |
+| **交联型 PVA（D3/D4）** | 透明 / 琥珀色 | 高（户外级） | 夹持 1–2 小时 | 户外家具、船用 |
+| **脲醛胶** | 硬、脆 | 良好 | 快（需催化剂） | 胶合板、颗粒板制造 |
+| **EVA 热熔胶** | 透明 | 无 | 瞬间 | 封边、快速组装 |
 
-### PVA Application Tips
-- Apply thin, even coat to ONE surface only
-- Clamp for minimum 30 minutes at 20°C
-- Full cure takes 24 hours before sanding or finishing
-- Clean excess with damp cloth before drying
-- Shelf life: 12 months unopened; discard if lumpy or separated
+### PVA 胶使用技巧
+- 仅在一面涂抹薄而均匀的胶层
+- 20°C 环境下至少夹持 30 分钟
+- 完全固化需 24 小时后再打磨或涂装
+- 干燥前用湿布擦去多余胶
+- 保质期：未开封 12 个月；出现结块或分层则废弃
 
-### VOC Note on Wood Glues
-- Standard PVA: Very low VOC, safe for indoor use
-- Urea-formaldehyde: Releases formaldehyde; avoid in residential applications where possible; use E0/E1 graded products
-- Polyurethane wood glue: Moderate VOC during cure, inert after cure
+### 木工胶 VOC 说明
+- 标准 PVA 胶：VOC 极低，室内使用安全
+- 脲醛胶：释放甲醛；住宅中尽量避免；选用 E0/E1 级产品
+- 聚氨酯木工胶：固化期间 VOC 中等，固化后惰性
 
 ---
 
-## 7. Polyurethane Foam Sealant (发泡胶 / PU发泡剂)
+## 7. PU 发泡剂
 
-### Types
-| Type | Expansion | Best For |
+### 类型分类
+| 类型 | 膨胀倍率 | 适用场景 |
 |---|---|---|
-| **High-expansion** | Expands 2–3x volume | Large gaps (> 20mm), void filling |
-| **Low-expansion** | Expands 1.2–1.5x | Window/door frames (prevents bowing) |
-| **Gun-grade** | Precise application, controlled expansion | Professional work, narrow gaps |
-| **Straw-grade** | DIY use, disposable | One-off small jobs |
+| **高膨胀型** | 膨胀 2–3 倍 | 大缝隙（> 20mm）、空洞填充 |
+| **低膨胀型** | 膨胀 1.2–1.5 倍 | 门窗框（防止变形） |
+| **枪式** | 精确施工，可控膨胀 | 专业施工、窄缝隙 |
+| **管式（吸管式）** | DIY 使用，一次性 | 零星小工程 |
 
-### Application Checklist
-- [ ] Choose low-expansion foam for window/door frames to avoid distortion
-- [ ] Fill gap only 1/3 to 1/2 full (foam expands)
-- [ ] Dampen substrate slightly for better adhesion
-- [ ] Trim excess after full cure (typically 2–4 hours)
-- [ ] Cut surface must be sealed with silicone or paint (UV degrades foam)
-- [ ] Never use in gaps narrower than 5mm or wider than 80mm without multiple passes
-
----
-
-## 8. VOC and Health Considerations
-
-### VOC Levels by Adhesive Category
-
-| Category | VOC Range | Indoor Air Quality Impact | Recommendations |
-|---|---|---|---|
-| Silicone sealant | Very low (post-cure) | Minimal after 24 hrs | Choose neutral, anti-mold for bathrooms |
-| Epoxy | Low–Moderate | Moderate during mixing/cure | Ventilate during use; inert after cure |
-| Solvent-based contact adhesive | High | Significant for 48–72 hrs | Avoid in residential; use water-based alternative |
-| Water-based PVA/acetate | Very low | Negligible | Safe for all indoor use |
-| PU foam (uncured) | Moderate | Moderate for 4–8 hrs | Ventilate; inert after trim |
-| Tile adhesive (cement-based) | None | None | Dust hazard during mixing — wear mask |
-| MS Polymer | Very low | Negligible | Best all-around low-VOC option |
-
-### Key Standards
-- **GB 18583-2008:** Chinese national standard for indoor decorative adhesives (VOC limits)
-- **GREENGUARD Gold:** Low emission certification for indoor air quality
-- **EC1 Plus (EMICODE):** European standard, lowest emission class
-- **A+ (French VOC label):** Highest indoor air quality rating
-
-### Practical VOC Reduction Tips
-1. Choose products labeled E0, GREENGUARD, or EC1 Plus
-2. Ventilate continuously during and after adhesive application
-3. Allow 72-hour cure period before occupying renovated space
-4. Use air purifiers with activated carbon during curing
-5. Avoid mixing different adhesive brands on the same job
-6. Store adhesives sealed and in cool conditions to prevent premature off-gassing
+### 施工检查清单
+- [ ] 门窗框选用低膨胀型，避免框体变形
+- [ ] 缝隙填充 1/3 至 1/2 即可（发泡会膨胀）
+- [ ] 施工前稍微湿润基层，增强粘接力
+- [ ] 完全固化后修剪多余泡沫（通常 2–4 小时）
+- [ ] 切割面必须用硅酮胶或油漆密封（紫外线会降解泡沫）
+- [ ] 小于 5mm 或大于 80mm 的缝隙不可一次性填充，需分层施工
 
 ---
 
-## 9. Quick Selection Matrix
+## 8. VOC 与健康考量
 
-| Task | Best Adhesive | Alternative | Notes |
+### 各类粘合剂 VOC 水平
+
+| 类别 | VOC 范围 | 室内空气质量影响 | 建议 |
 |---|---|---|---|
-| Seal bathroom sink to counter | Neutral anti-mold silicone | MS polymer | Anti-mold grade essential |
-| Bond tile to wall | C1 or C2 tile adhesive | — | Use notch trowel |
-| Fix wood trim | White PVA (D2) | Construction adhesive | Clamp 30 min |
-| Mount frameless mirror | MS polymer | Structural silicone | Must be mirror-safe |
-| Seal window perimeter | Low-expansion PU foam | — | Trim and seal surface |
-| Bond stone countertop | Two-part epoxy | — | Structural strength required |
-| Edge banding | EVA hot melt | Contact adhesive | Use edge banding machine |
-| Fill gap between cabinet and wall | Neutral silicone | MS polymer | Paintable if MS |
-| Install LVT flooring | Pressure-sensitive acrylic | — | Follow manufacturer TDS |
-| Outdoor wood repair | D3/D4 PVA or PU wood glue | Epoxy | Must be waterproof |
+| 硅酮密封胶 | 极低（固化后） | 24 小时后影响极小 | 卫生间选用中性防霉型 |
+| 环氧树脂胶 | 低–中 | 混合和固化期间中等 | 施工时通风；固化后惰性 |
+| 溶剂型万能胶 | 高 | 48–72 小时影响显著 | 住宅中避免使用；改用水性替代品 |
+| 水性 PVA / 醋酸酯胶 | 极低 | 可忽略 | 所有室内场景安全使用 |
+| PU 发泡剂（未固化） | 中等 | 4–8 小时中等 | 通风；修剪后惰性 |
+| 瓷砖胶（水泥基） | 无 | 无 | 搅拌时有粉尘危害 — 佩戴口罩 |
+| MS 聚合物胶 | 极低 | 可忽略 | 最佳通用低 VOC 选择 |
+
+### 关键标准
+- **GB 18583-2008：** 中国室内装饰粘合剂国家标准（VOC 限值）
+- **GREENGUARD Gold：** 室内空气质量低排放认证
+- **EC1 Plus（EMICODE）：** 欧洲标准，最低排放等级
+- **A+（法国 VOC 标签）：** 最高室内空气质量评级
+
+### 实用 VOC 降低建议
+1. 选择标注 E0、GREENGUARD 或 EC1 Plus 认证的产品
+2. 粘合剂施工期间和之后持续通风
+3. 装修完成后留出 72 小时固化期再入住
+4. 固化期间使用含活性炭的空气净化器
+5. 同一工程不要混用不同品牌的粘合剂
+6. 密封存放于阴凉处，防止提前挥发
+
+---
+
+## 9. 快速选用矩阵
+
+| 任务 | 最佳粘合剂 | 替代方案 | 说明 |
+|---|---|---|---|
+| 卫生间洗手盆与台面密封 | 中性防霉硅酮胶 | MS 聚合物胶 | 必须使用防霉型 |
+| 墙面贴砖 | C1 或 C2 瓷砖胶 | — | 使用齿形刮刀 |
+| 固定木线条 | 白乳胶（D2 级） | 建筑结构胶 | 夹持 30 分钟 |
+| 安装无框镜子 | MS 聚合物胶 | 结构硅酮胶 | 必须确认对镜子背面安全 |
+| 窗框周边密封 | 低膨胀 PU 发泡剂 | — | 修剪后密封表面 |
+| 石材台面粘接 | 双组分环氧树脂胶 | — | 需要结构强度 |
+| 封边条 | EVA 热熔胶 | 万能胶 | 使用封边机 |
+| 橱柜与墙面缝隙填充 | 中性硅酮胶 | MS 聚合物胶 | MS 型可刷漆 |
+| LVT 地板安装 | 压敏丙烯酸胶 | — | 遵循厂家技术说明书 |
+| 户外木材修补 | D3/D4 级 PVA 或 PU 木工胶 | 环氧树脂胶 | 必须防水 |
