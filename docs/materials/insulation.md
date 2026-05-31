@@ -2,269 +2,269 @@
 category: materials
 tags: ["材料选购", "装修材料", "品牌推荐"]
 ---
-# 保温隔热材料指南 (Insulation Materials Guide)
+# 保温隔热材料指南
 
-## 1. Why Insulation Matters in Renovation
+## 1. 为什么装修中需要保温隔热
 
-Proper insulation reduces energy costs by 20–40%, improves thermal comfort, reduces condensation and mold risk, and provides acoustic benefits. In renovation projects, insulation upgrades are most cost-effective when walls, windows, or roofs are already being opened up.
+合理的保温隔热可降低 20–40% 的能源费用，提升热舒适度，减少结露和霉菌风险，并提供隔音效果。在装修项目中，当墙体、窗户或屋顶已经打开施工时，同步升级保温隔热是最具性价比的做法。
 
-### Key Metrics
+### 关键术语
 
-| Term | Symbol | Definition | Unit |
+| 术语 | 符号 | 定义 | 单位 |
 |---|---|---|---|
-| **Thermal Conductivity** | λ (lambda) | Heat flow through 1m thickness per 1°C difference | W/(m·K) — lower is better |
-| **Thermal Resistance** | R-value | Thickness / conductivity; resistance to heat flow | m²·K/W — higher is better |
-| **U-Value** | U | Overall heat transfer coefficient of an assembly | W/(m²·K) — lower is better |
-| **R-Value (US)** | R-US | Imperial resistance | ft²·°F·h/BTU |
+| **导热系数** | λ | 1 米厚度、1°C 温差下的热流量 | W/(m·K) — 越低越好 |
+| **热阻** | R 值 | 厚度 / 导热系数，抵抗热流的能力 | m²·K/W — 越高越好 |
+| **传热系数** | U 值 | 整体结构的传热能力 | W/(m²·K) — 越低越好 |
+| **美标 R 值** | R-US | 英制热阻单位 | ft²·°F·h/BTU |
 
-### Conversion
-- R-value (metric) = thickness (m) / λ
-- R-US ≈ R-metric × 5.678
+### 换算公式
+- R 值（公制）= 厚度（m）/ 导热系数 λ
+- R-US ≈ R-公制 × 5.678
 
 ---
 
-## 2. Insulation Material Types
+## 2. 保温隔热材料类型
 
-### Material Comparison Table
+### 材料对比表
 
-| Material | Chinese Name | λ (W/m·K) | Form | R-value per 50mm | Fire Rating | Cost (per m², 50mm) | Best Use |
+| 材料 | 中文名 | λ (W/m·K) | 形态 | 50mm 热阻 | 防火等级 | 成本（50mm/㎡） | 最佳用途 |
 |---|---|---|---|---|---|---|---|
-| **Expanded Polystyrene (EPS)** | 膨胀聚苯板 (EPS) | 0.032–0.038 | Rigid board | ~1.3–1.6 | B1 (flame-retardant) | Low | Exterior wall insulation |
-| **Extruded Polystyrene (XPS)** | 挤塑聚苯板 (XPS) | 0.028–0.034 | Rigid board | ~1.5–1.8 | B1/B2 | Low–Mid | Floor, roof, below-grade |
-| **Rock Wool / Mineral Wool** | 岩棉板 | 0.034–0.040 | Board or batt | ~1.25–1.47 | A (non-combustible) | Mid | Fire-rated walls, facades |
-| **Glass Wool** | 玻璃棉 | 0.032–0.044 | Roll / batt | ~1.1–1.56 | A (non-combustible) | Low–Mid | Ceiling, stud wall cavities |
-| **Polyurethane Foam (PUR/PIR)** | 聚氨酯板 | 0.022–0.028 | Rigid board / spray | ~1.8–2.3 | B1/B2 | High | Roof, thin-profile walls |
-| **Aerogel Blanket** | 气凝胶毡 | 0.014–0.020 | Flexible blanket | ~2.5–3.6 | A | Very High | Space-constrained retrofits |
-| **Phenolic Foam** | 酚醛板 | 0.018–0.025 | Rigid board | ~2.0–2.8 | B1 | High | Fire-sensitive applications |
-| **Reflective Foil (Radiant Barrier)** | 铝箔反射隔热膜 | N/A (reflective) | Sheet / roll | ~0.3–0.8 (effective) | Varies | Low | Attic / roof radiant barrier |
+| **膨胀聚苯板 (EPS)** | 膨胀聚苯板 | 0.032–0.038 | 硬质板材 | ~1.3–1.6 | B1（阻燃） | 低 | 外墙保温 |
+| **挤塑聚苯板 (XPS)** | 挤塑聚苯板 | 0.028–0.034 | 硬质板材 | ~1.5–1.8 | B1/B2 | 低–中 | 地面、屋顶、地下 |
+| **岩棉板** | 岩棉板 | 0.034–0.040 | 板材 / 毡 | ~1.25–1.47 | A（不燃） | 中 | 防火墙体、外立面 |
+| **玻璃棉** | 玻璃棉 | 0.032–0.044 | 卷 / 毡 | ~1.1–1.56 | A（不燃） | 低–中 | 吊顶、轻钢龙骨墙 |
+| **聚氨酯板 (PUR/PIR)** | 聚氨酯板 | 0.022–0.028 | 硬质板 / 喷涂 | ~1.8–2.3 | B1/B2 | 高 | 屋顶、薄型墙体 |
+| **气凝胶毡** | 气凝胶毡 | 0.014–0.020 | 柔性毡 | ~2.5–3.6 | A | 很高 | 空间受限的改造 |
+| **酚醛板** | 酚醛板 | 0.018–0.025 | 硬质板材 | ~2.0–2.8 | B1 | 高 | 防火敏感场景 |
+| **铝箔反射膜** | 铝箔反射隔热膜 | 不适用（反射型） | 卷材 | ~0.3–0.8（有效值） | 不定 | 低 | 阁楼 / 屋顶辐射屏障 |
 
 ---
 
-## 3. Wall Insulation (墙体保温)
+## 3. 墙体保温
 
-### Exterior Wall Insulation (外保温)
+### 外保温
 
-The most effective approach — wraps the entire building envelope.
+外保温 — 将保温层包裹在整个建筑外墙外侧，是最有效的保温方式。
 
-#### Common Systems
+#### 常见系统
 
-| System Type | Description | Thickness | Typical R-value | Suitable For |
+| 系统类型 | 说明 | 厚度 | 典型热阻 | 适用场景 |
 |---|---|---|---|---|
-| **EIFS (External Insulation Finish System)** | Insulation board + adhesive + mesh + finish coat | 50–120mm | 1.5–4.0 | New construction, major renovation |
-| **Ventilated Facade (幕墙)** | Insulation + air gap + cladding panel | 60–150mm | 1.7–4.5 | Commercial, high-end residential |
-| **Insulating Render (保温砂浆)** | Lightweight insulating plaster | 20–40mm | 0.5–1.0 | Heritage buildings, thin-profile retrofit |
+| **EIFS（外保温装饰系统）** | 保温板 + 粘结砂浆 + 网格布 + 饰面 | 50–120mm | 1.5–4.0 | 新建、大规模改造 |
+| **干挂幕墙（通风外墙）** | 保温层 + 空气层 + 外挂板 | 60–150mm | 1.7–4.5 | 商业、高端住宅 |
+| **保温砂浆** | 轻质保温抹灰 | 20–40mm | 0.5–1.0 | 历史建筑、薄型改造 |
 
-#### EPS Board Installation Steps
-1. Clean and level wall surface
-2. Apply adhesive in dot-and-perimeter pattern (minimum 40% coverage)
-3. Press boards firmly, staggering joints in brick pattern
-4. Wait 24 hours for adhesive set
-5. Install mechanical anchors (6–8 per m², depending on height)
-6. Apply base coat with embedded fiberglass mesh
-7. Apply finish coat (textured render or paint)
+#### EPS 板施工步骤
+1. 清理并找平墙面
+2. 点框法涂胶（粘结面积不低于 40%）
+3. 压紧板材，错缝排列如砌砖
+4. 等待 24 小时粘结固化
+5. 安装机械锚栓（每 ㎡ 6–8 个，视高度而定）
+6. 抹底层砂浆并嵌入玻璃纤维网格布
+7. 涂饰面砂浆或涂料
 
-#### EPS Board Installation Checklist
-- [ ] Surface must be dry, clean, and structurally sound
-- [ ] Boards must be cut tightly around openings (no gaps > 2mm)
-- [ ] Stagger vertical joints — never align joints at corners
-- [ ] Anchor spacing: 6 per m² below 20m height, 8+ above
-- [ ] Mesh overlap at joints: minimum 100mm
-- [ ] Temperature during installation: 5–35°C
-- [ ] Do NOT install in rain or on wet substrate
+#### EPS 板施工检查清单
+- [ ] 基层必须干燥、干净、结构牢固
+- [ ] 洞口周围板材必须切割严密（缝隙 ≤ 2mm）
+- [ ] 竖向接缝必须错开 — 转角处不得对齐
+- [ ] 锚栓间距：20m 以下每 ㎡ 6 个，以上 8 个+
+- [ ] 网格布搭接：最少 100mm
+- [ ] 施工温度：5–35°C
+- [ ] 不得在雨天或潮湿基层上施工
 
-### Interior Wall Insulation (内保温)
+### 内保温
 
-Used when exterior insulation is not possible (heritage buildings, apartments, space constraints).
+当无法进行外保温时采用（历史建筑、公寓楼、空间受限等情况）。
 
-| Material | Recommended Thickness | Notes |
+| 材料 | 推荐厚度 | 说明 |
 |---|---|---|
-| XPS board | 20–40mm | Thin profile, good performance |
-| Aerogel blanket | 10–20mm | Premium, space-saving |
-| Phenolic board | 20–30mm | Fire-safe, thin |
-| Insulating plaster | 15–30mm | DIY-friendly, lower performance |
+| XPS 板 | 20–40mm | 薄型、性能良好 |
+| 气凝胶毡 | 10–20mm | 高端、节省空间 |
+| 酚醛板 | 20–30mm | 防火、薄型 |
+| 保温砂浆 | 15–30mm | 施工简便、性能较低 |
 
-> **Warning:** Interior insulation creates a cold bridge at floor/ceiling junctions and can cause interstitial condensation. Always install a vapor barrier on the warm side (facing the room).
+> **警告：** 内保温在楼板/天花板交界处会产生冷桥，并可能导致墙体内结露。必须在温暖一侧（面向室内）安装防潮层。
 
 ---
 
-## 4. Window Insulation (窗户隔热)
+## 4. 窗户隔热
 
-### Window U-Values by Configuration
+### 不同配置窗户的 U 值
 
-| Window Type | Glass | Frame | U-Value (W/m²·K) | SHGC |
+| 窗户类型 | 玻璃 | 窗框 | U 值 (W/m²·K) | 遮阳系数 SHGC |
 |---|---|---|---|---|
-| Single glazed | Clear single pane | Aluminum (no thermal break) | 5.7–6.5 | 0.85 |
-| Double glazed | 5+12A+5 clear | Aluminum thermal break | 2.7–3.2 | 0.70 |
-| Double glazed | Low-E + argon | Aluminum thermal break | 1.6–2.0 | 0.40 |
-| Triple glazed | Low-E + argon x2 | PVC / wood | 0.8–1.2 | 0.35 |
-| Double glazed | Low-E + warm edge spacer | Wood-clad aluminum | 1.1–1.4 | 0.38 |
+| 单层玻璃 | 透明单层 | 铝合金（无断桥） | 5.7–6.5 | 0.85 |
+| 双层中空 | 5+12A+5 透明 | 断桥铝 | 2.7–3.2 | 0.70 |
+| 双层 Low-E | Low-E + 氩气 | 断桥铝 | 1.6–2.0 | 0.40 |
+| 三层中空 | Low-E + 双层氩气 | PVC / 木框 | 0.8–1.2 | 0.35 |
+| 双层 Low-E | Low-E + 暖边间隔条 | 铝包木 | 1.1–1.4 | 0.38 |
 
-### Window Insulation Upgrade Checklist
-- [ ] Replace single-glazed windows minimum with double Low-E
-- [ ] Verify thermal break on all aluminum frames
-- [ ] Check weatherstripping condition; replace worn seals
-- [ ] Install window insulation film in winter (temporary)
-- [ ] Seal frame-to-wall gap with low-expansion PU foam
-- [ ] Apply silicone sealant on exterior perimeter
-- [ ] Consider insulated shutters or blinds for summer heat rejection
-- [ ] Verify spacer type: warm edge (thermoplastic) outperforms aluminum spacer
+### 窗户升级检查清单
+- [ ] 单层玻璃至少更换为双层 Low-E
+- [ ] 所有铝合金窗框必须有断桥隔热
+- [ ] 检查密封条状态，老化及时更换
+- [ ] 冬季可安装窗户保温膜（临时）
+- [ ] 窗框与墙体缝隙用低膨胀 PU 发泡填充
+- [ ] 外周边用硅酮密封胶收口
+- [ ] 夏季考虑隔热百叶或窗帘
+- [ ] 确认间隔条类型：暖边（热塑性）优于铝间隔条
 
-### Glass Types Explained
+### 玻璃类型说明
 
-| Glass Type | Description | Benefit |
+| 玻璃类型 | 说明 | 优点 |
 |---|---|---|
-| **Low-E (低辐射玻璃)** | Microscopically thin metallic coating reflects IR | Reduces heat transfer 30–50% |
-| **Tinted / Reflective** | Absorbs or reflects solar radiation | Reduces solar heat gain |
-| **Laminated** | Two panes with PVB interlayer | Safety + acoustic + UV protection |
-| **Tempered** | Heat-strengthened | Safety (shatters into small pieces) |
-| **Electrochromic / Smart Glass** | Electrically switchable tint | Dynamic solar control, expensive |
+| **Low-E（低辐射玻璃）** | 极薄的金属涂层反射红外线 | 减少 30–50% 热传递 |
+| **着色 / 镀膜玻璃** | 吸收或反射太阳辐射 | 减少太阳得热 |
+| **夹胶玻璃** | 两片玻璃间夹 PVB 膜 | 安全 + 隔音 + 防紫外线 |
+| **钢化玻璃** | 高温强化处理 | 安全（碎后成小颗粒） |
+| **电致变色 / 智能玻璃** | 电控变色 | 动态调节太阳得热，价格昂贵 |
 
 ---
 
-## 5. Roof Insulation (屋顶保温)
+## 5. 屋顶保温
 
-### Roof Insulation Methods
+### 屋顶保温方式
 
-| Method | Description | Material | Thickness | R-value Range |
+| 方式 | 说明 | 材料 | 厚度 | 热阻范围 |
 |---|---|---|---|---|
-| **Above-deck (inverted)** | Insulation above structural deck, under waterproofing | XPS board | 60–120mm | 1.8–3.6 |
-| **Below-deck (warm roof)** | Insulation below deck, between rafters | Mineral wool, PIR board | 100–200mm | 2.5–7.0 |
-| **Spray foam** | Closed-cell PU sprayed on underside | PU foam | 50–100mm | 1.8–3.6 |
-| **Loose fill (attic)** | Blown cellulose or glass wool in attic space | Cellulose, glass wool | 150–300mm | 3.5–8.0 |
-| **Reflective foil** | Radiant barrier under roof covering | Multi-layer foil | N/A | 0.3–0.8 effective |
+| **倒置式（保温层在上）** | 保温层在结构层上、防水层下 | XPS 板 | 60–120mm | 1.8–3.6 |
+| **正置式（暖屋顶）** | 保温层在结构层下、椽子之间 | 岩棉、PIR 板 | 100–200mm | 2.5–7.0 |
+| **喷涂泡沫** | 闭孔 PU 喷涂在底部 | PU 泡沫 | 50–100mm | 1.8–3.6 |
+| **松散填充（阁楼）** | 阁楼空间吹填纤维素或玻璃棉 | 纤维素、玻璃棉 | 150–300mm | 3.5–8.0 |
+| **反射膜** | 屋面覆盖层下的辐射屏障 | 多层箔膜 | 不适用 | 0.3–0.8 有效值 |
 
-### Recommended Roof R-Values by Climate
+### 不同气候区屋顶推荐热阻
 
-| Climate Zone | Minimum Roof R-value (metric) | Equivalent Thickness (Mineral Wool) |
+| 气候区 | 最低屋顶热阻（公制） | 岩棉等效厚度 |
 |---|---|---|
-| Hot-humid (South China) | 2.0 | ~70mm |
-| Mixed / temperate (East China) | 3.0 | ~100mm |
-| Cold (North China) | 4.0 | ~130mm |
-| Severe cold (Northeast) | 5.0+ | ~170mm+ |
+| 炎热潮湿（华南） | 2.0 | ~70mm |
+| 混合 / 温和（华东） | 3.0 | ~100mm |
+| 寒冷（华北） | 4.0 | ~130mm |
+| 严寒（东北） | 5.0+ | ~170mm+ |
 
-### Installation Checklist — Below-Deck Insulation
-- [ ] Ensure roof waterproofing is intact before insulating
-- [ ] Provide ventilation gap (50mm minimum) between insulation and roof deck
-- [ ] Install vapor barrier on warm side (ceiling side)
-- [ ] Do NOT compress batt insulation — it loses R-value
-- [ ] Seal all penetrations (wires, pipes, light fixtures) through the vapor barrier
-- [ ] Use fire-rated insulation (Class A) near chimneys or heat sources
-- [ ] Verify insulation does not block soffit/eave ventilation channels
+### 正置式保温施工检查清单
+- [ ] 保温施工前确认屋面防水完好
+- [ ] 保温层与屋面板间预留通风间隙（最小 50mm）
+- [ ] 在温暖一侧（天花板侧）安装防潮层
+- [ ] 不得压缩毡类保温 — 会降低热阻
+- [ ] 密封所有穿墙部位（电线、管道、灯具）通过防潮层
+- [ ] 烟囱或热源附近使用 A 级防火保温
+- [ ] 确认保温不会阻塞檐口 / 天沟通风通道
 
 ---
 
-## 6. Floor Heating Insulation (地暖保温层)
+## 6. 地暖保温层
 
-### Floor Heating System Layers (bottom to top)
+### 地暖系统层次（从下到上）
 
-| Layer | Material | Thickness | Purpose |
+| 层 | 材料 | 厚度 | 作用 |
 |---|---|---|---|
-| 1. Structural slab | Concrete | 100mm+ | Base structure |
-| 2. Waterproofing | SBS membrane or coating | 2–3mm | Moisture barrier (ground floor) |
-| 3. Insulation board | XPS or EPS | 20–30mm | Prevent downward heat loss |
-| 4. Reflective film | Aluminum foil | 0.2mm | Reflect heat upward |
-| 5. Wire mesh | Steel mesh | 2–3mm | Support and protect pipe |
-| 6. Heating pipe | PEX-a or PERT | 16–20mm | Heat distribution |
-| 7. Backfill / screed | Concrete or anhydrite | 40–50mm above pipe | Thermal mass and surface leveling |
-| 8. Floor finish | Tile, wood, etc. | Varies | Final surface |
+| 1. 结构楼板 | 混凝土 | 100mm+ | 基础结构 |
+| 2. 防水层 | SBS 卷材或涂料 | 2–3mm | 防潮（首层） |
+| 3. 保温板 | XPS 或 EPS | 20–30mm | 防止热量向下散失 |
+| 4. 反射膜 | 铝箔 | 0.2mm | 热量向上反射 |
+| 5. 钢丝网 | 钢丝网片 | 2–3mm | 支撑保护管道 |
+| 6. 加热管 | PEX-a 或 PERT | 16–20mm | 散热 |
+| 7. 回填层 | 混凝土或自流平 | 管上 40–50mm | 蓄热和找平 |
+| 8. 地面饰面 | 瓷砖、木地板等 | 不定 | 最终面层 |
 
-### Insulation Board Requirements
+### 保温板要求
 
-| Property | Minimum Requirement |
+| 性能 | 最低要求 |
 |---|---|
-| Compressive strength | ≥ 150 kPa (for residential) / ≥ 250 kPa (commercial) |
-| Thermal conductivity | ≤ 0.035 W/(m·K) |
-| Water absorption | ≤ 1.5% by volume |
-| Fire rating | B1 minimum |
-| Thickness | 20mm minimum (ground floor: 30mm recommended) |
+| 抗压强度 | ≥ 150 kPa（住宅）/ ≥ 250 kPa（商业） |
+| 导热系数 | ≤ 0.035 W/(m·K) |
+| 吸水率 | ≤ 1.5% 体积比 |
+| 防火等级 | 最低 B1 |
+| 厚度 | 最小 20mm（首层推荐 30mm） |
 
-### Floor Heating Insulation Checklist
-- [ ] Ground floor: install waterproofing layer before insulation
-- [ ] Upper floors: 20mm XPS minimum; 30mm for better efficiency
-- [ ] Perimeter: install edge insulation strip (10–15mm) around all walls
-- [ ] Reflective film: seams overlapped and taped
-- [ ] Pipe spacing: 150–200mm (closer near exterior walls/windows)
-- [ ] Pressure test heating pipes before screed pour
-- [ ] Screed must cure 21 days before turning on heating
-- [ ] Gradual heat-up: increase temperature 5°C per day during first commissioning
+### 地暖施工检查清单
+- [ ] 首层：保温前先做防水层
+- [ ] 楼层：XPS 最小 20mm；30mm 更高效
+- [ ] 周边：沿墙四周安装边缘保温条（10–15mm）
+- [ ] 反射膜：搭接并贴胶带密封
+- [ ] 管间距：150–200mm（靠外墙 / 窗户处加密）
+- [ ] 回填前对加热管做打压试验
+- [ ] 回填层养护 21 天后方可开启地暖
+- [ ] 首次升温：每天升高 5°C 逐步加热
 
 ---
 
-## 7. Fire Safety Considerations
+## 7. 防火安全
 
-### Insulation Material Fire Ratings
+### 保温材料防火等级
 
-| Rating | Description | Approved Materials |
+| 等级 | 说明 | 适用材料 |
 |---|---|---|
-| **A (Non-combustible)** | Will not burn | Rock wool, glass wool, aerogel |
-| **B1 (Flame-retardant)** | Difficult to ignite, self-extinguishing | EPS B1, XPS B1, PIR |
-| **B2 (Combustible)** | Ignites but slow spread | EPS B2, PU foam |
-| **B3 (Flammable)** | No fire resistance | Unmodified polystyrene — banned in building |
+| **A（不燃）** | 不燃烧 | 岩棉、玻璃棉、气凝胶 |
+| **B1（阻燃）** | 难燃、自熄 | EPS B1、XPS B1、PIR |
+| **B2（可燃）** | 可燃、蔓延慢 | EPS B2、PU 泡沫 |
+| **B3（易燃）** | 无防火能力 | 未改性聚苯板 — 建筑禁用 |
 
-### Fire Safety Rules
-- Buildings above 27m height: exterior insulation must be Class A
-- Buildings 24–27m: minimum Class B1 with fire barriers every 2 floors
-- Fire barriers: horizontal mineral wool bands at each floor level (300mm minimum height)
-- All insulation must be fully covered with fire-rated render or cladding
-- Never leave exposed foam insulation on any building interior
+### 防火安全规定
+- 27m 以上建筑：外墙保温必须为 A 级
+- 24–27m 建筑：最低 B1 级，每 2 层设防火隔离带
+- 防火隔离带：每层楼标高水平岩棉带（最小高度 300mm）
+- 所有保温必须完全覆盖防火抹灰或挂板
+- 建筑室内不得暴露泡沫保温层
 
 ---
 
-## 8. Condensation and Vapor Control
+## 8. 结露与防潮控制
 
-### The Dew Point Rule
-When warm, moist indoor air meets a cold surface, condensation occurs. Insulation changes the temperature profile within the wall, and the dew point may shift.
+### 露点原则
+当温暖潮湿的室内空气遇到冷表面时，就会产生结露。保温隔热会改变墙体内的温度分布，露点位置可能会随之移动。
 
-| Scenario | Risk | Solution |
+| 场景 | 风险 | 解决方案 |
 |---|---|---|
-| Interior insulation without vapor barrier | High — condensation within wall | Install vapor barrier on warm side |
-| Exterior insulation | Low — structure stays warm | No vapor barrier needed typically |
-| Roof insulation without ventilation | High — condensation on underside of deck | Provide ventilation gap or use vapor-open insulation |
-| Ground floor without waterproofing | Moderate — rising damp through insulation | SBS membrane under insulation |
+| 内保温不设防潮层 | 高 — 墙体内结露 | 在温暖一侧安装防潮层 |
+| 外保温 | 低 — 结构层保持温暖 | 通常不需要防潮层 |
+| 屋顶保温无通风 | 高 — 屋面板底部结露 | 预留通风间隙或使用透气型保温 |
+| 首层无防水 | 中等 — 潮气透过保温上升 | 保温层下做 SBS 防水 |
 
-### Vapor Barrier Installation Checklist
-- [ ] Use polyethylene sheet (0.2mm minimum) or vapor-retarding membrane
-- [ ] Overlap seams by 200mm; seal with vapor barrier tape
-- [ ] Seal around all penetrations (outlets, pipes)
-- [ ] Continuous — no gaps or tears
-- [ ] On warm side of insulation (room side for interior insulation)
-- [ ] Verify with blower door test if possible
+### 防潮层施工检查清单
+- [ ] 使用聚乙烯薄膜（最小 0.2mm）或防潮膜
+- [ ] 搭接 200mm；用防潮胶带密封
+- [ ] 密封所有穿墙部位（插座、管道）
+- [ ] 连续完整 — 不得有缝隙或破损
+- [ ] 位于保温层的温暖一侧（内保温在室内侧）
+- [ ] 如条件允许，进行鼓风门测试验证
 
 ---
 
-## 9. Selection Guide by Renovation Scenario
+## 9. 按装修场景选用
 
-| Scenario | Recommended Insulation | Thickness | Estimated R-value |
+| 场景 | 推荐保温材料 | 厚度 | 预估热阻 |
 |---|---|---|---|
-| Exterior wall (new build) | EPS board B1 | 80mm | 2.4 |
-| Exterior wall (retrofit) | EPS board B1 or mineral wool | 60mm | 1.8 |
-| Interior wall (space-constrained) | Aerogel blanket or phenolic board | 20mm | 0.8–1.0 |
-| Flat roof | XPS inverted roof system | 100mm | 3.0 |
-| Pitched roof (between rafters) | Mineral wool batts | 150mm | 4.0 |
-| Attic floor | Blown cellulose | 200mm | 5.0 |
-| Floor heating (upper floor) | XPS board | 20mm | 0.6 |
-| Floor heating (ground floor) | XPS board + waterproofing | 30mm | 0.9 |
-| Window upgrade | Double Low-E + thermal break frame | N/A | U-value 1.6–2.0 |
-| Pipe insulation (hot water) | Rubber foam tube | 20mm wall | Prevents heat loss and condensation |
-| Hot water tank | PU foam or fiberglass wrap | 50mm | Reduces standby losses 50%+ |
+| 外墙（新建） | EPS 板 B1 级 | 80mm | 2.4 |
+| 外墙（改造） | EPS 板 B1 或岩棉 | 60mm | 1.8 |
+| 内墙（空间受限） | 气凝胶毡或酚醛板 | 20mm | 0.8–1.0 |
+| 平屋顶 | XPS 倒置式系统 | 100mm | 3.0 |
+| 坡屋顶（椽子间） | 岩棉毡 | 150mm | 4.0 |
+| 阁楼地面 | 吹填纤维素 | 200mm | 5.0 |
+| 地暖（楼层） | XPS 板 | 20mm | 0.6 |
+| 地暖（首层） | XPS 板 + 防水 | 30mm | 0.9 |
+| 窗户升级 | 双层 Low-E + 断桥框 | 不适用 | U 值 1.6–2.0 |
+| 管道保温（热水） | 橡塑保温管 | 壁厚 20mm | 防止热损和结露 |
+| 热水箱 | PU 泡沫或玻璃棉包覆 | 50mm | 减少待机热损 50%+ |
 
 ---
 
-## 10. Brand and Product Recommendations
+## 10. 品牌与产品推荐
 
-| Brand | Product Range | Notes |
+| 品牌 | 产品范围 | 说明 |
 |---|---|---|
-| Knauf (可耐福) | Glass wool, mineral wool, EIFS | Global leader, full system |
-| Rockwool (洛科威) | Mineral wool boards and batts | Fire-safe, acoustic benefits |
-| Owens Corning | Fiberglass, foam board | Wide availability |
-| BASF | PIR/PUR boards, spray foam | Chemical manufacturer, high performance |
-| Saint-Gobain (Isover) | Glass wool, mineral wool | European quality |
-| Local XPS manufacturers | Various | Verify compressive strength and fire rating on test report |
+| 可耐福（Knauf） | 玻璃棉、岩棉、EIFS | 全球龙头、全套系统 |
+| 洛科威（Rockwool） | 岩棉板和毡 | 防火安全、隔音 |
+| 欧文斯科宁 | 玻璃纤维、泡沫板 | 渠道广泛 |
+| 巴斯夫（BASF） | PIR/PUR 板、喷涂泡沫 | 化工巨头、高性能 |
+| 圣戈班（Isover） | 玻璃棉、岩棉 | 欧洲品质 |
+| 国产 XPS 厂家 | 多样 | 查验检测报告中的抗压强度和防火等级 |
 
-### Purchasing Checklist
-- [ ] Request material test report (导热系数, 燃烧等级, 抗压强度)
-- [ ] Verify fire rating certificate from accredited lab
-- [ ] Check manufacturing date — aged EPS/XPS loses some performance
-- [ ] Buy from authorized distributor to avoid counterfeit products
-- [ ] For exterior systems, use complete system from one manufacturer (board + adhesive + mesh + render)
-- [ ] Retain all product documentation for building inspection records
+### 采购检查清单
+- [ ] 索要材料检测报告（导热系数、燃烧等级、抗压强度）
+- [ ] 确认有资质的实验室出具的防火等级证书
+- [ ] 检查生产日期 — 老化的 EPS/XPS 性能会下降
+- [ ] 从授权经销商处购买，避免假冒产品
+- [ ] 外保温系统：使用同一厂家的全套产品（板 + 胶 + 网 + 砂浆）
+- [ ] 保留所有产品文档以备建筑验收

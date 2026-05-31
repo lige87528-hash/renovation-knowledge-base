@@ -2,423 +2,423 @@
 category: materials
 tags: ["材料选购", "装修材料", "品牌推荐"]
 ---
-# 智能家居材料预埋指南 (Smart Home Pre-installation Guide)
+# 智能家居预埋指南
 
-## 1. Why Pre-installation Matters
+## 1. 为什么需要预埋
 
-Smart home retrofitting after renovation is expensive, messy, and often aesthetically compromised. Proper pre-installation during renovation ensures clean wire management, reliable connections, and future-proofing. This guide covers conduit planning, wiring, sensor positioning, and infrastructure requirements.
+装修完成后再改造智能家居成本高昂、施工麻烦，且往往影响美观。装修期间的合理预埋能确保线路整洁、连接可靠、面向未来。本指南涵盖管道规划、布线、传感器定位及基础设施要求。
 
-### Renovation Phase Checklist
+### 装修阶段智能家居任务清单
 
-| Phase | Smart Home Tasks |
+| 阶段 | 智能家居任务 |
 |---|---|
-| **Design** | Select ecosystem, map device locations, plan network topology |
-| **Demolition** | Mark new outlet locations, identify hub placement |
-| **Electrical rough-in** | Run neutral wires to all switch locations, install extra conduits |
-| **Low-voltage rough-in** | Network cables, sensor wires, speaker wires, security |
-| **Wall closing** | Photograph all wire runs, label both ends, test continuity |
-| **Finishing** | Install smart switches, sensors, hubs, APs |
-| **Commissioning** | Network setup, device pairing, automation programming |
+| **设计阶段** | 选定生态系统、规划设备位置、设计网络拓扑 |
+| **拆除阶段** | 标记新增插座位置、确定网关摆放位置 |
+| **水电布线阶段** | 所有开关位置预留零线、额外管道预埋 |
+| **弱电布线阶段** | 网线、传感器线、音箱线、安防线 |
+| **封墙前** | 拍照记录线路、两端贴标签、测试通断 |
+| **收尾阶段** | 安装智能开关、传感器、网关、AP |
+| **调试阶段** | 网络配置、设备配对、自动化编程 |
 
 ---
 
-## 2. Smart Home Ecosystem Selection
+## 2. 智能家居生态系统选择
 
-### Platform Comparison
+### 平台对比
 
-| Ecosystem | Protocol | Local Control | Hub Required | Voice Assistant | Notes |
+| 生态系统 | 协议 | 本地控制 | 需要网关 | 语音助手 | 说明 |
 |---|---|---|---|---|---|
-| **Apple HomeKit** | Thread, Wi-Fi, Bluetooth | Yes (with Thread Border Router) | Apple TV / HomePod / HomePod mini | Siri | Premium, privacy-focused, best iOS integration |
-| **Xiaomi / Mi Home (米家)** | Zigbee 3.0, BLE Mesh, Wi-Fi | Partial (depends on device) | Xiaomi Gateway / Multimode | Xiao Ai | Widest device selection in China, cost-effective |
-| **Aqara** | Zigbee 3.0, Thread, Wi-Fi | Yes (with Aqara Hub M2/M3) | Aqara Hub M2/M3 | Siri, Alexa, Google | Good HomeKit support, quality hardware |
-| **Tuya / Smart Life** | Wi-Fi, Zigbee | Partial | Tuya Gateway | Alexa, Google | Massive device compatibility, budget |
-| **Home Assistant** | Zigbee, Z-Wave, Thread, Wi-Fi, MQTT | Yes (fully local) | HA server (Raspberry Pi / NAS) | Any | Ultimate flexibility, DIY, technical skill needed |
-| **Huawei HiLink (鸿蒙)** | Wi-Fi, BLE, PLC | Yes | Huawei router / hub | Celia | Growing ecosystem, PLC wired reliability |
+| **Apple HomeKit** | Thread、Wi-Fi、蓝牙 | 是（需 Thread 边界路由器） | Apple TV / HomePod / HomePod mini | Siri | 高端、注重隐私、iOS 生态最佳 |
+| **米家（Xiaomi）** | Zigbee 3.0、BLE Mesh、Wi-Fi | 部分（取决于设备） | 小米网关 / 多模网关 | 小爱同学 | 国内设备选择最广、性价比高 |
+| **Aqara（绿米）** | Zigbee 3.0、Thread、Wi-Fi | 是（需 Aqara 网关 M2/M3） | Aqara 网关 M2/M3 | Siri、Alexa、Google | HomeKit 支持好、硬件品质优 |
+| **涂鸦 / 智能生活** | Wi-Fi、Zigbee | 部分 | 涂鸦网关 | Alexa、Google | 设备兼容性极广、经济实惠 |
+| **Home Assistant** | Zigbee、Z-Wave、Thread、Wi-Fi、MQTT | 是（完全本地） | HA 服务器（树莓派 / NAS） | 任意 | 灵活性最强、DIY、需要技术能力 |
+| **华为鸿蒙（HiLink）** | Wi-Fi、BLE、PLC | 是 | 华为路由器 / 网关 | 小艺 | 生态快速发展、PLC 有线更可靠 |
 
-### Protocol Comparison
+### 协议对比
 
-| Protocol | Range | Bandwidth | Power Use | Mesh | Best For |
+| 协议 | 室内范围 | 带宽 | 功耗 | 组网 | 适用场景 |
 |---|---|---|---|---|---|
-| **Zigbee 3.0** | 10–30m indoor | 250 kbps | Very low | Yes | Sensors, switches, locks |
-| **Z-Wave** | 30–100m indoor | 100 kbps | Very low | Yes | Sensors, locks, thermostats |
-| **Thread** | 10–30m indoor | 250 kbps | Very low | Yes | Next-gen standard, Matter compatible |
-| **Wi-Fi** | 30–50m indoor | 100+ Mbps | High | No | Cameras, displays, speakers |
-| **Bluetooth LE / BLE Mesh** | 10m | 1–2 Mbps | Low | Yes (mesh) | Proximity sensors, remotes |
-| **Matter (over Thread/Wi-Fi)** | Depends on underlying | Varies | Varies | Yes | Universal standard (future-proof) |
-| **RS-485 (wired)** | 1000m+ | High | N/A | No | Commercial, wired reliability |
+| **Zigbee 3.0** | 10–30m | 250 kbps | 极低 | Mesh | 传感器、开关、门锁 |
+| **Z-Wave** | 30–100m | 100 kbps | 极低 | Mesh | 传感器、门锁、温控器 |
+| **Thread** | 10–30m | 250 kbps | 极低 | Mesh | 下一代标准、兼容 Matter |
+| **Wi-Fi** | 30–50m | 100+ Mbps | 高 | 不组网 | 摄像头、显示屏、音箱 |
+| **蓝牙 BLE / BLE Mesh** | 10m | 1–2 Mbps | 低 | Mesh | 接近感应、遥控器 |
+| **Matter（基于 Thread/Wi-Fi）** | 取决于底层协议 | 可变 | 可变 | Mesh | 通用标准（面向未来） |
+| **RS-485（有线）** | 1000m+ | 高 | 不适用 | 不组网 | 商用、有线可靠场景 |
 
-> **Recommendation:** Plan for Zigbee 3.0 or Thread for sensors and switches, Wi-Fi for cameras and displays, and ensure your hub supports Matter for future compatibility.
+> **建议：** 传感器和开关预留 Zigbee 3.0 或 Thread，摄像头和显示屏使用 Wi-Fi，网关需支持 Matter 以兼容未来设备。
 
 ---
 
-## 3. Conduit Pre-Planning (管道预埋)
+## 3. 管道预埋规划
 
-### General Rules
-- **Every switch box needs a neutral wire** — this is the single most important pre-installation rule
-- Run **at least one extra empty conduit** to each major location for future expansion
-- Use **20mm conduits** (not 16mm) for switch locations to allow future cable additions
-- Separate power and low-voltage conduits by **minimum 300mm**
+### 通用规则
+- **每个开关底盒都需要零线** — 这是最重要的一条预埋规则
+- 每个主要位置**至少预留一根空管**以备将来扩展
+- 开关位置使用 **20mm 管道**（而非 16mm），以便将来穿线
+- 强电和弱电管道间距**不小于 300mm**
 
-### Conduit Layout by Room
+### 各房间管道布置
 
-#### Living Room
+#### 客厅
 
-| Location | Conduits Needed | Wire Types | Notes |
+| 位置 | 所需管道 | 线类型 | 说明 |
 |---|---|---|---|
-| TV wall | 3 x 20mm conduits | Power + HDMI/ethernet + spare | HDMI conduit with pull string |
-| Sofa wall | 2 x 20mm conduits | Power + ethernet | For floor lamp + smart speaker |
-| Ceiling center | 2 x 20mm conduits | Power (ceiling light) + neutral | Smart switch needs neutral |
-| Corner (curtain) | 1 x 20mm conduit | Power at ceiling height | For motorized curtain track |
-| Window (sensor) | 1 x 16mm spare | Optional wired contact sensor | Usually wireless is sufficient |
+| 电视墙 | 3 根 20mm 管 | 强电 + 网线/HDMI + 备用 | HDMI 管带引线 |
+| 沙发墙 | 2 根 20mm 管 | 强电 + 网线 | 落地灯 + 智能音箱 |
+| 天花板中心 | 2 根 20mm 管 | 强电（主灯）+ 零线 | 智能开关需要零线 |
+| 墙角（窗帘） | 1 根 20mm 管 | 强电（天花板高度） | 电动窗帘轨道 |
+| 窗户（传感器） | 1 根 16mm 备用管 | 可选有线门磁传感器 | 通常无线即可 |
 
-#### Kitchen
+#### 厨房
 
-| Location | Conduits Needed | Wire Types | Notes |
+| 位置 | 所需管道 | 线类型 | 说明 |
 |---|---|---|---|
-| Under-sink | 2 x 20mm | Power + spare | Water purifier, leak sensor, garbage disposal |
-| Above cooktop | 1 x 20mm | Power | Smart range hood |
-| Countertop level | 2 x 20mm | Power | Smart appliance outlets |
-| Ceiling | 1 x 20mm | Power | Smart light / gas detector |
-| Fridge area | 1 x 20mm | Power (dedicated circuit) | Smart fridge |
+| 水槽下方 | 2 根 20mm 管 | 强电 + 备用 | 净水器、漏水传感器、垃圾处理器 |
+| 灶台上方 | 1 根 20mm 管 | 强电 | 智能烟机 |
+| 台面高度 | 2 根 20mm 管 | 强电 | 智能电器插座 |
+| 天花板 | 1 根 20mm 管 | 强电 | 智能灯 / 燃气报警器 |
+| 冰箱区域 | 1 根 20mm 管 | 强电（独立回路） | 智能冰箱 |
 
-#### Bedroom
+#### 卧室
 
-| Location | Conduits Needed | Wire Types | Notes |
+| 位置 | 所需管道 | 线类型 | 说明 |
 |---|---|---|---|
-| Each side of bed | 2 x 20mm | Power + USB | Bedside outlets + smart lamp |
-| Door | 2 x 20mm | Power (switch) + neutral | Smart switch + scene panel |
-| Window | 1 x 16mm | Power (optional) | Motorized curtain/blind |
-| Ceiling | 2 x 20mm | Power + neutral | Smart light + optional projection screen power |
+| 床头两侧 | 各 2 根 20mm 管 | 强电 + USB | 床头插座 + 智能灯 |
+| 门口 | 2 根 20mm 管 | 强电（开关）+ 零线 | 智能开关 + 场景面板 |
+| 窗户 | 1 根 16mm 管 | 强电（可选） | 电动窗帘/百叶窗 |
+| 天花板 | 2 根 20mm 管 | 强电 + 零线 | 智能灯 + 可选投影幕布电源 |
 
-#### Bathroom
+#### 卫生间
 
-| Location | Conduits Needed | Wire Types | Notes |
+| 位置 | 所需管道 | 线类型 | 说明 |
 |---|---|---|---|
-| Mirror area | 2 x 20mm | Power | Smart mirror, LED lighting |
-| Ceiling | 2 x 20mm | Power | Smart exhaust fan, heater, light |
-| Toilet area | 1 x 20mm | Power | Smart toilet seat |
-| Shower area | 1 x 16mm | Power (IP-rated) | Digital shower controller (optional) |
-| Wall (sensor) | 1 x 16mm spare | Optional wired humidity sensor | Usually wireless |
+| 镜子区域 | 2 根 20mm 管 | 强电 | 智能镜子、LED 灯带 |
+| 天花板 | 2 根 20mm 管 | 强电 | 智能排气扇、浴霸、灯 |
+| 马桶区域 | 1 根 20mm 管 | 强电 | 智能马桶盖 |
+| 淋浴区域 | 1 根 16mm 管 | 强电（IP 防护等级） | 智能淋浴控制器（可选） |
+| 墙面（传感器） | 1 根 16mm 备用管 | 可选有线温湿度传感器 | 通常无线即可 |
 
-### Switch Box Requirements
+### 开关底盒要求
 
-| Switch Type | Box Size | Wiring Needed |
+| 开关类型 | 底盒尺寸 | 所需线路 |
 |---|---|---|
-| Standard single gang | 86 x 86mm | Live + Neutral + Load (each way) |
-| Multi-gang (2–3 gang) | 86 x 86mm (deep) | Live + Neutral + multiple loads |
-| Scene panel / touchscreen | 86 x 86mm (deep 50mm+) | Live + Neutral + ethernet (recommended) |
-| Curtain switch | 86 x 86mm | Live + Neutral + 2 switched legs |
-| Dimmer switch | 86 x 86mm (deep) | Live + Neutral + Load + earth |
+| 标准单联 | 86×86mm | 火线 + 零线 + 负载线（每路） |
+| 多联（2–3 联） | 86×86mm（加深） | 火线 + 零线 + 多路负载 |
+| 场景面板 / 触屏 | 86×86mm（深度 50mm+） | 火线 + 零线 + 网线（推荐） |
+| 窗帘开关 | 86×86mm | 火线 + 零线 + 2 路控制线 |
+| 调光开关 | 86×86mm（加深） | 火线 + 零线 + 负载线 + 地线 |
 
-> **Critical:** Request electricians to run **neutral wire (零线)** to EVERY switch location. Traditional Chinese wiring often omits neutral at switches (switch only breaks live). Smart switches need both live and neutral to power their electronics.
+> **关键：** 要求电工在 **每个开关位置都穿零线**。传统中国装修开关处通常不穿零线（开关只断火线）。智能开关需要同时有火线和零线为其内部电子元件供电。
 
 ---
 
-## 4. Wiring for Smart Switches
+## 4. 智能开关布线
 
-### Smart Switch Wiring Diagram (Text)
+### 智能开关布线示意
 
 ```
-Distribution Box
+配电箱
     |
-    |--- Live (火线) --------------------+--- to smart switch L terminal
+    |--- 火线 ---------------------------+--- 接智能开关 L 端子
     |                                     |
-    |--- Neutral (零线) ------------------+--- to smart switch N terminal
+    |--- 零线 ---------------------------+--- 接智能开关 N 端子
     |
-    +--- Earth (地线) --------------------+--- to smart switch E terminal (if metal)
+    +--- 地线 ---------------------------+--- 接智能开关 E 端子（金属面板时）
 
-Smart Switch
+智能开关
     |
-    +--- L1, L2, L3 (load wires) -----> to each light fixture
+    +--- L1, L2, L3（负载线） -----> 接各个灯具
 ```
 
-### Wire Requirements
+### 线材规格
 
-| Connection | Wire Size | Type | Notes |
+| 连接 | 线径 | 类型 | 说明 |
 |---|---|---|---|
-| Live to switch | 2.5mm² | BV | Standard |
-| Neutral to switch | 2.5mm² | BV | **Must be added** if not present |
-| Load wires (to lights) | 1.5–2.5mm² | BV | Per lighting circuit |
-| Earth | 2.5mm² | BVR | Required for metal switch plates |
+| 火线到开关 | 2.5mm² | BV | 标准 |
+| 零线到开关 | 2.5mm² | BV | **必须额外穿线** |
+| 负载线（到灯） | 1.5–2.5mm² | BV | 按照明回路 |
+| 地线 | 2.5mm² | BVR | 金属开关面板必须接 |
 
-### Smart Switch Types
+### 智能开关类型
 
-| Type | Neutral Required | Installation | Best For |
+| 类型 | 需要零线 | 接线 | 适用场景 |
 |---|---|---|---|
-| **Zero-fire version (零火版)** | Yes | L + N + Load | New construction, renovation (preferred) |
-| **Single-fire version (单火版)** | No | L + Load only | Retrofit (existing homes), but less reliable |
-| **No-neutral version (无零线)** | No | L + Load | Last resort; requires bypass capacitor |
+| **零火版** | 是 | L + N + 负载 | 新装修、旧房改造（首选） |
+| **单火版** | 否 | L + 负载 | 旧房改造，但可靠性较差 |
+| **无零线版** | 否 | L + 负载 | 最后手段；需要旁路电容 |
 
-> **Always choose zero-fire version (零火版) for new installations.** Single-fire switches have issues with low-wattage LED flickering and are less reliable.
+> **新装修始终选择零火版。** 单火开关在小功率 LED 灯上容易出现闪烁问题，可靠性较差。
 
 ---
 
-## 5. Sensor Mounting Positions
+## 5. 传感器安装位置
 
-### Sensor Placement Guide
+### 传感器布置指南
 
-| Sensor Type | Recommended Height | Location | Spacing | Notes |
+| 传感器类型 | 推荐高度 | 位置 | 间距 | 说明 |
 |---|---|---|---|---|
-| **Motion (PIR)** | 2.2–2.5m | Ceiling corner, facing entry | 5–8m coverage radius | Avoid pointing at AC vents, windows |
-| **Motion (mmWave)** | 2.5–3.0m | Ceiling center of room | 6m coverage radius | Detects presence (breathing), not just motion |
-| **Door/Window Contact** | Door frame height | Top corner of door/window | One per door/window | Magnet on door, sensor on frame |
-| **Temperature/Humidity** | 1.5m | Interior wall, shaded | One per zone/room | Away from direct sun, AC vents, kitchens |
-| **Light (Lux)** | 1.5m | Interior wall | One per room | Away from direct lamp light |
-| **Water Leak** | Floor level | Under sinks, near water heater, washing machine | One per wet area | Place on lowest point |
-| **Smoke Detector** | Ceiling center | Each room, hallway | Per fire code | Interconnected if wired |
-| **Gas Detector** | Ceiling (natural gas) or floor (LPG) | Kitchen, near gas appliance | One per gas appliance area | Natural gas rises; LPG sinks |
-| **Air Quality (VOC/PM2.5)** | 1.5m | Living room, bedroom | One per floor | Away from kitchen, open windows |
-| **Noise** | 1.5m | Living room, nursery | One per room | For automation triggers |
+| **人体感应（PIR）** | 2.2–2.5m | 天花板墙角，面向入口 | 5–8m 覆盖半径 | 避免对准空调出风口、窗户 |
+| **人体存在（毫米波）** | 2.5–3.0m | 房间天花板中心 | 6m 覆盖半径 | 检测存在（呼吸），不仅是移动 |
+| **门窗传感器** | 门框高度 | 门/窗顶角 | 每门/窗一个 | 磁铁装在门上，传感器装在门框上 |
+| **温湿度传感器** | 1.5m | 室内墙面，避光 | 每区域/房间一个 | 远离阳光直射、空调出风口、厨房 |
+| **光照（Lux）传感器** | 1.5m | 室内墙面 | 每房间一个 | 远离灯具直射 |
+| **水浸传感器** | 地面 | 水槽下方、热水器旁、洗衣机旁 | 每个湿区一个 | 放置在最低点 |
+| **烟雾报警器** | 天花板中心 | 每房间、走廊 | 按消防规范 | 有线时可互联 |
+| **燃气报警器** | 天花板（天然气）或地面（液化气） | 厨房、燃气设备附近 | 每燃气区域一个 | 天然气上升；液化气下沉 |
+| **空气质量（VOC/PM2.5）** | 1.5m | 客厅、卧室 | 每层一个 | 远离厨房、开窗处 |
+| **噪音传感器** | 1.5m | 客厅、婴儿房 | 每房间一个 | 用于自动化触发 |
 
-### mmWave Sensor vs PIR
+### 毫米波传感器 vs PIR 人体感应
 
-| Feature | PIR (Passive Infrared) | mmWave (Millimeter Wave Radar) |
+| 特性 | PIR（被动红外） | 毫米波雷达 |
 |---|---|---|
-| Detection | Body heat movement | Micro-movement (breathing, typing) |
-| "Still person" detection | No (turns off if sitting still) | Yes (detects presence even when still) |
-| Through materials | No (line of sight) | Yes (through thin walls, glass, fabric) |
-| False triggers | Moderate (pets, sunlight) | Low |
-| Cost | ¥20–80 | ¥80–300 |
-| Power | Battery or wired | Wired (5V or 12V) |
-| Recommended Use | Hallways, entry, closets | Living rooms, bedrooms, bathrooms |
+| 检测原理 | 人体热量移动 | 微动（呼吸、打字） |
+| "静止人体"检测 | 否（静坐不动会关闭） | 是（即使静止也能检测存在） |
+| 穿透能力 | 否（需直线可见） | 是（可穿透薄墙、玻璃、织物） |
+| 误触发 | 中等（宠物、阳光） | 低 |
+| 价格 | ¥20–80 | ¥80–300 |
+| 供电 | 电池或有线 | 有线（5V 或 12V） |
+| 推荐用途 | 走廊、入口、衣帽间 | 客厅、卧室、卫生间 |
 
-### mmWave Sensor Installation Checklist
-- [ ] Mount on ceiling for best coverage (360° models)
-- [ ] Wall mount at 2.5m+ if ceiling not possible (directional models)
-- [ ] Power: run 5V USB-C or 12V DC wire to sensor location
-- [ ] Avoid placing near rotating fans, curtains, or moving objects that trigger false detection
-- [ ] Configure detection zone in software to exclude false trigger areas
-- [ ] Set appropriate "unoccupied delay" (30–60 seconds recommended)
+### 毫米波传感器安装检查清单
+- [ ] 天花板安装覆盖最佳（360° 型号）
+- [ ] 如无法天花板安装，墙面安装 2.5m+（定向型号）
+- [ ] 供电：预埋 5V USB-C 或 12V DC 线到传感器位置
+- [ ] 避免放置在旋转风扇、窗帘或移动物体附近导致误触发
+- [ ] 在软件中配置检测区域，排除误触发区域
+- [ ] 设置合适的"无人延迟"（推荐 30–60 秒）
 
 ---
 
-## 6. Network Cable Requirements
+## 6. 网线要求
 
-### Cable Category Selection
+### 网线类型选择
 
-| Cable Category | Max Speed | Max Distance | Suitable For | Recommendation |
+| 网线类型 | 最大速率 | 最大距离 | 适用场景 | 建议 |
 |---|---|---|---|---|
-| **Cat 5e** | 1 Gbps | 100m | Basic internet | **Minimum** — avoid for new installs |
-| **Cat 6** | 1–10 Gbps | 55m (10G) / 100m (1G) | Gigabit + future | **Recommended** for most homes |
-| **Cat 6a** | 10 Gbps | 100m | 10G backbone, PoE++ | **Ideal** for future-proofing |
-| **Cat 7** | 10 Gbps | 100m | Shielded installations | Overkill for most; harder to terminate |
-| **Cat 8** | 40 Gbps | 30m | Data centers | Unnecessary for residential |
+| **超五类（Cat 5e）** | 1 Gbps | 100m | 基础网络 | **最低标准** — 新装不推荐 |
+| **六类（Cat 6）** | 1–10 Gbps | 55m（10G）/ 100m（1G） | 千兆 + 未来扩展 | **大部分家庭推荐** |
+| **超六类（Cat 6a）** | 10 Gbps | 100m | 10G 骨干、PoE++ | **面向未来的理想选择** |
+| **七类（Cat 7）** | 10 Gbps | 100m | 屏蔽安装 | 大部分家庭性能过剩；端接困难 |
+| **八类（Cat 8）** | 40 Gbps | 30m | 数据中心 | 家装不需要 |
 
-> **Recommendation:** Install Cat 6a (六类a) to all fixed locations. The cost difference from Cat 6 is minimal during construction, and it supports 10 Gbps for future network upgrades.
+> **建议：** 所有固定点位预埋超六类（Cat 6a）网线。施工期间与六类的价差很小，但支持万兆网络面向未来升级。
 
-### Network Drop Points
+### 网络点位布置
 
-| Location | Number of Cat 6a Drops | Notes |
+| 位置 | 超六类网线数量 | 说明 |
 |---|---|---|
-| **TV wall** | 3–4 | TV, set-top box, game console, spare |
-| **Each bedroom** | 2 | Desktop PC, spare |
-| **Study / office** | 4–6 | Desktop, NAS, printer, monitor, spare |
-| **Kitchen** | 1 | Smart display / tablet |
-| **Living room ceiling** | 1 | Wi-Fi AP (ceiling mount) |
-| **Each floor hallway** | 1 | Wi-Fi AP |
-| **Distribution box** | As needed | Smart home hub, network switch |
-| **Door entrance** | 1 | Smart doorbell / camera |
-| **Balcony** | 1 | Security camera |
-| **Garage** | 1 | EV charger communication (optional) |
+| **电视墙** | 3–4 根 | 电视、机顶盒、游戏机、备用 |
+| **每间卧室** | 2 根 | 台式机、备用 |
+| **书房 / 办公室** | 4–6 根 | 台式机、NAS、打印机、显示器、备用 |
+| **厨房** | 1 根 | 智能显示屏 / 平板 |
+| **客厅天花板** | 1 根 | Wi-Fi 吸顶 AP |
+| **每层走廊** | 1 根 | Wi-Fi AP |
+| **配电箱** | 按需 | 智能家居网关、网络交换机 |
+| **入户门** | 1 根 | 智能门铃 / 摄像头 |
+| **阳台** | 1 根 | 安防摄像头 |
+| **车库** | 1 根 | 电动车充电桩通信（可选） |
 
-### PoE (Power over Ethernet) Devices
+### PoE（以太网供电）设备
 
-| Device | PoE Standard | Power | Notes |
+| 设备 | PoE 标准 | 功率 | 说明 |
 |---|---|---|---|
-| IP Camera | 802.3af (PoE) | 15.4W | Most common |
-| Wi-Fi AP (ceiling) | 802.3af (PoE) | 15.4W | Ubiquiti, TP-Link Omada |
-| Smart doorbell | 802.3af (PoE) | 15.4W | Wired alternative to battery |
-| IP Phone | 802.3af (PoE) | 15.4W | Optional for home |
-| PoE Switch | 802.3at (PoE+) | 30W | For downstream devices |
-| Smart display | 802.3at (PoE+) | 30W | Wall-mounted control panel |
+| IP 摄像头 | 802.3af（PoE） | 15.4W | 最常见 |
+| 吸顶 Wi-Fi AP | 802.3af（PoE） | 15.4W | Ubiquiti、TP-Link Omada |
+| 智能门铃 | 802.3af（PoE） | 15.4W | 电池供电的有线替代方案 |
+| IP 电话 | 802.3af（PoE） | 15.4W | 家庭可选 |
+| PoE 交换机 | 802.3at（PoE+） | 30W | 用于下游设备 |
+| 智能面板 | 802.3at（PoE+） | 30W | 墙面控制面板 |
 
-### Network Topology Recommendation
+### 网络拓扑推荐
 
 ```
-Internet (fiber optic modem / ONT)
+互联网（光纤猫 / ONT）
     |
-    |--- Main Router (with 2.5G WAN port)
+    |--- 主路由器（带 2.5G WAN 口）
             |
-            +--- 2.5G/10G Switch (in distribution box)
+            +--- 2.5G/10G 交换机（配电箱内）
                     |
-                    +--- Cat 6a to each room drop
-                    +--- Cat 6a to ceiling APs
-                    +--- Cat 6a to PoE cameras
-                    +--- Cat 6a to smart home hub
-                    +--- Cat 6a to NAS
+                    +--- 超六类到各房间点位
+                    +--- 超六类到吸顶 AP
+                    +--- 超六类到 PoE 摄像头
+                    +--- 超六类到智能家居网关
+                    +--- 超六类到 NAS
 ```
 
-### Network Installation Checklist
-- [ ] Run minimum Cat 6a, solid copper (not CCA — Copper-Clad Aluminum)
-- [ ] Use shielded cable (STP) only if running near power lines; otherwise UTP is fine
-- [ ] Label both ends of every cable
-- [ ] Test every cable with certification tester (Fluke or equivalent)
-- [ ] Leave 1m service loop at both ends
-- [ ] Use structured media enclosure / patch panel in distribution box
-- [ ] Conduit size: minimum 20mm for network cable runs (allow for future re-pull)
-- [ ] Do NOT run network and power in the same conduit
+### 网络施工检查清单
+- [ ] 至少使用超六类（Cat 6a）纯铜线（不要用 CCA 铜包铝）
+- [ ] 仅在与强电线并行时使用屏蔽线（STP）；否则非屏蔽（UTP）即可
+- [ ] 每根线两端贴标签
+- [ ] 使用认证测试仪（福禄克或同等级）测试每根线
+- [ ] 两端各预留 1m 余量
+- [ ] 配电箱内使用结构化配线架 / 理线架
+- [ ] 管道规格：网线穿管最小 20mm（便于将来重新穿线）
+- [ ] 绝对不要将网线和强电穿在同一管道内
 
 ---
 
-## 7. Central Hub Placement
+## 7. 中央网关布置
 
-### Hub Placement Criteria
+### 网关布置标准
 
-| Factor | Requirement | Why |
+| 因素 | 要求 | 原因 |
 |---|---|---|
-| **Centrality** | Central location in home | Maximizes Zigbee/Thread range to all devices |
-| **Elevation** | 1.5–2.0m height | Avoids floor-level obstruction |
-| **Power** | Always-on outlet (not switched) | Hub must run 24/7 |
-| **Network** | Ethernet connection (not Wi-Fi) | Reliable, low-latency backbone |
-| **Ventilation** | Open area, not enclosed in metal box | Zigbee/Thread signals attenuate in metal enclosures |
-| **Accessibility** | Accessible for maintenance | USB ports, reset buttons, SD cards |
+| **居中位置** | 房屋中心位置 | 最大化 Zigbee/Thread 覆盖到所有设备 |
+| **高度** | 1.5–2.0m | 避免地面遮挡 |
+| **电源** | 常电插座（非开关控制） | 网关需要 24 小时运行 |
+| **网络** | 有线连接（非 Wi-Fi） | 可靠、低延迟骨干 |
+| **散热** | 开放区域，不要封闭在金属箱内 | 金属箱内 Zigbee/Thread 信号衰减严重 |
+| **可维护性** | 便于维护 | USB 接口、复位按钮、SD 卡 |
 
-### Recommended Hub Locations
+### 推荐网关位置
 
-| Home Type | Best Hub Location | Notes |
+| 房屋类型 | 最佳位置 | 说明 |
 |---|---|---|
-| Small apartment (1–2 BR) | Living room shelf or TV cabinet | Central, easy access |
-| Large apartment (3+ BR) | Central hallway ceiling or utility room | Maximize radio range |
-| Multi-story villa | Each floor has a hub, wired together | Zigbee doesn't cross floors well |
-| With NAS | Next to NAS / in equipment rack | Consolidate infrastructure |
-| With HomeKit | Near Apple TV / HomePod | Thread Border Router co-location |
+| 小户型（1–2 居室） | 客厅置物架或电视柜 | 居中、方便维护 |
+| 大户型（3+ 居室） | 中央走廊天花板或设备间 | 最大化无线覆盖 |
+| 多层别墅 | 每层一个网关，有线互联 | Zigbee 跨楼层效果差 |
+| 有 NAS | NAS 旁边 / 设备机柜内 | 基础设施集中管理 |
+| 有 HomeKit | Apple TV / HomePod 附近 | Thread 边界路由器同位置 |
 
-### Equipment Rack / Distribution Box Setup
+### 设备机柜 / 配电箱配置
 
-| Component | Size / Space | Notes |
+| 组件 | 尺寸 / 空间 | 说明 |
 |---|---|---|
-| Router | 1U or desktop | 2.5G WAN minimum |
-| Switch | 8–16 port PoE+ | Managed switch with VLAN support |
-| Smart Home Hub | Desktop (15 x 15 x 5cm) | Aqara M3, Home Assistant, etc. |
-| NVR (camera recorder) | 4–8 bay | If using wired cameras |
-| NAS | 2–4 bay | Media, backups, Home Assistant |
-| Patch panel | 12–24 port | Organize all network drops |
-| UPS | 600–1500VA | Keep network running during outages |
-| **Enclosure** | 400 x 300 x 120mm minimum | Ventilated metal or plastic cabinet |
+| 路由器 | 1U 或桌面式 | 最小 2.5G WAN |
+| 交换机 | 8–16 口 PoE+ | 支持 VLAN 的管理型交换机 |
+| 智能家居网关 | 桌面式（15×15×5cm） | Aqara M3、Home Assistant 等 |
+| NVR（录像机） | 4–8 盘位 | 如使用有线摄像头 |
+| NAS | 2–4 盘位 | 媒体、备份、Home Assistant |
+| 配线架 | 12–24 口 | 整理所有网络点位 |
+| UPS | 600–1500VA | 停电时保持网络运行 |
+| **机柜** | 最小 400×300×120mm | 通风的金属或塑料柜 |
 
-### Equipment Rack Checklist
-- [ ] Dedicated 16A circuit for network equipment
-- [ ] UPS backup for router, switch, and hub
-- [ ] Ventilation: minimum 2 fans or passive vents
-- [ ] Cable management: velcro ties (not zip ties) for serviceability
-- [ ] Label every cable at both ends
-- [ ] Leave 30% spare ports on switch for future devices
-- [ ] Configure VLANs: separate IoT devices from main network
-- [ ] Document IP addresses and device assignments
+### 设备机柜检查清单
+- [ ] 网络设备独立 16A 回路
+- [ ] UPS 备份路由器、交换机和网关
+- [ ] 通风：至少 2 个风扇或被动通风口
+- [ ] 线缆管理：使用魔术贴扎带（不要尼龙扎带）便于维护
+- [ ] 每根线两端贴标签
+- [ ] 交换机预留 30% 空余端口
+- [ ] 配置 VLAN：IoT 设备与主网络隔离
+- [ ] 记录 IP 地址和设备分配
 
 ---
 
-## 8. Special Considerations
+## 8. 特殊注意事项
 
-### Smart Curtain Pre-installation
+### 电动窗帘预埋
 
-| Curtain Type | Power Location | Conduit | Notes |
+| 窗帘类型 | 电源位置 | 管道 | 说明 |
 |---|---|---|---|
-| Motorized track | Ceiling, end of curtain rod | 20mm conduit to one end | Measure track length + 15cm for motor |
-| Roller blind | Ceiling or wall, top of window | 16mm conduit | Battery options available |
-| Venetian blind | Wall, beside window | 16mm conduit | Smart tilt/raise control |
-| Roman shade | Ceiling | 16mm conduit | Requires compatible motor |
+| 电动轨道 | 天花板，窗帘杆末端 | 20mm 管到一端 | 轨道长度 + 15cm 给电机 |
+| 卷帘 | 天花板或墙面，窗户顶部 | 16mm 管 | 有电池版本可选 |
+| 百叶窗 | 墙面，窗户旁边 | 16mm 管 | 智能翻转/升降控制 |
+| 罗马帘 | 天花板 | 16mm 管 | 需要兼容电机 |
 
-### Smart Lock Pre-installation
+### 智能门锁预埋
 
-| Door Type | Requirement | Notes |
+| 门类型 | 要求 | 说明 |
 |---|---|---|
-| Wooden door | Standard mortise size (6068 or 7255) | Measure before purchasing lock |
-| Metal security door | Confirm lock body compatibility | May need adapter plate |
-| Double door | Confirm latch direction | Smart locks are handed |
-| Glass door | Special glass door lock | Different mechanism |
+| 木门 | 标准锁体尺寸（6068 或 7255） | 购买前测量 |
+| 金属防盗门 | 确认锁体兼容性 | 可能需要适配板 |
+| 双开门 | 确认锁舌方向 | 智能锁分左右 |
+| 玻璃门 | 专用玻璃门锁 | 不同机构 |
 
-> **Tip:** No wiring needed for smart locks (battery powered), but consider pre-running a low-voltage wire for future hardwired models.
+> **提示：** 智能锁使用电池供电，不需要布线，但可考虑预埋低压线以备将来有线型号使用。
 
-### Smart Mirror / Bathroom TV
+### 智能镜子 / 浴室电视
 
-| Item | Power Location | Water Protection |
+| 设备 | 电源位置 | 防水要求 |
 |---|---|---|
-| Smart mirror | Above mirror, concealed | IP44 minimum |
-| Bathroom TV | Above vanity or in niche | IP65 for shower-adjacent areas |
-| Heated towel rack | Wall, beside shower | Dedicated 16A circuit |
+| 智能镜子 | 镜子上方隐藏 | 最低 IP44 |
+| 浴室电视 | 洗手台上方或壁龛内 | 淋浴区旁需 IP65 |
+| 电热毛巾架 | 墙面，淋浴旁边 | 独立 16A 回路 |
 
-### Projector Pre-installation
+### 投影仪预埋
 
-| Item | Requirement | Notes |
+| 项目 | 要求 | 说明 |
 |---|---|---|
-| Ceiling mount | Reinforced ceiling box or concrete anchor | Verify projector weight capacity |
-| HDMI conduit | 25mm conduit from TV rack to projector | HDMI 2.1 requires high-quality cable |
-| Power | 1 x 10A outlet at projector location | |
-| Screen power | 1 x 10A outlet at screen location | For motorized screen |
-| Speaker wire | 2 x 16mm² to rear speaker locations | If planning surround sound |
+| 天花板支架 | 加固天花板盒或混凝土锚栓 | 确认投影仪承重 |
+| HDMI 管道 | 25mm 管从电视柜到投影仪 | HDMI 2.1 需要高质量线材 |
+| 电源 | 投影仪位置 1 个 10A 插座 | |
+| 幕布电源 | 幕布位置 1 个 10A 插座 | 电动幕布 |
+| 音箱线 | 2 根 16mm² 到后置音箱位置 | 如计划环绕声 |
 
 ---
 
-## 9. Complete Pre-installation Checklist
+## 9. 完整预埋检查清单
 
-### Electrical
-- [ ] Neutral wire at EVERY switch location
-- [ ] 20mm conduits at all switch boxes (not 16mm)
-- [ ] Extra empty conduit to major locations
-- [ ] Dedicated circuit for smart water heater
-- [ ] Outlet under every sink (water purifier, leak sensor)
-- [ ] Outlet at ceiling for motorized curtains
-- [ ] Outlet at door entrance for smart doorbell/camera
+### 强电
+- [ ] 每个开关位置都穿零线
+- [ ] 所有开关底盒使用 20mm 管道（不用 16mm）
+- [ ] 主要位置额外预留空管
+- [ ] 智能热水器独立回路
+- [ ] 每个水槽下方预留插座（净水器、漏水传感器）
+- [ ] 天花板电动窗帘插座
+- [ ] 入户门智能门铃 / 摄像头插座
 
-### Low-Voltage
-- [ ] Cat 6a to every room (minimum 2 drops per room)
-- [ ] Cat 6a to TV wall (3–4 drops)
-- [ ] Cat 6a to ceiling AP locations
-- [ ] Cat 6a to smart home hub location
-- [ ] Cat 6a for doorbell camera
-- [ ] Cat 6a for each PoE camera location
-- [ ] Spare conduits with pull string everywhere
+### 弱电
+- [ ] 每个房间超六类网线（每房间至少 2 根）
+- [ ] 电视墙超六类网线（3–4 根）
+- [ ] 吸顶 AP 位置超六类网线
+- [ ] 智能家居网关位置超六类网线
+- [ ] 门铃摄像头超六类网线
+- [ ] 每个 PoE 摄像头位置超六类网线
+- [ ] 所有位置预留空管带引线
 
-### Structural
-- [ ] Reinforced ceiling mount for projector
-- [ ] Reinforced wall for wall-mounted smart display
-- [ ] Niche in shower for smart controls
-- [ ] Equipment rack / cabinet space in distribution area
-- [ ] Ventilation plan for equipment rack
+### 结构
+- [ ] 投影仪加固天花板支架
+- [ ] 墙面智能显示屏加固
+- [ ] 淋浴壁龛放置智能控制器
+- [ ] 配电区域设备机柜空间
+- [ ] 设备机柜通风方案
 
-### Final Verification (Before Wall Closing)
-- [ ] Photograph every wall with conduits visible
-- [ ] Label both ends of every wire and conduit
-- [ ] Test continuity of all network cables
-- [ ] Test power to all outlet locations
-- [ ] Verify neutral present at all switch boxes
-- [ ] Document smart device plan with exact locations
-- [ ] Share documentation with future self / next electrician
+### 封墙前最终确认
+- [ ] 每面墙拍照记录管道走向
+- [ ] 每根线/管道两端贴标签
+- [ ] 测试所有网线通断
+- [ ] 测试所有插座通电
+- [ ] 确认所有开关底盒都有零线
+- [ ] 记录智能设备计划及精确位置
+- [ ] 与未来自己 / 下一任电工共享文档
 
 ---
 
-## 10. Cost Estimates
+## 10. 费用估算
 
-### Pre-installation Cost Breakdown
+### 预埋费用明细
 
-| Item | Unit Cost | Typical Quantity | Total |
+| 项目 | 单价 | 常见数量 | 合计 |
 |---|---|---|---|
-| Extra neutral wire to switches | ¥5–10/m | 50–100m | ¥250–1000 |
-| Extra empty conduit (20mm) | ¥3–5/m | 30–50m | ¥90–250 |
-| Cat 6a cable | ¥2–4/m | 200–400m | ¥400–1600 |
-| Network outlet (faceplate + module) | ¥15–30/point | 10–20 points | ¥150–600 |
-| Smart switch (zero-fire, per gang) | ¥50–150 | 10–20 switches | ¥500–3000 |
-| Smart home hub | ¥200–800 | 1–2 | ¥200–1600 |
-| Wi-Fi AP (ceiling, PoE) | ¥200–600 | 2–4 | ¥400–2400 |
-| PoE switch (8-port) | ¥300–800 | 1 | ¥300–800 |
-| **Estimated total (pre-installation materials)** | | | **¥2290–11250** |
+| 开关额外穿零线 | ¥5–10/m | 50–100m | ¥250–1000 |
+| 额外空管（20mm） | ¥3–5/m | 30–50m | ¥90–250 |
+| 超六类网线 | ¥2–4/m | 200–400m | ¥400–1600 |
+| 网络插座（面板 + 模块） | ¥15–30/个 | 10–20 个 | ¥150–600 |
+| 智能开关（零火版，每联） | ¥50–150 | 10–20 个 | ¥500–3000 |
+| 智能家居网关 | ¥200–800 | 1–2 个 | ¥200–1600 |
+| 吸顶 Wi-Fi AP（PoE） | ¥200–600 | 2–4 个 | ¥400–2400 |
+| PoE 交换机（8 口） | ¥300–800 | 1 个 | ¥300–800 |
+| **预埋材料预估合计** | | | **¥2290–11250** |
 
-> **Note:** These are material costs only. Labor for extra wiring during renovation typically adds 20–40%. The cost of retrofitting after renovation (chasing walls, surface-mount trunking) can be 3–5x higher.
+> **说明：** 以上仅为材料费用。装修期间额外布线的人工费通常增加 20–40%。装修后改造（开槽、明装线槽）的费用可能是预埋的 3–5 倍。
 
 ---
 
-## 11. Common Mistakes to Avoid
+## 11. 常见错误
 
-| Mistake | Consequence | Prevention |
+| 错误 | 后果 | 预防方法 |
 |---|---|---|
-| No neutral at switches | Cannot install reliable smart switches | Specify "零线到每个开关" to electrician |
-| 16mm conduit at switches | Cannot pull additional wires later | Use 20mm minimum |
-| No spare conduit | No room for future upgrades | Always run 1 extra empty conduit |
-| Cat 5e instead of Cat 6a | Limited to 1 Gbps, no 10G future | Specify Cat 6a minimum |
-| Hub in metal cabinet | Zigbee/Thread signal blocked | Use plastic/vented enclosure |
-| No network to ceiling | Cannot install ceiling AP | Plan AP locations early |
-| No outlet under sink | Cannot power leak sensor/purifier | Add under-sink outlets |
-| No curtain motor power | Cannot add motorized curtains later | Run power to curtain track end |
-| Wi-Fi hub instead of Ethernet hub | Unreliable smart home network | Hub on wired Ethernet |
-| No equipment rack documentation | Future electricians can't trace wires | Label and photograph everything |
+| 开关处不穿零线 | 无法安装可靠的智能开关 | 向电工明确"每个开关都要穿零线" |
+| 开关处用 16mm 管 | 将来无法穿额外线 | 最小使用 20mm |
+| 不预留空管 | 没有未来升级空间 | 始终多穿一根空管 |
+| 用超五类不用超六类 | 限速 1Gbps，不支持万兆 | 最低标准超六类 |
+| 网关放在金属柜内 | Zigbee/Thread 信号被屏蔽 | 使用塑料/通风柜体 |
+| 天花板不留网线 | 无法安装吸顶 AP | 提前规划 AP 位置 |
+| 水槽下不留插座 | 无法使用漏水传感器/净水器 | 增加水槽下方插座 |
+| 不留窗帘电机电源 | 后期无法加装电动窗帘 | 在窗帘轨道末端预留电源 |
+| 网关用 Wi-Fi 而非有线 | 智能家居网络不稳定 | 网关使用有线以太网 |
+| 不记录设备机柜布线 | 未来电工无法追踪线路 | 贴标签并拍照记录一切 |
