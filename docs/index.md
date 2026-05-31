@@ -72,6 +72,40 @@ features:
     link: /enterprises/
 ---
 
+## 装修时间线
+
+<div class="timeline-nav">
+  <a href="/pitfalls/pre-renovation" class="timeline-phase">
+    <span class="timeline-num">1</span>
+    <span class="timeline-label">装修前准备</span>
+    <span class="timeline-hint">避坑指南 · 预算分配 · 公司选择</span>
+  </a>
+  <span class="timeline-arrow">→</span>
+  <a href="/whitepaper/" class="timeline-phase">
+    <span class="timeline-num">2</span>
+    <span class="timeline-label">设计与规划</span>
+    <span class="timeline-hint">风格选择 · 模式对比 · 审批流程</span>
+  </a>
+  <span class="timeline-arrow">→</span>
+  <a href="/standards/" class="timeline-phase">
+    <span class="timeline-num">3</span>
+    <span class="timeline-label">施工中</span>
+    <span class="timeline-hint">施工规范 · 工种工艺 · 材料选购</span>
+  </a>
+  <span class="timeline-arrow">→</span>
+  <a href="/inspection/" class="timeline-phase">
+    <span class="timeline-num">4</span>
+    <span class="timeline-label">验收交付</span>
+    <span class="timeline-hint">分阶段验收 · 环保检测 · 竣工清单</span>
+  </a>
+  <span class="timeline-arrow">→</span>
+  <a href="/whitepaper/move-in" class="timeline-phase">
+    <span class="timeline-num">5</span>
+    <span class="timeline-label">入住与售后</span>
+    <span class="timeline-hint">甲醛治理 · 售后服务 · 保修指南</span>
+  </a>
+</div>
+
 ## 快速入口
 
 ### 我是业主 — 装修前必看
@@ -248,6 +282,68 @@ features:
 </div>
 
 <style>
+/* ===== 装修时间线 ===== */
+.timeline-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin: 1rem 0 2rem;
+  padding: 1.5rem 1rem;
+  background: var(--vp-c-bg-soft);
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 12px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.timeline-phase {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  text-decoration: none;
+  min-width: 120px;
+  padding: 0.75rem 0.5rem;
+  border-radius: 10px;
+  background: var(--vp-c-bg);
+  border: 1px solid var(--vp-c-divider);
+  transition: all 0.2s;
+  text-align: center;
+}
+.timeline-phase:hover {
+  border-color: var(--vp-c-brand-2);
+  background: var(--vp-c-brand-soft);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(180, 83, 9, 0.1);
+}
+.timeline-num {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--vp-c-brand-1);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+.timeline-label {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--vp-c-text-1);
+}
+.timeline-hint {
+  font-size: 0.72rem;
+  color: var(--vp-c-text-3);
+  line-height: 1.3;
+}
+.timeline-arrow {
+  font-size: 1.2rem;
+  color: var(--vp-c-text-3);
+  flex-shrink: 0;
+}
+
 /* ===== 快速入口 — 卡片式链接 ===== */
 .quick-links {
   display: grid;
@@ -403,6 +499,28 @@ features:
 
 /* ===== 移动端适配 ===== */
 @media (max-width: 640px) {
+  .timeline-nav {
+    gap: 0.3rem;
+    padding: 1rem 0.5rem;
+  }
+  .timeline-phase {
+    min-width: 100px;
+    padding: 0.6rem 0.4rem;
+  }
+  .timeline-num {
+    width: 24px;
+    height: 24px;
+    font-size: 0.75rem;
+  }
+  .timeline-label {
+    font-size: 0.82rem;
+  }
+  .timeline-hint {
+    font-size: 0.65rem;
+  }
+  .timeline-arrow {
+    font-size: 1rem;
+  }
   .quick-links {
     grid-template-columns: 1fr;
   }
