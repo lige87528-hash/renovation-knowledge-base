@@ -5,7 +5,52 @@ import { ref, onMounted, onUnmounted, computed, watch, nextTick } from 'vue'
 
 const { Layout } = DefaultTheme
 const route = useRoute()
-const { page, site } = useData()
+const { page, site, theme } = useData()
+
+// 侧边栏折叠状态
+const sidebarOpen = ref(false)
+
+function toggleSidebar() {
+  sidebarOpen.value = !sidebarOpen.value
+}
+
+// 文章内 TOC — 从 page.headers 提取 h2/h3
+const tocItems = computed(() => {
+  const headers = page.value?.headers || []
+  if (headers.length < 3) return [] // 标题少于 3 个不显示 TOC
+
+  const result = []
+  for (const h of headers) {
+    if (h.level === 2) {
+      result.push({
+        level: 2,
+        title: h.title,
+        slug: h.slug,
+        children: [],
+      })
+    } else if (h.level === 3 && result.length > 0) {
+      result[result.length - 1].children.push({
+        level: 3,
+        title: h.title,
+        slug: h.slug,
+      })
+    }
+  }
+  return result.length < 3 ? [] : result
+})
+
+// 最近更新标识 — 近 7 天内更新的页面
+const isRecentlyUpdated = computed(() => {
+  if (!page.value?.lastUpdated) return false
+  try {
+    const updated = new Date(page.value.lastUpdated)
+    const now = new Date()
+    const diffDays = (now - updated) / (1000 * 60 * 60 * 24)
+    return diffDays <= 7
+  } catch {
+    return false
+  }
+})
 
 // Breadcrumb path computation
 const breadcrumbs = computed(() => {
@@ -146,23 +191,49 @@ const relatedArticles = computed(() => {
 
     <!-- 面包屑（仅文章页显示） -->
     <template #doc-before>
-      <nav class="breadcrumb-nav" v-if="breadcrumbs.length > 1">
-        <template v-for="(crumb, i) in breadcrumbs" :key="i">
-          <span v-if="i > 0" class="breadcrumb-sep">›</span>
-          <a v-if="crumb.link && crumb.link !== route.path" :href="crumb.link">{{ crumb.label }}</a>
-          <span v-else class="breadcrumb-current">{{ crumb.label }}</span>
-        </template>
-      </nav>
+      <div>
+        <nav class="breadcrumb-nav" v-if="breadcrumbs.length > 1">
+          <template v-for="(crumb, i) in breadcrumbs" :key="i">
+            <span v-if="i > 0" class="breadcrumb-sep">›</span>
+            <a v-if="crumb.link && crumb.link !== route.path" :href="crumb.link">{{ crumb.label }}</a>
+            <span v-else class="breadcrumb-current">{{ crumb.label }}</span>
+          </template>
+        </nav>
+
+        <!-- 文章内 TOC（h2/h3 锚点目录，标题≥3 个时显示） -->
+        <nav v-if="tocItems.length > 0" class="inline-toc" :class="{ open: sidebarOpen }">
+          <div class="inline-toc-header" @click="toggleSidebar">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px">
+              <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+            </svg>
+            <span>目录</span>
+            <svg class="inline-toc-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:12px;height:12px">
+              <polyline points="6,9 12,15 18,9"/>
+            </svg>
+          </div>
+          <ul class="inline-toc-list">
+            <li v-for="item in tocItems" :key="item.slug">
+              <a :href="'#' + item.slug" class="toc-link toc-h2">{{ item.title }}</a>
+              <ul v-if="item.children.length > 0" class="toc-sub-list">
+                <li v-for="child in item.children" :key="child.slug">
+                  <a :href="'#' + child.slug" class="toc-link toc-h3">{{ child.title }}</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </template>
 
     <!-- 更新时间徽章 -->
     <template #doc-after>
-      <div v-if="page.lastUpdated" class="last-updated-badge">
+      <div v-if="page.lastUpdated" class="last-updated-badge" :class="{ 'recent': isRecentlyUpdated }">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <circle cx="12" cy="12" r="10"/>
           <polyline points="12,6 12,12 16,14"/>
         </svg>
         <span>最后更新于 {{ page.lastUpdated }}</span>
+        <span v-if="isRecentlyUpdated" class="recent-badge">最近更新</span>
       </div>
 
       <!-- 文章标签 -->

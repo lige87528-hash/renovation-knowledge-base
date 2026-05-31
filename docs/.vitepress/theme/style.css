@@ -249,6 +249,95 @@
   width: 14px;
   height: 14px;
 }
+.last-updated-badge.recent {
+  border-color: rgba(217, 119, 6, 0.3);
+  background: rgba(217, 119, 6, 0.05);
+}
+.recent-badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.1rem 0.45rem;
+  background: #d97706;
+  color: #fff;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+/* ===== 文章内 TOC（锚点目录） ===== */
+.inline-toc {
+  margin: 0.75rem 0 1rem;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+  background: var(--vp-c-bg-soft);
+  padding: 0;
+  max-width: 420px;
+}
+.inline-toc-header {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.6rem 0.85rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--vp-c-text-1);
+  cursor: pointer;
+  user-select: none;
+  border-bottom: 1px solid var(--vp-c-divider);
+}
+.inline-toc-header svg:first-child {
+  opacity: 0.6;
+}
+.inline-toc-arrow {
+  margin-left: auto;
+  transition: transform 0.2s;
+}
+.inline-toc:not(.open) .inline-toc-arrow {
+  transform: rotate(-90deg);
+}
+.inline-toc:not(.open) .inline-toc-list {
+  display: none;
+}
+.inline-toc-list {
+  list-style: none;
+  padding: 0.4rem 0;
+  margin: 0;
+  max-height: 360px;
+  overflow-y: auto;
+}
+.inline-toc-list li {
+  padding: 0;
+  margin: 0;
+  color: inherit;
+  line-height: inherit;
+  border-bottom: none;
+}
+.toc-link {
+  display: block;
+  padding: 0.35rem 0.85rem;
+  font-size: 0.82rem;
+  color: var(--vp-c-text-2);
+  text-decoration: none;
+  border-left: 2px solid transparent;
+  transition: all 0.15s;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.toc-link:hover {
+  color: var(--vp-c-brand-1);
+  background: var(--vp-c-brand-soft);
+  border-left-color: var(--vp-c-brand-1);
+}
+.toc-h3 {
+  padding-left: 1.5rem;
+  font-size: 0.78rem;
+}
+.toc-sub-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
 /* ===== 首页 Hero 增强 ===== */
 .VPHero .name {
@@ -523,7 +612,74 @@
   .reading-progress-bar,
   .back-to-top-btn,
   .feedback-section,
-  .related-section {
+  .related-section,
+  .inline-toc {
     display: none !important;
+  }
+}
+
+/* ===== P2-13 排版统一规范 ===== */
+
+/* 引用块增强 */
+.vp-doc blockquote {
+  border-left: 3px solid var(--vp-c-brand-1);
+  background: var(--vp-c-bg-soft);
+  padding: 0.75rem 1rem;
+  margin: 1rem 0;
+  border-radius: 0 6px 6px 0;
+  font-size: 0.92rem;
+  color: var(--vp-c-text-2);
+}
+.vp-doc blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+/* 链接下划线增强 */
+.vp-doc a:not(.header-anchor) {
+  text-decoration: none;
+  border-bottom: 1px solid var(--vp-c-brand-2);
+  transition: border-color 0.15s;
+}
+.vp-doc a:not(.header-anchor):hover {
+  border-bottom-color: var(--vp-c-brand-1);
+}
+
+/* 强文本/强调文字颜色 */
+.vp-doc strong {
+  color: var(--vp-c-text-1);
+  font-weight: 600;
+}
+
+/* 水平分割线增强 */
+.vp-doc hr {
+  border: none;
+  height: 1px;
+  background: var(--vp-c-divider);
+  margin: 2rem 0;
+}
+
+/* 表格 caption */
+.vp-doc table caption {
+  caption-side: top;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--vp-c-text-2);
+  padding: 0.5rem 0;
+  text-align: left;
+}
+
+/* 首段缩进选项（按需启用） */
+.indent-first p:first-of-type {
+  text-indent: 2em;
+}
+
+/* 移动端 TOC 适配 */
+@media (max-width: 640px) {
+  .inline-toc {
+    max-width: 100%;
+  }
+  .toc-link {
+    padding: 0.3rem 0.65rem;
+    font-size: 0.78rem;
   }
 }
