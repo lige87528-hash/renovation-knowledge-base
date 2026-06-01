@@ -2,6 +2,7 @@
 import DefaultTheme from 'vitepress/theme'
 import { useRoute, useData } from 'vitepress'
 import { ref, onMounted, onUnmounted, computed, watch, nextTick } from 'vue'
+import { relatedMap } from 'virtual:related-data'
 
 const { Layout } = DefaultTheme
 const route = useRoute()
@@ -424,7 +425,7 @@ watch(() => route.path, () => {
   progressWidth.value = 0
 })
 
-// 相关文章 — 基于 tags 匹配，无标签时回退到同分类
+// 相关文章 — 基于构建阶段预计算的数据（解决 SSR 时 site.pages 为空的问题）
 const articleTags = computed(() => {
   const tags = page.value?.frontmatter?.tags || []
   return Array.isArray(tags) ? tags.slice(0, 8) : []
@@ -433,46 +434,8 @@ const articleTags = computed(() => {
 const relatedArticles = computed(() => {
   const currentPage = route.data?.relativePath || ''
   if (!currentPage) return []
-
-  const parts = currentPage.replace(/\\/g, '/').split('/')
-  const currentCategory = parts[0] || ''
-  const currentTags = page.value?.frontmatter?.tags || []
-  const pages = site.value?.pages || []
-
-  const scored = pages
-    .filter(p => {
-      const rel = (p.relativePath || '').replace(/\\/g, '/')
-      return rel !== currentPage && rel.endsWith('.md')
-    })
-    .map(p => {
-      const pTags = p.frontmatter?.tags || []
-      const pCat = p.frontmatter?.category || ''
-      // 计算匹配分数
-      let score = 0
-      if (Array.isArray(currentTags) && currentTags.length > 0) {
-        score = currentTags.filter(t => pTags.includes(t)).length
-      } else {
-        // 无标签时按分类匹配
-        score = pCat === currentCategory ? 1 : 0
-      }
-      // 同分类加分
-      if (pCat === currentCategory) score += 0.5
-      return { page: p, score }
-    })
-    .filter(x => x.score > 0)
-    .sort((a, b) => b.score - a.score)
-    .slice(0, 3)
-    .map(x => ({
-      title: x.page.title || '未命名',
-      link: '/' + (x.page.relativePath || '').replace(/\\/g, '/').replace(/\.md$/, '').replace(/\/index$/, ''),
-      category: x.page.frontmatter?.category || '',
-    }))
-
-  // 修复链接：确保 index 页正确
-  return scored.map(a => ({
-    ...a,
-    link: a.link.endsWith('/') ? a.link : a.link + '/',
-  }))
+  const relPath = currentPage.replace(/\\/g, '/')
+  return relatedMap[relPath] || []
 })
 </script>
 

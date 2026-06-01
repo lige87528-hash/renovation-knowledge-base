@@ -1,4 +1,17 @@
 import { defineConfig } from 'vitepress'
+import { relatedMap } from './related-data.mjs'
+
+const relatedDataPlugin = {
+  name: 'related-data-virtual-module',
+  resolveId(id: string) {
+    if (id === 'virtual:related-data') return '\0' + id
+  },
+  load(id: string) {
+    if (id === '\0virtual:related-data') {
+      return `export const relatedMap = ${JSON.stringify(relatedMap)}`
+    }
+  },
+}
 
 // 各分类的个性化 description 映射
 const categoryDescriptions: Record<string, string> = {
@@ -25,6 +38,10 @@ export default defineConfig({
   title: '装修知识库',
   description: '汇集各类装修知识，为从业者和业主提供专业参考',
   lang: 'zh-CN',
+
+  vite: {
+    plugins: [relatedDataPlugin],
+  },
 
   themeConfig: {
     logo: '/logo.svg',
