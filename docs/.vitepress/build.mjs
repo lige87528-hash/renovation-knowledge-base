@@ -1,24 +1,26 @@
 /**
  * 统一构建脚本 — VitePress 构建 + Sitemap/robots.txt 生成
- * 替换原来的两步模式，确保 sitemap/robots 作为构建流程的必需环节
- * 任何一步失败都会中断部署，在 Cloudflare 日志中暴露错误
+ * 使用 process.cwd() 作为 repo root，兼容 Cloudflare Pages 构建环境
  */
 import { execSync } from 'child_process'
-import { SitemapStream, streamToPromise } from 'sitemap'
+import { SitemapStream } from 'sitemap'
 import { createWriteStream, existsSync, readdirSync } from 'fs'
-import { join, resolve, posix, dirname } from 'path'
-import { fileURLToPath } from 'url'
+import { join, posix } from 'path'
 
-const __dirname = dirname(fileURLToPath(import.meta.url))
-const DOCS_DIR = resolve(__dirname, '..')
-const DIST_DIR = join(DOCS_DIR, '.vitepress', 'dist')
+// process.cwd() 在 Cloudflare Pages 中是 /opt/buildhome/repo（repo root）
+// 本地运行时也是 repo root
+const REPO_ROOT = process.cwd()
+const DIST_DIR = join(REPO_ROOT, 'docs', '.vitepress', 'dist')
 const BASE_URL = 'https://zhuangxiuzhishi.cn'
 
-// Step 1: VitePress build
+console.log('[build] repo root:', REPO_ROOT)
+console.log('[build] dist dir:', DIST_DIR)
+
+// Step 1: Run VitePress build
 console.log('[build] Starting VitePress build...')
 try {
   execSync('npx vitepress build docs', {
-    cwd: DOCS_DIR,
+    cwd: REPO_ROOT,
     stdio: 'inherit',
     env: { ...process.env, FORCE_COLOR: '1' },
   })
@@ -30,7 +32,21 @@ console.log('[build] VitePress build complete.')
 
 // Step 2: Verify dist exists
 if (!existsSync(DIST_DIR)) {
-  console.error(`[post-build] ERROR: dist directory not found: ${DIST_DIR}`)
+  console.error(`[build] ERROR: dist directory not found: ${DIST_DIR}`)
+  // Diagnostic: list what's in docs/
+  try {
+    const docsEntries = readdirSync(join(REPO_ROOT, 'docs'), { withFileTypes: true })
+    console.error('[build] Contents of docs/:', docsEntries.map(e => e.name).join(', '))
+  } catch (e) {
+    console.error('[build] Cannot list docs/:', e.message)
+  }
+  // Diagnostic: check if vitepress .vitepress dir exists
+  try {
+    const vitepressEntries = readdirSync(join(REPO_ROOT, 'docs', '.vitepress'), { withFileTypes: true })
+    console.error('[build] Contents of docs/.vitepress/:', vitepressEntries.map(e => e.name).join(', '))
+  } catch (e) {
+    console.error('[build] Cannot list docs/.vitepress/:', e.message)
+  }
   process.exit(1)
 }
 
@@ -91,7 +107,7 @@ await new Promise((resolve, reject) => {
 })
 console.log(`[post-build] ✓ robots.txt written to ${robotsPath}`)
 
-// Step 4: Verify output files exist
+// Step 4: Final verification
 if (!existsSync(sitemapPath)) {
   console.error('[post-build] ERROR: sitemap.xml was not generated')
   process.exit(1)
