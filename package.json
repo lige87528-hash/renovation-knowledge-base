@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vitepress dev docs",
-    "build": "vitepress build docs && node docs/.vitepress/post-build.js",
+    "build": "node docs/.vitepress/build.mjs",
     "preview": "vitepress preview docs"
   },
   "keywords": [
