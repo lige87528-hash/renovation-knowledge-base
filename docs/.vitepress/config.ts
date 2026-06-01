@@ -713,7 +713,13 @@ export default defineConfig({
       copyright: 'Copyright © 2026 装修知识库',
     },
 
-    lastUpdated: true,
+    lastUpdated: {
+      text: '最后更新于',
+      formatOptions: {
+        dateStyle: 'medium',
+        forceLocale: true,
+      },
+    },
 
     docFooter: {
       prev: '上一页',

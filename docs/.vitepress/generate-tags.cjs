@@ -122,14 +122,53 @@ title: 标签云
 ---
 
 <script setup>
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
 
 const allTags = ` + JSON.stringify(tagJson) + `
 
 const selectedTag = ref('')
+const activeCategory = ref('all')
+
+const tagCategories = {
+  construction: ['施工工艺','施工规范','工种工艺','装修工艺','水电施工','泥瓦施工','木作施工','油漆施工','防水','瓷砖铺贴','地板安装','橱柜安装','墙面处理','涂料','吊顶','木作工艺'],
+  material: ['材料选购','装修材料','品牌推荐','瓷砖选购','卫浴选购','涂料选购','室内门','木地板','复合地板','主材','辅材','环保涂料'],
+  budget: ['装修报价','预算控制','装修费用','预算技巧','省钱技巧','全包','半包','清包','整装','增项','付款方式'],
+  acceptance: ['验收标准','装修验收','验收清单','Checklist','水电验收','安装工程','验收'],
+  standard: ['国家标准','施工规范','GB50210','GB50222','GB50242','GB50303','GB50325','GB50327'],
+  mode: ['装修模式','模式对比','装修方式选择'],
+  design: ['设计阶段','设计避坑','装修风格','现代简约','北欧风','智能家居','智能装修'],
+}
+
+const categoryNames2 = {
+  all: '全部',
+  construction: '施工',
+  material: '材料',
+  budget: '预算',
+  acceptance: '验收',
+  standard: '标准',
+  mode: '模式',
+  design: '设计',
+}
+
+function getTagCategory(tag) {
+  for (const [cat, tags] of Object.entries(tagCategories)) {
+    if (tags.includes(tag)) return cat
+  }
+  return 'other'
+}
+
+const filteredTags = computed(() => {
+  if (activeCategory.value === 'all') return allTags
+  const cats = tagCategories[activeCategory.value] || []
+  return allTags.filter(t => cats.includes(t.tag))
+})
 
 function selectTag(tag) {
   selectedTag.value = selectedTag.value === tag ? '' : tag
+}
+function selectCategory(cat) {
+  activeCategory.value = cat
+  selectedTag.value = ''
 }
 </script>
 
@@ -139,9 +178,22 @@ function selectTag(tag) {
     <p>按标签浏览全站文章，共 {{ allTags.length }} 个标签</p>
   </div>
 
+  <div class="category-filter">
+    <span class="category-label">分类筛选：</span>
+    <button
+      v-for="(name, key) in categoryNames2"
+      :key="key"
+      class="cat-btn"
+      :class="{ active: activeCategory === key }"
+      @click="selectCategory(key)"
+    >
+      {{ name }}
+    </button>
+  </div>
+
   <div class="tags-cloud">
     <button
-      v-for="item in allTags"
+      v-for="item in filteredTags"
       :key="item.tag"
       class="tag-btn"
       :class="{ active: selectedTag === item.tag }"
@@ -201,6 +253,20 @@ function selectTag(tag) {
 .tag-btn.active .tag-count { background: rgba(255,255,255,0.2); color: #fff; }
 .tag-articles { margin-top: 2rem; }
 .tag-articles h2 { font-size: 1.2rem; margin-bottom: 1rem; color: var(--vp-c-text-1); }
+.category-filter { display: flex; align-items: center; gap: 0.4rem; margin-bottom: 1.2rem; justify-content: center; flex-wrap: wrap; }
+.category-label { font-size: 0.85rem; color: var(--vp-c-text-2); }
+.cat-btn {
+  padding: 0.3rem 0.7rem;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 16px;
+  background: var(--vp-c-bg);
+  cursor: pointer;
+  font-size: 0.8rem;
+  color: var(--vp-c-text-2);
+  transition: all 0.2s;
+}
+.cat-btn:hover { border-color: var(--vp-c-brand); color: var(--vp-c-brand); }
+.cat-btn.active { border-color: var(--vp-c-brand); background: var(--vp-c-brand); color: #fff; }
 .article-list { display: flex; flex-direction: column; gap: 0.5rem; }
 .article-item {
   display: flex;
