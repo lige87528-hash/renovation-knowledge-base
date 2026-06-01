@@ -52,6 +52,20 @@ const isRecentlyUpdated = computed(() => {
   }
 })
 
+// 格式化更新时间为可读日期（如 2026年6月1日）
+const formattedLastUpdated = computed(() => {
+  if (!page.value?.lastUpdated) return ''
+  try {
+    return new Date(page.value.lastUpdated).toLocaleDateString('zh-CN', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+    })
+  } catch {
+    return ''
+  }
+})
+
 // Breadcrumb path computation
 const breadcrumbs = computed(() => {
   const path = route.data?.relativePath || ''
@@ -510,7 +524,8 @@ const relatedArticles = computed(() => {
           <circle cx="12" cy="12" r="10"/>
           <polyline points="12,6 12,12 16,14"/>
         </svg>
-        <span>最后更新于 {{ page.lastUpdated }}</span>
+        <span v-if="formattedLastUpdated">最后更新于 {{ formattedLastUpdated }}</span>
+        <span v-else>最后更新于 {{ page.lastUpdated }}</span>
         <span v-if="isRecentlyUpdated" class="recent-badge">最近更新</span>
       </div>
 
