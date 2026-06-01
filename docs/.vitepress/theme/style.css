@@ -749,3 +749,54 @@ body, .vp-doc, .vp-doc p, .vp-doc li, .vp-doc span, .vp-doc div {
     font-size: 0.78rem;
   }
 }
+
+/* ===== 打印友好样式 ===== */
+@media print {
+  .VPNav,
+  .VPSidebar,
+  .VPFooter,
+  .docsearch,
+  .edit-link,
+  .feedback-section,
+  .back-to-top-btn {
+    display: none !important;
+  }
+  .VPContent,
+  .main {
+    margin: 0 !important;
+    padding: 1rem !important;
+    width: 100% !important;
+    max-width: none !important;
+  }
+  .vp-doc table {
+    font-size: 10pt !important;
+    page-break-inside: avoid;
+  }
+  a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 8pt;
+    color: #666;
+  }
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid;
+  }
+}
+
+/* ===== 移动端表格适配 ===== */
+@media (max-width: 768px) {
+  .vp-doc table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+  }
+  .vp-doc table th,
+  .vp-doc table td {
+    white-space: nowrap;
+    min-width: 100px;
+  }
+}
