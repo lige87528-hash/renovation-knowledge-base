@@ -1,6 +1,6 @@
 ---
 category: materials
-tags: ["材料选购", "装修材料", "品牌推荐"]
+tags: ["主材选购", "材料选购", "装修材料"]
 ---
 # 主材清单
 
@@ -65,5 +65,5 @@ tags: ["材料选购", "装修材料", "品牌推荐"]
 
 - 👉 [主材选购详解](/materials/main-detailed) — 品牌推荐与鉴别方法
 - 👉 [材料真伪鉴别](/pitfalls/material-authentication) — 瓷砖/板材/涂料鉴别
-- 👉 [材料采购避坑](/pitfalls/materials/) — 以次充好、虚假促销
+- 👉 [材料采购避坑](/pitfalls/material-authentication) — 以次充好、虚假促销
 - 👉 [材料采购清单](/materials/purchase-checklist) — 一站式勾选清单

@@ -110,4 +110,4 @@ tags: []
 
 - 👉 [三档报价模板](/pricing/template) — 经济/舒适/高端报价参考
 - 👉 [预算控制技巧](/pricing/budget-tips) — 隐藏费用、省钱攻略
--  [常见漏项与增项](/pitfalls/pre-renovation#六常见漏项与增项点) — 对照报价单逐项核查
+- 👉 [常见漏项与增项](/pitfalls/pre-renovation#%E5%85%AD%E3%80%81%E5%B8%B8%E8%A7%81%E6%BC%8F%E9%A1%B9%E4%B8%8E%E5%A2%9E%E9%A1%B9%E7%82%B9) — 对照报价单逐项核查

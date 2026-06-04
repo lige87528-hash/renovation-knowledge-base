@@ -315,7 +315,7 @@ tags: ["装修前", "装修准备", "避坑指南", "装修避坑", "合同陷�
 
 ## 延伸阅读
 
-- 👉 [签合同避坑指南](/pitfalls/contract-signing) — 条款陷阱、付款节点、保修条款
--  [三档报价参考](/pricing/) — 经济/舒适/高端报价模板，对照是否被坑
+- 👉 [签合同避坑指南](/pitfalls/contract/traps) — 条款陷阱、付款节点、保修条款
+- 👉 [三档报价参考](/pricing/index) — 经济/舒适/高端报价模板，对照是否被坑
 - 👉 [装修模式对比](/models/comparison) — 清包/半包/全包/整装怎么选？
 - 👉 [材料采购清单](/materials/purchase-checklist) — 主材+辅材一站式勾选清单

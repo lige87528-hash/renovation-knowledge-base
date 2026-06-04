@@ -1,6 +1,6 @@
 ---
 category: pitfalls
-tags: ["装修避坑", "合同陷阱", "施工陷阱"]
+tags: ["灯具采购", "装修避坑", "照明设计"]
 ---
 # 灯具采购避坑 (Lighting Purchase Pitfalls)
 

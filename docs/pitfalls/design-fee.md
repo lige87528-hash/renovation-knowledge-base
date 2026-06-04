@@ -322,4 +322,4 @@ Use this checklist when reviewing delivered drawings:
 
 - Related: [Contract Pitfalls](/pitfalls/contract/) — Contract clauses related to design services
 - Related: [Pricing Guide](../pricing/) — Construction pricing benchmarks for comparison
-- Related: [Company Pitfalls](/pitfalls/company) — Evaluating design and construction companies
+- Related: [Company Pitfalls](/enterprises/) — Evaluating design and construction companies

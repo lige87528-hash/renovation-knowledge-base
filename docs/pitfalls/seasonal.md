@@ -1,6 +1,6 @@
 ---
 category: pitfalls
-tags: ["装修避坑", "合同陷阱", "施工陷阱"]
+tags: ["季节性施工", "装修避坑", "春夏秋冬装修"]
 ---
 # 季节性装修避坑 — Seasonal Renovation Pitfalls
 

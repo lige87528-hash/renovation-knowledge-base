@@ -1,6 +1,6 @@
 ---
 category: pitfalls
-tags: ["装修避坑", "合同陷阱", "施工陷阱"]
+tags: ["保修期", "装修避坑", "售后服务"]
 ---
 # 保修期避坑 — Warranty Period Pitfalls
 
@@ -373,4 +373,4 @@ An emerging option is third-party renovation warranty insurance:
 - Related: [Legal Pitfalls](/pitfalls/legal) — Legal framework for renovation contracts and disputes
 - Related: [Dispute Resolution](/pitfalls/dispute) — Steps to take when warranty claims are denied
 - Related: [Contract Pitfalls](/pitfalls/contract/) — Contract clauses that strengthen your warranty position
-- Related: [Insurance Pitfalls](insurance.md) — Renovation insurance options and considerations
+- Related: [Insurance Pitfalls](/pitfalls/insurance) — Renovation insurance options and considerations
